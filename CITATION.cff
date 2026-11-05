@@ -34,4 +34,5 @@ keywords:
   - "INT8"
   - "TensorRT"
   - "edge deployment"
-# doi: filled after the Zenodo DOI is reserved
+doi: "10.5281/zenodo.23983315"
+repository-code: "https://github.com/iamdinhthuan/measured-ap-fp16-allocation-int8-detectors"

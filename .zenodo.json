@@ -41,5 +41,13 @@
     "edge deployment"
   ],
   "access_right": "open",
-  "license": "MIT"
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/iamdinhthuan/measured-ap-fp16-allocation-int8-detectors/tree/v1.0.0",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ]
 }

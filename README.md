@@ -52,4 +52,4 @@ Code and metadata are released under the MIT License (see `LICENSE`). Third-part
 
 ## Citation
 
-See `CITATION.cff`.
+DOI: [10.5281/zenodo.23983315](https://doi.org/10.5281/zenodo.23983315). See `CITATION.cff`.

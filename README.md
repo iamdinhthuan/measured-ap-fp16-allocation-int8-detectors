@@ -4,11 +4,11 @@ This archive accompanies the article
 
 > *Measured detection accuracy versus proxy scores for FP16 block allocation in INT8 object detectors: a controlled study* (prepared for Information Sciences).
 
-It contains the code, configurations, tuning-split manifests, allocation plans, metric files and bootstrap outputs behind every table and figure of the article and its supplementary material. Datasets, checkpoints, ONNX graphs, TensorRT engines and raw prediction files are not redistributed (see "Not included").
+It contains the code, configurations, tuning-split manifests, allocation plans, and the metric and bootstrap files from which the tables and figures of the article and its supplementary material were produced. Datasets, checkpoints, ONNX graphs, TensorRT engines and raw prediction files are not redistributed (see "Not included").
 
 ## What the code does
 
-1. `make_tuning_split.py` draws a 2000-image `train2017` tuning split (seed 20261025) that is disjoint from the 512 calibration images (`data/calib512/calib_files.txt`).
+1. `make_tuning_split.py` draws a 2000-image `train2017` tuning split (seed 20261025) that is disjoint from the 512 calibration images (`data/calib512/calib_files.txt`, the content of `data/coco/calib/images` read by `gate_headroom.py` through `tools/coco_common.py`).
 2. The INT8 base graph is built with NVIDIA ModelOpt 0.45 (entropy calibration on the 512 images, Sigmoid unquantized). `qdq_restore.py` restores selected nodes of the explicit-Q/DQ ONNX graph to FP16. `tools/build_engine.py` builds strongly typed TensorRT engines.
 3. `block_sensitivity.py` restores each block alone on the compiled engine and measures the AP recovery on the tuning split, overall and per group (`metrics/sens_*.json`).
 4. `allocate.py` solves the budgeted integer program (mean or worst-group objective, forced set F) and writes the allocation plans (`configs/`).
@@ -37,6 +37,7 @@ Scripts named `queue_*.sh`, `fx_queue_*.sh`, `boot_*.sh` are the unattended job 
 | `metrics/` | AP and per-group AP of every evaluated engine, sensitivity sweeps, scores, bootstrap outputs (`metrics/bootstrap/`), Jetson latency (`metrics/orin_latency/`), Jetson AP check (`metrics/orin_e4/`), exploratory 25 W latency session (`metrics/orin_phaseB/`) |
 | `results/` | summary tables collected during the runs |
 | `tests/` | unit test of the Q/DQ restoration |
+| `manuscript_inputs/` | `make_tables.py` and `make_vis_figs.py` with the inputs they read (`data/`): run summaries, allocation plans, Jetson records and bootstrap files. The bootstrap files `g_*.json` there are byte-identical copies of files in `metrics/bootstrap/` under the names used by the table script (e.g. `g_yolo26s_coco_sim256.json` = `k5_yolo26s_sim256.json`). The two dataset images of the qualitative figure are not redistributed; `data/vis/SHA256SUMS` identifies them. |
 
 ## Not included
 

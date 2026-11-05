@@ -21,6 +21,8 @@ Scripts named `queue_*.sh`, `fx_queue_*.sh`, `boot_*.sh` are the unattended job 
 
 ## Protocol records
 
+- `protocol/README_isci_method_frozen_20261025.md`: the confirmatory protocol as frozen on 2026-10-25 (internal planning notes, in Vietnamese); SHA-256 `934776253c13171a0612c2e9f4186d0972271866c18689fd5d6379bb0b5afa2e`, the digest printed in Supplementary Section S3.
+- `protocol/README_isci_method_with_10_8a.md`: the same document with the clarification §10.8a appended on 2026-10-25 23:09 +07; SHA-256 `8773a8046a04dda8c122c0ab5ce42f8ed5bfaab023fb1702287195bb1eb3547c`, the digest in `FREEZE_RECORD.md`. Its first 375 lines are byte-identical to the frozen file.
 - `FREEZE_RECORD.md`: SHA-256 digests of the confirmatory protocol at freeze time (2026-10-25) and after the documented clarification.
 - `rules_11_9.md`, `rules_11_10.md`: decision rules of the post-freeze exploratory experiments, written before their results existed.
 - `logs/fx.sha256`: digests of the result files of the post-freeze runs.

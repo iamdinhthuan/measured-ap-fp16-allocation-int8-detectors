@@ -1,0 +1,35 @@
+{
+ "key": "fisher@0.03",
+ "blocks": [],
+ "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/attn/pe/conv/Conv$|^/model\\.23/one2one_cv2\\.2/one2one_cv2\\.2\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.0/one2one_cv3\\.0\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.1/one2one_cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.0/one2one_cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.0/one2one_cv3\\.1\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.0/one2one_cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.1/conv/Conv$",
+ "qdq_inputs_restored": 38,
+ "cost_macs_frac": 0.02951105303277796,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 47.3,
+ "latency_ms": 0.6052000224590302,
+ "engine_bytes": 13349948,
+ "splits": {
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26s_int8ent_fxo_fisher_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 412438,
+   "stats": {
+    "AP": 0.4520881199384696,
+    "AP50": 0.6207191335231486,
+    "AP75": 0.49288976239391996,
+    "AP_small": 0.2681587439204094,
+    "AP_medium": 0.49735980817675624,
+    "AP_large": 0.6141231745557741,
+    "AR1": 0.35274871901621835,
+    "AR10": 0.5922898371871078,
+    "AR100": 0.6472994430323996,
+    "AR_small": 0.4727710781343768,
+    "AR_medium": 0.6970774941806485,
+    "AR_large": 0.796827198356253
+   },
+   "prediction_sha256": "f1aa7e1cd21aa8fe06c2f0ab7909c9b920424b97fc0e20955234d0128028e065"
+  }
+ }
+}

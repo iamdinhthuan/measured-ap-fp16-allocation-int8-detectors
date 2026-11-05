@@ -1,0 +1,22 @@
+{
+ "model": "yolo26l",
+ "base": "int8ent",
+ "note": "folklore baselines, written by queue_f.sh before any evaluation",
+ "allocations": {
+  "headout": {
+   "blocks": [],
+   "regex": "/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/",
+   "cost": null
+  },
+  "stem_headout": {
+   "blocks": [],
+   "regex": "^/model\\.0/|/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/",
+   "cost": null
+  },
+  "head": {
+   "blocks": [],
+   "regex": "^/model\\.23/",
+   "cost": null
+  }
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "key": "mean@0.03",
+ "blocks": [
+  "m0",
+  "head.cv3.1",
+  "head.cv3.2",
+  "head.dfl"
+ ],
+ "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.23/cv3\\.1/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+ "qdq_inputs_restored": 59,
+ "cost_macs_frac": 0.01915680146571505,
+ "pred_gap_AP_tune": 0.6238877485742145,
+ "pred_gap_SML_tune": [
+  0.8238387153065683,
+  0.8664272532161621,
+  0.7468408866996734
+ ],
+ "build_s": 37.8,
+ "latency_ms": 1.1917440295219421,
+ "engine_bytes": 30660068,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11l_int8ent_sim_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 165094,
+   "stats": {
+    "AP": 0.6073541558871816,
+    "AP50": 0.772229954434464,
+    "AP75": 0.6671351721369643,
+    "AP_small": 0.3939860565904769,
+    "AP_medium": 0.6775478069148703,
+    "AP_large": 0.80204487687088,
+    "AR1": 0.41911166588352644,
+    "AR10": 0.6759169836246468,
+    "AR100": 0.7208904396627521,
+    "AR_small": 0.5318261186923059,
+    "AR_medium": 0.7867679254027886,
+    "AR_large": 0.8834642083727726
+   },
+   "prediction_sha256": "bc5d25d347c656dcbb8045657f23039045945d5d956377a442d3893d8bd04260"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11l_int8ent_sim_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 414612,
+   "stats": {
+    "AP": 0.5162496373408888,
+    "AP50": 0.6814277375966096,
+    "AP75": 0.5627242552792088,
+    "AP_small": 0.3425313722306124,
+    "AP_medium": 0.571795524890215,
+    "AP_large": 0.676749161629071,
+    "AR1": 0.37731355743772305,
+    "AR10": 0.6200220217920804,
+    "AR100": 0.6655833474153142,
+    "AR_small": 0.4846028302246637,
+    "AR_medium": 0.725539326487581,
+    "AR_large": 0.8049652126053001
+   },
+   "prediction_sha256": "f310dc998843c5d5f2eda30435bf5c5be1a1f66019ecbbeae959cb126f1fc87f"
+  }
+ }
+}

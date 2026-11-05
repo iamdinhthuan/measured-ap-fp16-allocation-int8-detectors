@@ -1,0 +1,50 @@
+{
+ "key": "reconq@0.1",
+ "blocks": [
+  "m0",
+  "m1",
+  "m9",
+  "m10",
+  "m11",
+  "m12",
+  "m14",
+  "m15",
+  "m18",
+  "m21",
+  "m22",
+  "head.one2one_cv3.1",
+  "head.one2one_cv3.2",
+  "head.rest"
+ ],
+ "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.1/)|(?:^/model\\.9/)|(?:^/model\\.10/)|(?:^/model\\.11/)|(?:^/model\\.12/)|(?:^/model\\.14/)|(?:^/model\\.15/)|(?:^/model\\.18/)|(?:^/model\\.21/)|(?:^/model\\.22/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.23/one2one_cv3\\.2/)|(?:^/model\\.23/(?!(?:one2one_)?cv[23]\\.\\d/|dfl/))",
+ "qdq_inputs_restored": 180,
+ "cost_macs_frac": 0.09984431537865485,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 38.3,
+ "latency_ms": 1.198095977306366,
+ "engine_bytes": 33705036,
+ "splits": {
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8ent_fx256_reconq_B0.1.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 410427,
+   "stats": {
+    "AP": 0.5151881891898404,
+    "AP50": 0.6832670449623162,
+    "AP75": 0.5655670170655543,
+    "AP_small": 0.3318791510262212,
+    "AP_medium": 0.5729394877078454,
+    "AP_large": 0.6899465733614792,
+    "AR1": 0.3855732126207096,
+    "AR10": 0.649259860259624,
+    "AR100": 0.7075614651604986,
+    "AR_small": 0.5068115926053508,
+    "AR_medium": 0.7683813614723829,
+    "AR_large": 0.8648627292781125
+   },
+   "prediction_sha256": "5c1481d6d016231e61184654d806cd1a436bc5b4222d02fa43a839e296b01d7b"
+  }
+ }
+}

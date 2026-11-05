@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it as below."
+title: "Reproducibility package for measured detection accuracy versus proxy scores for FP16 block allocation in INT8 object detectors: a controlled study"
+type: software
+version: 1.0.0
+license: MIT
+authors:
+  - family-names: "Nguyen"
+    given-names: "Dinh Thuan"
+    affiliation: "Faculty of Electrical and Electronics Engineering, Ton Duc Thang University, Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0009-0008-6467-203X"
+  - family-names: "Nguyen"
+    given-names: "Lam Phuong"
+    affiliation: "Faculty of Electrical and Electronics Engineering, Ton Duc Thang University, Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0009-0007-3439-5871"
+  - family-names: "Nguyen"
+    given-names: "Vinh Huy"
+    affiliation: "Center of Visualization and Simulation, Duy Tan University, Da Nang, Vietnam"
+    orcid: "https://orcid.org/0009-0006-0878-9714"
+  - family-names: "Elara"
+    given-names: "Mohan Rajesh"
+    affiliation: "ROAR Lab, Engineering Product Development, Singapore University of Technology and Design, Singapore"
+    orcid: "https://orcid.org/0000-0001-6504-1530"
+  - family-names: "Le"
+    given-names: "Anh Vu"
+    affiliation: "Advanced Intelligent Technology Research Group, Faculty of Electrical and Electronics Engineering, Ton Duc Thang University, Ho Chi Minh City, Vietnam"
+    orcid: "https://orcid.org/0000-0002-4804-7540"
+keywords:
+  - "post-training quantization"
+  - "mixed precision"
+  - "object detection"
+  - "sensitivity analysis"
+  - "integer programming"
+  - "INT8"
+  - "TensorRT"
+  - "edge deployment"
+# doi: filled after the Zenodo DOI is reserved

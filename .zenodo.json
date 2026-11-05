@@ -1,0 +1,45 @@
+{
+  "title": "Reproducibility package for measured detection accuracy versus proxy scores for FP16 block allocation in INT8 object detectors: a controlled study",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "description": "<p>Reproducibility package accompanying the manuscript <em>Measured detection accuracy versus proxy scores for FP16 block allocation in INT8 object detectors: a controlled study</em>, prepared for <em>Information Sciences</em>.</p><p>The release contains the experiment, allocation, evaluation and bootstrap code; allocation plans and score files; the calibration list and tuning-split manifests; AP, per-group AP, sensitivity, bootstrap and Jetson latency records; and the protocol freeze record and decision rules of the post-freeze experiments. COCO, ExDark, Ultralytics checkpoints, ONNX graphs, TensorRT engines and raw predictions are not redistributed; their sources and regeneration steps are documented in README.md.</p><p>All scientific claims and metadata remain the responsibility of the five human authors. AI tools are not creators or contributors.</p>",
+  "creators": [
+    {
+      "name": "Nguyen, Dinh Thuan",
+      "affiliation": "Faculty of Electrical and Electronics Engineering, Ton Duc Thang University, Ho Chi Minh City, Vietnam",
+      "orcid": "0009-0008-6467-203X"
+    },
+    {
+      "name": "Nguyen, Lam Phuong",
+      "affiliation": "Faculty of Electrical and Electronics Engineering, Ton Duc Thang University, Ho Chi Minh City, Vietnam",
+      "orcid": "0009-0007-3439-5871"
+    },
+    {
+      "name": "Nguyen, Vinh Huy",
+      "affiliation": "Center of Visualization and Simulation, Duy Tan University, Da Nang, Vietnam",
+      "orcid": "0009-0006-0878-9714"
+    },
+    {
+      "name": "Elara, Mohan Rajesh",
+      "affiliation": "ROAR Lab, Engineering Product Development, Singapore University of Technology and Design, Singapore",
+      "orcid": "0000-0001-6504-1530"
+    },
+    {
+      "name": "Le, Anh Vu",
+      "affiliation": "Advanced Intelligent Technology Research Group, Faculty of Electrical and Electronics Engineering, Ton Duc Thang University, Ho Chi Minh City, Vietnam",
+      "orcid": "0000-0002-4804-7540"
+    }
+  ],
+  "keywords": [
+    "post-training quantization",
+    "mixed precision",
+    "object detection",
+    "sensitivity analysis",
+    "integer programming",
+    "INT8",
+    "TensorRT",
+    "edge deployment"
+  ],
+  "access_right": "open",
+  "license": "MIT"
+}

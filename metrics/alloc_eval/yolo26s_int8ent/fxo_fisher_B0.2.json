@@ -1,0 +1,35 @@
+{
+ "key": "fisher@0.2",
+ "blocks": [],
+ "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.10/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.10/m/m\\.0/attn/qkv/conv/Conv$|^/model\\.10/m/m\\.0/ffn/ffn\\.1/conv/Conv$|^/model\\.13/m\\.0/cv1/conv/Conv$|^/model\\.16/m\\.0/cv1/conv/Conv$|^/model\\.16/m\\.0/cv3/conv/Conv$|^/model\\.19/m\\.0/cv1/conv/Conv$|^/model\\.19/m\\.0/cv3/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.2/m\\.0/cv1/conv/Conv$|^/model\\.2/m\\.0/cv2/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/attn/pe/conv/Conv$|^/model\\.23/one2one_cv2\\.0/one2one_cv2\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv2\\.1/one2one_cv2\\.1\\.1/conv/Conv$|^/model\\.23/one2one_cv2\\.2/one2one_cv2\\.2\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.0/one2one_cv3\\.0\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.0/one2one_cv3\\.0\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.1/one2one_cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.1/one2one_cv3\\.0\\.1\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.0/one2one_cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.0/one2one_cv3\\.1\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.0/one2one_cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.0/one2one_cv3\\.2\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.1/conv/Conv$|^/model\\.4/cv1/conv/Conv$|^/model\\.6/cv1/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.6/m\\.0/cv2/conv/Conv$|^/model\\.6/m\\.0/cv3/conv/Conv$|^/model\\.8/m\\.0/cv1/conv/Conv$|^/model\\.8/m\\.0/cv3/conv/Conv$|^/model\\.9/cv1/conv/Conv$",
+ "qdq_inputs_restored": 88,
+ "cost_macs_frac": 0.1997861661370319,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 67.4,
+ "latency_ms": 0.6521119773387909,
+ "engine_bytes": 14864332,
+ "splits": {
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26s_int8ent_fxo_fisher_B0.2.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 386180,
+   "stats": {
+    "AP": 0.45655587175462203,
+    "AP50": 0.6231432605944744,
+    "AP75": 0.4978464413308595,
+    "AP_small": 0.2789099361018213,
+    "AP_medium": 0.49868365852432,
+    "AP_large": 0.6184341098915801,
+    "AR1": 0.3557936281263923,
+    "AR10": 0.5927445552937451,
+    "AR100": 0.6471814365002723,
+    "AR_small": 0.45967917478294096,
+    "AR_medium": 0.70149378316647,
+    "AR_large": 0.7990105134927492
+   },
+   "prediction_sha256": "8fcfe2c1f8a7d1cc86ed1c0630185b9c5c507723f10675a6a90d820f8fd951ac"
+  }
+ }
+}

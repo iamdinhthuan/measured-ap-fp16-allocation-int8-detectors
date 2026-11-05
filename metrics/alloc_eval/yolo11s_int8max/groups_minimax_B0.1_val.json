@@ -1,0 +1,26 @@
+{
+ "gt": "data/coco_src/annotations/instances_val2017.json",
+ "pred": "metrics/alloc_eval/yolo11s_int8max/minimax_B0.1_val.pred.json.gz",
+ "AP": 44.56617644414973,
+ "groups": {
+  "size": {
+   "AP_small": 27.653747755901747,
+   "AP_medium": 48.951180444602976,
+   "AP_large": 61.42085844744849
+  },
+  "supercat": {
+   "accessory": 31.222033863565535,
+   "animal": 63.09325746834893,
+   "appliance": 50.937732039841585,
+   "electronic": 49.91330870430452,
+   "food": 35.554358677188,
+   "furniture": 43.072585935232816,
+   "indoor": 32.33931355775181,
+   "kitchen": 33.96084203597265,
+   "outdoor": 48.10220950213856,
+   "person": 58.46494369961902,
+   "sports": 44.148193318817285,
+   "vehicle": 50.6930928959743
+  }
+ }
+}

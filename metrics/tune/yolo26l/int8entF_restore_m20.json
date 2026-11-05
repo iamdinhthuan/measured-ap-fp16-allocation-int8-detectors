@@ -1,0 +1,26 @@
+{
+ "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8entF_restore_m20.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+ "n_images": 2000,
+ "n_det": 84187,
+ "stats": {
+  "AP": 0.5631225090201024,
+  "AP50": 0.7290685480054989,
+  "AP75": 0.6233818802070882,
+  "AP_small": 0.36047051153784976,
+  "AP_medium": 0.6467445793216856,
+  "AP_large": 0.7381834929806154,
+  "AR1": 0.41061884274107396,
+  "AR10": 0.660897308394016,
+  "AR100": 0.7101486787409622,
+  "AR_small": 0.49983881364533983,
+  "AR_medium": 0.7867867504388525,
+  "AR_large": 0.8714252480347925
+ },
+ "prediction_sha256": "97bfb449e2706befbe053c149cca8fc4c4ca315365fcb8be2dbc6b5ca7df2ed3",
+ "tag": "int8entF_restore_m20",
+ "onnx": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8entF_restore_m20.onnx",
+ "build_s": 38.1,
+ "latency_ms": 1.2792319655418396,
+ "engine_bytes": 33115196
+}

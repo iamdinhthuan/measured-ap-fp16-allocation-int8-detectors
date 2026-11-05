@@ -1,0 +1,30 @@
+{
+ "source_split_file_sha256": "57eb0a9a7f567f6edbff14d6bb7b65106c55edcde51c02515d4a43f83945a1ad",
+ "skipped": [],
+ "splits": {
+  "train": {
+   "images": 3000,
+   "objects": 10381,
+   "small": 712,
+   "medium": 4163,
+   "large": 5506,
+   "sha256": "4c93db1cdb5f8756d6a234cfca073f55c227f83cb540b8c94d535802e5d78c4e"
+  },
+  "val": {
+   "images": 1800,
+   "objects": 6212,
+   "small": 440,
+   "medium": 2178,
+   "large": 3594,
+   "sha256": "0481d4cfb0fc882e7794488bdee358fee76da3c98a67cd43245058a37efee7db"
+  },
+  "test": {
+   "images": 2563,
+   "objects": 7117,
+   "small": 264,
+   "medium": 1981,
+   "large": 4872,
+   "sha256": "dc225d359750a2991ddf481c72cba7473433a8b5ab55bb6f79c660928c2beff0"
+  }
+ }
+}

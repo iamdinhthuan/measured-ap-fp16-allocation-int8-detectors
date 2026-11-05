@@ -1,0 +1,73 @@
+{
+ "key": "minimax@0.2",
+ "blocks": [
+  "m2",
+  "m7",
+  "m9",
+  "m10",
+  "m11",
+  "m12",
+  "head.cv2.1",
+  "head.cv2.2",
+  "head.cv3.0",
+  "head.cv3.1",
+  "head.cv3.2",
+  "head.dfl"
+ ],
+ "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.2/)|(?:^/model\\.7/)|(?:^/model\\.9/)|(?:^/model\\.10/)|(?:^/model\\.11/)|(?:^/model\\.12/)|(?:^/model\\.23/cv2\\.1/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.0/)|(?:^/model\\.23/cv3\\.1/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+ "qdq_inputs_restored": 259,
+ "cost_macs_frac": 0.1959521993089695,
+ "pred_gap_AP_tune": -0.3166873358001032,
+ "pred_gap_SML_tune": [
+  -0.5647364642900552,
+  -0.6145808897691674,
+  -0.7677383227539192
+ ],
+ "build_s": 25.5,
+ "latency_ms": 1.2245919704437256,
+ "engine_bytes": 34878860,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11l_int8ent_minimax_B0.2.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 155879,
+   "stats": {
+    "AP": 0.6123240078551322,
+    "AP50": 0.775701910193872,
+    "AP75": 0.6728492688594204,
+    "AP_small": 0.3836831331240262,
+    "AP_medium": 0.6835744622018946,
+    "AP_large": 0.8160010584617153,
+    "AR1": 0.4221901539302664,
+    "AR10": 0.6799751610515193,
+    "AR100": 0.7259888630625642,
+    "AR_small": 0.5198749127150099,
+    "AR_medium": 0.7913861829210498,
+    "AR_large": 0.8897701268797825
+   },
+   "prediction_sha256": "6237927b4b03b6a79edf82cc84b238e56304d0c30c52432ead9b5e287c88b05c"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11l_int8ent_minimax_B0.2.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 391191,
+   "stats": {
+    "AP": 0.5204478343571813,
+    "AP50": 0.6841154849788682,
+    "AP75": 0.568371177419912,
+    "AP_small": 0.3468972997672766,
+    "AP_medium": 0.579025905483707,
+    "AP_large": 0.6769360940058758,
+    "AR1": 0.3803279747883363,
+    "AR10": 0.6245297663220993,
+    "AR100": 0.6709554717811063,
+    "AR_small": 0.4992733354296419,
+    "AR_medium": 0.734810850072022,
+    "AR_large": 0.805237337292587
+   },
+   "prediction_sha256": "c19132b94e690469b75939847dca505ffa7de6e536da877bd6de15f57e4be122"
+  }
+ }
+}

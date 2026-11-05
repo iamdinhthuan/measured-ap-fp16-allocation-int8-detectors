@@ -1,0 +1,21 @@
+{
+ "engine": "exports/tmp/yolo11s_exdarkcal_base.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+ "n_images": 5000,
+ "n_det": 559280,
+ "stats": {
+  "AP": 0.44181448097196757,
+  "AP50": 0.6118650144713337,
+  "AP75": 0.4825091343375556,
+  "AP_small": 0.272910606824552,
+  "AP_medium": 0.48587897001004393,
+  "AP_large": 0.6087935786228564,
+  "AR1": 0.33915150091290786,
+  "AR10": 0.5584339762619447,
+  "AR100": 0.6073381030818021,
+  "AR_small": 0.42303622871784824,
+  "AR_medium": 0.6616749076527171,
+  "AR_large": 0.7676087476289615
+ },
+ "prediction_sha256": "16d737286b71f10fa30e4cc540957afb61fbdaf7db4bb62ed251694d7185643c"
+}

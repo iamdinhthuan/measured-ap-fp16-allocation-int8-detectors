@@ -1,0 +1,53 @@
+{
+ "key": "random@0.2_s114",
+ "blocks": [
+  "head.one2one_cv2.0",
+  "head.one2one_cv2.1",
+  "m21",
+  "m13",
+  "head.one2one_cv2.2",
+  "m9",
+  "head.rest",
+  "m11",
+  "m22",
+  "m0",
+  "m20",
+  "m15",
+  "m12",
+  "head.one2one_cv3.2",
+  "head.one2one_cv3.1",
+  "m14",
+  "m18"
+ ],
+ "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.23/one2one_cv2\\.0/)|(?:^/model\\.23/one2one_cv2\\.1/)|(?:^/model\\.21/)|(?:^/model\\.13/)|(?:^/model\\.23/one2one_cv2\\.2/)|(?:^/model\\.9/)|(?:^/model\\.23/(?!(?:one2one_)?cv[23]\\.\\d/|dfl/))|(?:^/model\\.11/)|(?:^/model\\.22/)|(?:^/model\\.0/)|(?:^/model\\.20/)|(?:^/model\\.15/)|(?:^/model\\.12/)|(?:^/model\\.23/one2one_cv3\\.2/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.14/)|(?:^/model\\.18/)",
+ "qdq_inputs_restored": 248,
+ "cost_macs_frac": 0.19952749598940303,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 30.7,
+ "latency_ms": 1.3172160387039185,
+ "engine_bytes": 38291644,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8ent_r33_random_B0.2_s114.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 161831,
+   "stats": {
+    "AP": 0.5841368624405436,
+    "AP50": 0.7414519054628393,
+    "AP75": 0.6400547219419017,
+    "AP_small": 0.38849346868577583,
+    "AP_medium": 0.6666428619783311,
+    "AP_large": 0.7697638683646932,
+    "AR1": 0.42521000089325667,
+    "AR10": 0.6873900894214765,
+    "AR100": 0.7456464784712594,
+    "AR_small": 0.5588325926469765,
+    "AR_medium": 0.8099635531286062,
+    "AR_large": 0.8958307483475295
+   },
+   "prediction_sha256": "9a6aede67452d10453f50558525dc791d6dbe461aa0d773802f5705af44ef61f"
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "model": "yolo11l",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fx_hybrid head-first sqnrq (rules_11_10.md Y1)",
+ "scores": "metrics/fx_scores_yolo11l_int8ent_noise_n2000.json",
+ "force_regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.004762984803810388,
+ "head_blocks": [
+  "head.cv2.0",
+  "head.cv2.1",
+  "head.cv2.2",
+  "head.cv3.0",
+  "head.cv3.1",
+  "head.cv3.2",
+  "head.dfl"
+ ],
+ "cost_F_u_head": 0.07652882386382046,
+ "infeasible": [
+  0.03,
+  0.05
+ ],
+ "allocations": {
+  "hyb@0.1": {
+   "blocks": [
+    "head.cv2.0",
+    "head.cv2.1",
+    "head.cv2.2",
+    "head.cv3.0",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl",
+    "m0",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21"
+   ],
+   "cost": 0.09994727431787989
+  },
+  "hyb@0.15": {
+   "blocks": [
+    "head.cv2.0",
+    "head.cv2.1",
+    "head.cv2.2",
+    "head.cv3.0",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl",
+    "m0",
+    "m1",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21"
+   ],
+   "cost": 0.14338145410951036
+  },
+  "hyb@0.2": {
+   "blocks": [
+    "head.cv2.0",
+    "head.cv2.1",
+    "head.cv2.2",
+    "head.cv3.0",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl",
+    "m0",
+    "m2",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21"
+   ],
+   "cost": 0.1952611688606245
+  }
+ }
+}

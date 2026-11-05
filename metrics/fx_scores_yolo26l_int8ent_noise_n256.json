@@ -1,0 +1,283 @@
+{
+ "model": "yolo26l",
+ "base": "int8ent",
+ "mode": "noise",
+ "n_img": 256,
+ "gt": "data/tune2000/instances_tune.json",
+ "executor": "onnxruntime 1.24.4 CUDAExecutionProvider, opt level ORT_ENABLE_BASIC, graph lifted to FP32",
+ "scores": {
+  "m0": {
+   "sqnrq": 0.29596972102271735,
+   "sqnrr": -0.0010817379254803962,
+   "n_out": 1,
+   "reconq": 0.021348905796748762
+  },
+  "m1": {
+   "sqnrq": 0.28630213103171304,
+   "sqnrr": -0.0015205022662529318,
+   "n_out": 1,
+   "reconq": 0.012306247531752234
+  },
+  "m2": {
+   "sqnrq": 0.29610454214570847,
+   "sqnrr": -0.0006212120247992366,
+   "n_out": 1,
+   "reconq": 0.16695641223123564
+  },
+  "m3": {
+   "sqnrq": 0.27692477428911805,
+   "sqnrr": 0.0006491209619258826,
+   "n_out": 1,
+   "reconq": 0.0017507849700069494
+  },
+  "m4": {
+   "sqnrq": 0.2754024171458673,
+   "sqnrr": -0.0031555892597699446,
+   "n_out": 1,
+   "reconq": 0.006752268167328506
+  },
+  "m5": {
+   "sqnrq": 0.2680490616488018,
+   "sqnrr": -0.0015928153075355613,
+   "n_out": 1,
+   "reconq": 0.002830298809508607
+  },
+  "m6": {
+   "sqnrq": 0.2707112523565615,
+   "sqnrr": -0.0005078162096401583,
+   "n_out": 1,
+   "reconq": 0.004256165454226416
+  },
+  "m7": {
+   "sqnrq": 0.2659207787333599,
+   "sqnrr": -0.0014498573320222046,
+   "n_out": 1,
+   "reconq": 0.005093092486025047
+  },
+  "m8": {
+   "sqnrq": 0.2578843850931281,
+   "sqnrr": -0.0027283166824747873,
+   "n_out": 1,
+   "reconq": 0.0031523549030974527
+  },
+  "m9": {
+   "sqnrq": 0.2461030636021855,
+   "sqnrr": -0.002968270123034838,
+   "n_out": 1,
+   "reconq": 0.0014390175261798598
+  },
+  "m10": {
+   "sqnrq": 0.2853144505142632,
+   "sqnrr": -0.00213862843184018,
+   "n_out": 1,
+   "reconq": 0.03701762644423361
+  },
+  "m11": {
+   "sqnrq": 0.2690166948730453,
+   "sqnrr": 0.0,
+   "n_out": 1,
+   "reconq": 0.0044911390395865934
+  },
+  "m12": {
+   "sqnrq": 0.26155390873906337,
+   "sqnrr": 0.0,
+   "n_out": 1,
+   "reconq": 0.0027578651049685794
+  },
+  "m13": {
+   "sqnrq": 0.27916495516227297,
+   "sqnrr": -0.0009243966043971247,
+   "n_out": 1,
+   "reconq": 0.010927126425768334
+  },
+  "m14": {
+   "sqnrq": 0.26368482062561555,
+   "sqnrr": 0.0,
+   "n_out": 1,
+   "reconq": 0.0028167465200398256
+  },
+  "m15": {
+   "sqnrq": 0.25720108159291066,
+   "sqnrr": 0.0,
+   "n_out": 1,
+   "reconq": 0.0015374330839212336
+  },
+  "m16": {
+   "sqnrq": 0.2826967030077853,
+   "sqnrr": -0.0007649698303170817,
+   "n_out": 1,
+   "reconq": 0.021436889793775518
+  },
+  "m17": {
+   "sqnrq": 0.20384309103973916,
+   "sqnrr": -0.0017922685685836089,
+   "n_out": 1,
+   "reconq": 0.0013474467776235525
+  },
+  "m18": {
+   "sqnrq": 0.22692143379398744,
+   "sqnrr": 0.0,
+   "n_out": 1,
+   "reconq": 0.00156918063038499
+  },
+  "m19": {
+   "sqnrq": 0.25911197529953495,
+   "sqnrr": -0.0019055157338454711,
+   "n_out": 1,
+   "reconq": 0.012665382924231985
+  },
+  "m20": {
+   "sqnrq": 0.13450822580526403,
+   "sqnrr": -0.0010149868559178193,
+   "n_out": 1,
+   "reconq": 0.001647807916537235
+  },
+  "m21": {
+   "sqnrq": 0.1201452808094062,
+   "sqnrr": 0.0,
+   "n_out": 1,
+   "reconq": 0.001315834013436751
+  },
+  "m22": {
+   "sqnrq": 0.18893766076586047,
+   "sqnrr": -0.0008752145042738264,
+   "n_out": 1,
+   "reconq": 0.008758774707147228
+  },
+  "head.one2one_cv2.0": {
+   "sqnrq": 2.780720684464655e-06,
+   "sqnrr": -7.375411471776496e-05,
+   "n_out": 1,
+   "reconq": 0.002736661400245592
+  },
+  "head.one2one_cv2.1": {
+   "sqnrq": 8.362698432392273e-06,
+   "sqnrr": 5.764340559284695e-05,
+   "n_out": 1,
+   "reconq": 0.001510766277972706
+  },
+  "head.one2one_cv2.2": {
+   "sqnrq": 5.715874719552873e-06,
+   "sqnrr": -6.63632689601925e-05,
+   "n_out": 1,
+   "reconq": 0.0003210022696213313
+  },
+  "head.one2one_cv3.0": {
+   "sqnrq": 0.2959588579497054,
+   "sqnrr": 0.009331673199173555,
+   "n_out": 1,
+   "reconq": 0.00450619779860624
+  },
+  "head.one2one_cv3.1": {
+   "sqnrq": 0.2742890138680309,
+   "sqnrr": -0.0026831016236969897,
+   "n_out": 1,
+   "reconq": 0.004328258374272287
+  },
+  "head.one2one_cv3.2": {
+   "sqnrq": 0.24621928128007886,
+   "sqnrr": -9.675314397469123e-05,
+   "n_out": 1,
+   "reconq": 0.005590624029905365
+  },
+  "head.rest": {
+   "sqnrq": 0.3974876669873557,
+   "sqnrr": 0.10061105296385969,
+   "n_out": 1,
+   "reconq": 0.3974876669873557
+  }
+ },
+ "noise_base": 0.41736164209850496,
+ "boundary_outputs": {
+  "m0": [
+   "/model.0/act/Mul_output_0"
+  ],
+  "m1": [
+   "/model.1/act/Mul_output_0"
+  ],
+  "m2": [
+   "/model.2/cv2/act/Mul_output_0"
+  ],
+  "m3": [
+   "/model.3/act/Mul_output_0"
+  ],
+  "m4": [
+   "/model.4/cv2/act/Mul_output_0"
+  ],
+  "m5": [
+   "/model.5/act/Mul_output_0"
+  ],
+  "m6": [
+   "/model.6/cv2/act/Mul_output_0"
+  ],
+  "m7": [
+   "/model.7/act/Mul_output_0"
+  ],
+  "m8": [
+   "/model.8/cv2/act/Mul_output_0"
+  ],
+  "m9": [
+   "/model.9/Add_output_0"
+  ],
+  "m10": [
+   "/model.10/cv2/act/Mul_output_0"
+  ],
+  "m11": [
+   "/model.11/Resize_output_0"
+  ],
+  "m12": [
+   "/model.12/Concat_output_0"
+  ],
+  "m13": [
+   "/model.13/cv2/act/Mul_output_0"
+  ],
+  "m14": [
+   "/model.14/Resize_output_0"
+  ],
+  "m15": [
+   "/model.15/Concat_output_0"
+  ],
+  "m16": [
+   "/model.16/cv2/act/Mul_output_0"
+  ],
+  "m17": [
+   "/model.17/act/Mul_output_0"
+  ],
+  "m18": [
+   "/model.18/Concat_output_0"
+  ],
+  "m19": [
+   "/model.19/cv2/act/Mul_output_0"
+  ],
+  "m20": [
+   "/model.20/act/Mul_output_0"
+  ],
+  "m21": [
+   "/model.21/Concat_output_0"
+  ],
+  "m22": [
+   "/model.22/cv2/act/Mul_output_0"
+  ],
+  "head.one2one_cv2.0": [
+   "/model.23/one2one_cv2.0/one2one_cv2.0.2/Conv_output_0"
+  ],
+  "head.one2one_cv2.1": [
+   "/model.23/one2one_cv2.1/one2one_cv2.1.2/Conv_output_0"
+  ],
+  "head.one2one_cv2.2": [
+   "/model.23/one2one_cv2.2/one2one_cv2.2.2/Conv_output_0"
+  ],
+  "head.one2one_cv3.0": [
+   "/model.23/one2one_cv3.0/one2one_cv3.0.2/Conv_output_0"
+  ],
+  "head.one2one_cv3.1": [
+   "/model.23/one2one_cv3.1/one2one_cv3.1.2/Conv_output_0"
+  ],
+  "head.one2one_cv3.2": [
+   "/model.23/one2one_cv3.2/one2one_cv3.2.2/Conv_output_0"
+  ],
+  "head.rest": [
+   "output0_pre_cast"
+  ]
+ }
+}

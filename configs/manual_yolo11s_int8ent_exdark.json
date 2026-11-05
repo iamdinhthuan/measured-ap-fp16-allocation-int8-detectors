@@ -1,0 +1,28 @@
+{
+ "model": "yolo11s",
+ "base": "int8ent",
+ "note": "ExDark reference rows: base = nothing restored ((?!) matches no node), fp16_all = every node restored, plus the folklore configs",
+ "allocations": {
+  "base": {
+   "blocks": [],
+   "regex": "(?!)",
+   "cost": 0.0
+  },
+  "fp16_all": {
+   "blocks": [],
+   "regex": ".",
+   "cost": 1.0
+  },
+  "headout": {
+   "blocks": [],
+   "regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+   "cost": 0.0113
+  },
+  "stem_headout": {
+   "blocks": [],
+   "regex": "^/model\\.0/|/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+   "cost": 0.0195
+  }
+ },
+ "split": "exdark"
+}

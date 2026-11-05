@@ -1,0 +1,72 @@
+{
+ "key": "mean@0.15",
+ "blocks": [
+  "m9",
+  "m10",
+  "m20",
+  "m22",
+  "head.one2one_cv2.0",
+  "head.one2one_cv2.1",
+  "head.one2one_cv2.2",
+  "head.one2one_cv3.0",
+  "head.one2one_cv3.1",
+  "head.one2one_cv3.2",
+  "head.rest"
+ ],
+ "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.9/)|(?:^/model\\.10/)|(?:^/model\\.20/)|(?:^/model\\.22/)|(?:^/model\\.23/one2one_cv2\\.0/)|(?:^/model\\.23/one2one_cv2\\.1/)|(?:^/model\\.23/one2one_cv2\\.2/)|(?:^/model\\.23/one2one_cv3\\.0/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.23/one2one_cv3\\.2/)|(?:^/model\\.23/(?!(?:one2one_)?cv[23]\\.\\d/|dfl/))",
+ "qdq_inputs_restored": 219,
+ "cost_macs_frac": 0.1397417578381401,
+ "pred_gap_AP_tune": 0.7169364750544975,
+ "pred_gap_SML_tune": [
+  2.755245474469314,
+  0.6312584787790732,
+  1.0047630471257225
+ ],
+ "build_s": 29.7,
+ "latency_ms": 1.3019999861717224,
+ "engine_bytes": 36772684,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8ent_sim256_mean_B0.15.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 201965,
+   "stats": {
+    "AP": 0.5948582627680817,
+    "AP50": 0.7601414264576299,
+    "AP75": 0.6514667904634662,
+    "AP_small": 0.39232748948475343,
+    "AP_medium": 0.6629199741571974,
+    "AP_large": 0.7712921682551975,
+    "AR1": 0.42609618615048817,
+    "AR10": 0.6951415821166481,
+    "AR100": 0.7526913524287224,
+    "AR_small": 0.5780865288605793,
+    "AR_medium": 0.8093446374041884,
+    "AR_large": 0.8974439705468131
+   },
+   "prediction_sha256": "e1ba608dfc3269637b33fa10d05287a1adb7bc45912c1ad2bbf80689af569e79"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8ent_sim256_mean_B0.15.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 522010,
+   "stats": {
+    "AP": 0.5326423458231111,
+    "AP50": 0.7005153384575014,
+    "AP75": 0.5847137332883996,
+    "AP_small": 0.35201515021970087,
+    "AP_medium": 0.5738000621129843,
+    "AP_large": 0.690700312649769,
+    "AR1": 0.39488884271392144,
+    "AR10": 0.665392117901245,
+    "AR100": 0.7256387992801494,
+    "AR_small": 0.5655018339743265,
+    "AR_medium": 0.7740303783674238,
+    "AR_large": 0.8698358237092373
+   },
+   "prediction_sha256": "0aa13e4598b0b5f15bc8de751653a3cd29a91e2773fcb55a7819e12b27ad5fca"
+  }
+ }
+}

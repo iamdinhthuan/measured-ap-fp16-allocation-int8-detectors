@@ -1,0 +1,135 @@
+{
+ "_base": {
+  "hp32": "exports/yolo11s_int8ent_hp32.onnx",
+  "quantizers_fp16_flavour": 343,
+  "quantizers_hp32": 343,
+  "matched": 342,
+  "max_rel_scale_diff": 0.0004861375762195122
+ },
+ "base": {
+  "regex": null,
+  "cost_macs_frac": 0.0,
+  "qdq_inputs_restored": 0,
+  "sha256": "81eda13a249269ff744aa65e81f66621305720c82f4b57dd57cf65161ce8c6f4"
+ },
+ "headout": {
+  "regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+  "cost_macs_frac": 0.0113,
+  "qdq_inputs_restored": 14,
+  "sha256": "011553c78d2ef74236eb3a77ddf8eb26098c6b9ad3931dcfb6b51be8b860abd4"
+ },
+ "stem_headout": {
+  "regex": "^/model\\.0/|/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+  "cost_macs_frac": 0.0195,
+  "qdq_inputs_restored": 19,
+  "sha256": "ebabd4290ecc1e21323cbbac1f3336e29299abbb949b9a77523062a3e1388903"
+ },
+ "head": {
+  "regex": "/model\\.23/",
+  "cost_macs_frac": 0.14907399678015623,
+  "qdq_inputs_restored": 104,
+  "sha256": "8538e22cff566f4f6d62290ea39b1026f69ae35edbb86f86e229c18d0955a1f3"
+ },
+ "mean_B0.05": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.11/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.1/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+  "cost_macs_frac": 0.04509689344702164,
+  "qdq_inputs_restored": 70,
+  "sha256": "44c7fecbdd2c1fffba3ad82f9f1de1253e3be45eb9601e443d5282a3a28ebf90"
+ },
+ "mean_B0.1": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.2/)|(?:^/model\\.11/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+  "cost_macs_frac": 0.09678611889571284,
+  "qdq_inputs_restored": 72,
+  "sha256": "2aa5cf343b43c5dc24c62e89a2337cae5d8f17ab94c9f7d4c360cb4aa88ff889"
+ },
+ "mean_B0.15": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.1/)|(?:^/model\\.2/)|(?:^/model\\.11/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+  "cost_macs_frac": 0.14074771927732393,
+  "qdq_inputs_restored": 77,
+  "sha256": "bcc720e242848afcaeec03d79f2334140552346ed52e798cf0cffd405eaffdb7"
+ },
+ "mean_B0.2": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.1/)|(?:^/model\\.2/)|(?:^/model\\.8/)|(?:^/model\\.11/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+  "cost_macs_frac": 0.19203625305587024,
+  "qdq_inputs_restored": 127,
+  "sha256": "22170d7a60d6497df93a3185046cffcd59aeaaa8fb0e125f283e5b056cd124ba"
+ },
+ "minimax_B0.05": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.11/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+  "cost_macs_frac": 0.03572834058791963,
+  "qdq_inputs_restored": 50,
+  "sha256": "e906be205b3f480ac0060551e38c1f1e07fe4a112cfac1291faf87c35e2bd80d"
+ },
+ "minimax_B0.1": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.2/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+  "cost_macs_frac": 0.09678611889571284,
+  "qdq_inputs_restored": 71,
+  "sha256": "76b3d68436b12a483249d25918197b62c7807779d0eefc65067771774fd3551d"
+ },
+ "minimax_B0.15": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.2/)|(?:^/model\\.8/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+  "cost_macs_frac": 0.13983185260270706,
+  "qdq_inputs_restored": 116,
+  "sha256": "89f47a32fd1b361ea5699d45349395165a81df658b70e5934292223228a1b1c0"
+ },
+ "minimax_B0.2": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.2/)|(?:^/model\\.8/)|(?:^/model\\.23/cv2\\.1/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.0/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+  "cost_macs_frac": 0.19493649752549044,
+  "qdq_inputs_restored": 146,
+  "sha256": "92acba5cc72228a606da9551e9094fa1ffed60140f8b982441b6199a127acc48"
+ },
+ "fisher_B0.05": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.10/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.22/m\\.0/cv1/conv/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.1/cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.1/cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.0/cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.1/cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.6/m\\.0/cv2/conv/Conv$|^/model\\.8/m\\.0/cv1/conv/Conv$|^/model\\.9/cv1/conv/Conv$",
+  "cost_macs_frac": 0.04997913064217996,
+  "qdq_inputs_restored": 40,
+  "sha256": "201671bb23ef12c9f9e2454370f81dddb2b19f4ee189b2c79e427610f67c4d42"
+ },
+ "fisher_B0.1": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.10/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.0/cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.1/cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.0/cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.1/cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.6/cv1/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.9/cv1/conv/Conv$",
+  "cost_macs_frac": 0.09970305885158905,
+  "qdq_inputs_restored": 38,
+  "sha256": "c97cacac51ae7125ec82ea4dd510b320800895043fe214a54e4724795e3c3f3d"
+ },
+ "fisher_B0.15": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.10/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.19/m\\.0/cv1/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.22/m\\.0/cv1/conv/Conv$|^/model\\.22/m\\.0/m/m\\.0/cv2/conv/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.1/cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.0/cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.1/cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.0/cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.1/cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.1/cv3\\.2\\.1\\.1/conv/Conv$|^/model\\.4/cv1/conv/Conv$|^/model\\.6/cv1/conv/Conv$|^/model\\.6/cv2/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.6/m\\.0/m/m\\.0/cv2/conv/Conv$|^/model\\.8/m\\.0/cv1/conv/Conv$|^/model\\.9/cv1/conv/Conv$",
+  "cost_macs_frac": 0.14984675928686422,
+  "qdq_inputs_restored": 56,
+  "sha256": "634d1527966dd1aa752cf9f301faa94364dbf6c5c1d9250ca0597efcbfa49223"
+ },
+ "fisher_B0.2": {
+  "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.10/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.10/m/m\\.0/attn/qkv/conv/Conv$|^/model\\.19/m\\.0/cv1/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.2/cv2/conv/Conv$|^/model\\.2/m\\.0/cv1/conv/Conv$|^/model\\.22/m\\.0/cv1/conv/Conv$|^/model\\.22/m\\.0/m/m\\.0/cv2/conv/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.1/cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.0/cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.1/cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.0/cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.1/cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.4/cv1/conv/Conv$|^/model\\.6/cv1/conv/Conv$|^/model\\.6/cv2/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.6/m\\.0/m/m\\.0/cv2/conv/Conv$|^/model\\.6/m\\.0/m/m\\.1/cv2/conv/Conv$|^/model\\.8/m\\.0/cv1/conv/Conv$|^/model\\.9/cv1/conv/Conv$",
+  "cost_macs_frac": 0.19991413749925466,
+  "qdq_inputs_restored": 62,
+  "sha256": "90c90501bac4a5ebbe32ec5ab100c118fb83db0dbfd8b6037d462155a72d0cac"
+ },
+ "autoquant_B8.02": {
+  "regex": "^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.2/cv1/conv/Conv$",
+  "cost_macs_frac": 0.06197364498241011,
+  "qdq_inputs_restored": 6,
+  "sha256": "3a0078c074f38ff687fb7ae59a81fb55aca58c6d88e78b7cb40b3cd6d8c8e426"
+ },
+ "autoquant_B8.04": {
+  "regex": "^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.2/cv2/conv/Conv$|^/model\\.2/m\\.0/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.23/cv2\\.1/cv2\\.1\\.2/Conv$",
+  "cost_macs_frac": 0.1029682189493769,
+  "qdq_inputs_restored": 14,
+  "sha256": "19d8ed5257259762fc2a8b682256b90057977d191635026ef4dddf92ba0cacc3"
+ },
+ "autoquant_B8.08": {
+  "regex": "^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.2/cv2/conv/Conv$|^/model\\.2/m\\.0/cv1/conv/Conv$|^/model\\.2/m\\.0/cv2/conv/Conv$|^/model\\.4/cv1/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.23/cv2\\.0/cv2\\.0\\.2/Conv$|^/model\\.23/cv2\\.1/cv2\\.1\\.2/Conv$|^/model\\.23/cv2\\.2/cv2\\.2\\.2/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.0/cv3\\.0\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.1/cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.1/cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.0/cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.1/cv3\\.2\\.1\\.0/conv/Conv$",
+  "cost_macs_frac": 0.12930415598354303,
+  "qdq_inputs_restored": 34,
+  "sha256": "8602d53b29c35238e934df7b1cf54a6427e17036422b6750cb90ccc878d8dceb"
+ },
+ "autoquant_B8.15": {
+  "regex": "^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.2/cv2/conv/Conv$|^/model\\.2/m\\.0/cv1/conv/Conv$|^/model\\.2/m\\.0/cv2/conv/Conv$|^/model\\.4/cv1/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.16/cv1/conv/Conv$|^/model\\.16/m\\.0/cv1/conv/Conv$|^/model\\.23/cv2\\.0/cv2\\.0\\.2/Conv$|^/model\\.23/cv2\\.1/cv2\\.1\\.2/Conv$|^/model\\.23/cv2\\.2/cv2\\.2\\.2/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.0/cv3\\.0\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.1/cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.1/cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.0/cv3\\.2\\.0\\.0/conv/Conv$",
+  "cost_macs_frac": 0.1793286029455608,
+  "qdq_inputs_restored": 36,
+  "sha256": "b4d50ec30cf5135d3e973c4eeb2d078a047f00725b9cb65eed4a897240977d08"
+ },
+ "autoquant_B8.3": {
+  "regex": "^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.2/cv2/conv/Conv$|^/model\\.2/m\\.0/cv1/conv/Conv$|^/model\\.2/m\\.0/cv2/conv/Conv$|^/model\\.4/cv1/conv/Conv$|^/model\\.6/cv1/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.16/cv1/conv/Conv$|^/model\\.16/cv2/conv/Conv$|^/model\\.16/m\\.0/cv1/conv/Conv$|^/model\\.19/m\\.0/cv1/conv/Conv$|^/model\\.23/cv2\\.0/cv2\\.0\\.2/Conv$|^/model\\.23/cv2\\.1/cv2\\.1\\.2/Conv$|^/model\\.23/cv2\\.2/cv2\\.2\\.2/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.0/cv3\\.0\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.1/cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.0/cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.1/cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.2/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.0/cv3\\.2\\.0\\.0/conv/Conv$",
+  "cost_macs_frac": 0.216612008824757,
+  "qdq_inputs_restored": 46,
+  "sha256": "6c49a2f22991533162b5c7e184ee7e5693ce1f2f6f16f61d1266d5a0f15d5fdc"
+ }
+}

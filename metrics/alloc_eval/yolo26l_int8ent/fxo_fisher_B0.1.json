@@ -1,0 +1,35 @@
+{
+ "key": "fisher@0.1",
+ "blocks": [],
+ "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.10/m/m\\.1/attn/pe/conv/Conv$|^/model\\.16/m\\.0/cv1/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.2/m\\.0/cv1/conv/Conv$|^/model\\.2/m\\.0/cv2/conv/Conv$|^/model\\.2/m\\.0/cv3/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/attn/pe/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/attn/proj/conv/Conv$|^/model\\.23/one2one_cv2\\.1/one2one_cv2\\.1\\.1/conv/Conv$|^/model\\.23/one2one_cv2\\.2/one2one_cv2\\.2\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.0/one2one_cv3\\.0\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.0/one2one_cv3\\.0\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.1/one2one_cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.1/one2one_cv3\\.0\\.1\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.0/one2one_cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.0/one2one_cv3\\.1\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.0/one2one_cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.0/one2one_cv3\\.2\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.1/conv/Conv$|^/model\\.8/m\\.0/cv1/conv/Conv$",
+ "qdq_inputs_restored": 64,
+ "cost_macs_frac": 0.09976848725258113,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 64.6,
+ "latency_ms": 1.2642560005187988,
+ "engine_bytes": 31156820,
+ "splits": {
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8ent_fxo_fisher_B0.1.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 279807,
+   "stats": {
+    "AP": 0.5161051610909448,
+    "AP50": 0.6913546647629898,
+    "AP75": 0.5683003157488731,
+    "AP_small": 0.34078553225841574,
+    "AP_medium": 0.5646685790813945,
+    "AP_large": 0.6781955865929563,
+    "AR1": 0.3867204397835012,
+    "AR10": 0.6413155953499998,
+    "AR100": 0.6907722855610058,
+    "AR_small": 0.5077384289144695,
+    "AR_medium": 0.7445704605516109,
+    "AR_large": 0.8377847783990273
+   },
+   "prediction_sha256": "3f24203ce5d3fed48739d353bd167d9a1db7c55eabee162fee8b7deb870f59ba"
+  }
+ }
+}

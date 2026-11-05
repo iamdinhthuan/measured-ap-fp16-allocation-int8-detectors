@@ -1,0 +1,12 @@
+{
+ "light=Ambient": 36.37880794792725,
+ "light=Low": 23.43686769076553,
+ "light=Object": 33.58833728677635,
+ "light=Screen": 37.78429981357753,
+ "light=Shadow": 36.2203921639881,
+ "light=Single": 32.948983994426634,
+ "light=Strong": 28.601999443735444,
+ "light=Twilight": 29.503772721530048,
+ "light=Weak": 26.705091520460133,
+ "light=Window": 35.3956298300363
+}

@@ -1,0 +1,21 @@
+{
+ "engine": "exports/tmp/yolo11s_exdarkcal_headout.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/exdark/exdark_test.json",
+ "n_images": 2563,
+ "n_det": 252588,
+ "stats": {
+  "AP": 0.3361451797412947,
+  "AP50": 0.6094576497311379,
+  "AP75": 0.3340115753208625,
+  "AP_small": 0.021622382799426323,
+  "AP_medium": 0.13155227627175156,
+  "AP_large": 0.403995697553611,
+  "AR1": 0.2862585956736847,
+  "AR10": 0.45097764249709965,
+  "AR100": 0.49049891537235457,
+  "AR_small": 0.12098013289907257,
+  "AR_medium": 0.3111164163532226,
+  "AR_large": 0.5408970351234915
+ },
+ "prediction_sha256": "9550fc346d67f0ba825c0daae40d8877c6056d5499f0d6ae6d2531e6fc67b59f"
+}

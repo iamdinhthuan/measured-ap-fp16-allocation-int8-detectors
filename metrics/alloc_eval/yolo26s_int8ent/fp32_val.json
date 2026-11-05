@@ -1,0 +1,21 @@
+{
+ "engine": "exports/yolo26s_fp32.plan",
+ "gt": "data/coco_src/annotations/instances_val2017.json",
+ "n_images": 5000,
+ "n_det": 632280,
+ "stats": {
+  "AP": 0.47714714329285673,
+  "AP50": 0.6431523234469512,
+  "AP75": 0.5198076548055791,
+  "AP_small": 0.30241590653102185,
+  "AP_medium": 0.5234829806983672,
+  "AP_large": 0.6421681464579191,
+  "AR1": 0.36948984054891654,
+  "AR10": 0.6207812076103119,
+  "AR100": 0.6834182575275505,
+  "AR_small": 0.5071335694260471,
+  "AR_medium": 0.7386126362519153,
+  "AR_large": 0.8341706764093
+ },
+ "prediction_sha256": "ac41d9ad26f3760df6ab98ff504fd67e8398b38326cebe4c10aad749b6fb4f2f"
+}

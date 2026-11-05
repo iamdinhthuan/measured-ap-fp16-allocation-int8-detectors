@@ -1,0 +1,35 @@
+{
+ "key": "fp16_all",
+ "blocks": [],
+ "regex": ".",
+ "qdq_inputs_restored": 452,
+ "cost_macs_frac": 1.0,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 16.0,
+ "latency_ms": 0.46697598695755005,
+ "engine_bytes": 20925460,
+ "splits": {
+  "exdark_test": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_exdark_fp16_all.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/exdark/exdark_test.json",
+   "n_images": 2563,
+   "n_det": 255857,
+   "stats": {
+    "AP": 0.34776180517013067,
+    "AP50": 0.6307864501827912,
+    "AP75": 0.34278113225139395,
+    "AP_small": 0.021930263882328598,
+    "AP_medium": 0.13649310723299155,
+    "AP_large": 0.4169728366712895,
+    "AR1": 0.29572788501180425,
+    "AR10": 0.4642940822371728,
+    "AR100": 0.5015877323250949,
+    "AR_small": 0.16451423571093182,
+    "AR_medium": 0.3166766770085616,
+    "AR_large": 0.5536548150827031
+   },
+   "prediction_sha256": "41b9e7a94b0d84509cc8521856577c68c41394324ea11f12fbf5df21c5149fa4"
+  }
+ }
+}

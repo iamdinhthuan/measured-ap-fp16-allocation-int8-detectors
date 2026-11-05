@@ -1,0 +1,63 @@
+{
+ "model": "yolo11s",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fx_hybrid head-first sqnrq (rules_11_10.md Y1)",
+ "scores": "metrics/fx_scores_yolo11s_int8ent_noise_n2000.json",
+ "force_regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.011269453222825115,
+ "head_blocks": [
+  "head.cv2.0",
+  "head.cv2.1",
+  "head.cv2.2",
+  "head.cv3.0",
+  "head.cv3.1",
+  "head.cv3.2",
+  "head.dfl"
+ ],
+ "cost_F_u_head": 0.14907399678015623,
+ "infeasible": [
+  0.03,
+  0.05,
+  0.1
+ ],
+ "allocations": {
+  "hyb@0.15": {
+   "blocks": [
+    "head.cv2.0",
+    "head.cv2.1",
+    "head.cv2.2",
+    "head.cv3.0",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21"
+   ],
+   "cost": 0.14907399678015623
+  },
+  "hyb@0.2": {
+   "blocks": [
+    "head.cv2.0",
+    "head.cv2.1",
+    "head.cv2.2",
+    "head.cv3.0",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl",
+    "m1",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21"
+   ],
+   "cost": 0.19303559716176735
+  }
+ }
+}

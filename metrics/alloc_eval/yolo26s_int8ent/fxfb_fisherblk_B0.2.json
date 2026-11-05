@@ -1,0 +1,42 @@
+{
+ "key": "fisherblk@0.2",
+ "blocks": [
+  "m0",
+  "m1",
+  "m2",
+  "m19",
+  "head.one2one_cv3.1",
+  "head.one2one_cv3.2"
+ ],
+ "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.1/)|(?:^/model\\.2/)|(?:^/model\\.19/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.23/one2one_cv3\\.2/)",
+ "qdq_inputs_restored": 134,
+ "cost_macs_frac": 0.19774682466613208,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 76.5,
+ "latency_ms": 0.6156479716300964,
+ "engine_bytes": 13680644,
+ "splits": {
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26s_int8ent_fxfb_fisherblk_B0.2.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 412107,
+   "stats": {
+    "AP": 0.46155712437862706,
+    "AP50": 0.6321882665387833,
+    "AP75": 0.5041717660871146,
+    "AP_small": 0.27145600351398896,
+    "AP_medium": 0.5109517520977013,
+    "AP_large": 0.6264430649823027,
+    "AR1": 0.3587009786143935,
+    "AR10": 0.5992550065781692,
+    "AR100": 0.6533138971631423,
+    "AR_small": 0.47186069329437835,
+    "AR_medium": 0.7068355630026393,
+    "AR_large": 0.8059908512186404
+   },
+   "prediction_sha256": "c9ca4aca1bd1a8b98c746555c16defc46f40bfa1d1e5f50f64af5e04c59bd3fd"
+  }
+ }
+}

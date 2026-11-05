@@ -1,0 +1,56 @@
+{
+ "key": "stem_headout",
+ "blocks": [],
+ "regex": "^/model\\.0/|/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+ "qdq_inputs_restored": 19,
+ "cost_macs_frac": 0.008834939159275744,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 33.5,
+ "latency_ms": 1.2460959553718567,
+ "engine_bytes": 30921196,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11l_int8ent_stem_headout.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 162440,
+   "stats": {
+    "AP": 0.6077947213860605,
+    "AP50": 0.7720095866313699,
+    "AP75": 0.6685659333951467,
+    "AP_small": 0.3940835061435392,
+    "AP_medium": 0.6742213154581387,
+    "AP_large": 0.8003760851203591,
+    "AR1": 0.4219505893949882,
+    "AR10": 0.675670536683067,
+    "AR100": 0.7209579166488816,
+    "AR_small": 0.532068111737544,
+    "AR_medium": 0.7856747584290101,
+    "AR_large": 0.8840659103758619
+   },
+   "prediction_sha256": "3bf578f6f4157f7330c5231b59ed19de31fe6ef40757eaf1afc6e4806e1d9fb3"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11l_int8ent_stem_headout.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 408046,
+   "stats": {
+    "AP": 0.5154314898173687,
+    "AP50": 0.6815288412128574,
+    "AP75": 0.5618378619431844,
+    "AP_small": 0.3420066795580034,
+    "AP_medium": 0.5716390422292211,
+    "AP_large": 0.6700635701738716,
+    "AR1": 0.37907097154837416,
+    "AR10": 0.619909519238198,
+    "AR100": 0.6651552583066688,
+    "AR_small": 0.48437169577607536,
+    "AR_medium": 0.724399160265432,
+    "AR_large": 0.8065195196939703
+   },
+   "prediction_sha256": "24c9f60384929b26fc9f6994ddedf9fdb2d60755cc32bda0e6a5f42a2e9dab4c"
+  }
+ }
+}

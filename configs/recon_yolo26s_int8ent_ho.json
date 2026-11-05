@@ -1,0 +1,178 @@
+{
+ "model": "yolo26s",
+ "base": "int8ent",
+ "criterion": "recon/sqnr (onnxruntime simulation)",
+ "scores": "metrics/recon_scores_yolo26s_int8ent.json",
+ "force_regex": "/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.008419708354370229,
+ "allocations": {
+  "recon@0.03": {
+   "blocks": [
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.027991446645481272
+  },
+  "recon@0.05": {
+   "blocks": [
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.rest"
+   ],
+   "cost": 0.04652371476938612
+  },
+  "recon@0.1": {
+   "blocks": [
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m16",
+    "m18",
+    "m21",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.09583914941641174
+  },
+  "recon@0.15": {
+   "blocks": [
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m16",
+    "m18",
+    "m21",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.14972825279914465
+  },
+  "recon@0.2": {
+   "blocks": [
+    "m2",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m16",
+    "m18",
+    "m21",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.19730133745161513
+  },
+  "sqnr@0.03": {
+   "blocks": [
+    "m0",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.026823280171859067
+  },
+  "sqnr@0.05": {
+   "blocks": [
+    "m0",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.one2one_cv2.1",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.04939463237405087
+  },
+  "sqnr@0.1": {
+   "blocks": [
+    "m0",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m17",
+    "m18",
+    "m21",
+    "head.one2one_cv2.1",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.09754685040539335
+  },
+  "sqnr@0.15": {
+   "blocks": [
+    "m0",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m17",
+    "m18",
+    "m20",
+    "m21",
+    "head.one2one_cv2.1",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.1483917911555938
+  },
+  "sqnr@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m17",
+    "m18",
+    "m21",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.19645491174403296
+  }
+ }
+}

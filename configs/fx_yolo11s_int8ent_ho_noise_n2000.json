@@ -1,0 +1,137 @@
+{
+ "model": "yolo11s",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fx_factorial noise",
+ "scores": "metrics/fx_scores_yolo11s_int8ent_noise_n2000.json",
+ "force_regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.011269453222825115,
+ "allocations": {
+  "sqnrq@0.03": {
+   "blocks": [
+    "m0",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.dfl"
+   ],
+   "cost": 0.019562339753145308
+  },
+  "sqnrq@0.05": {
+   "blocks": [
+    "m0",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv2.1",
+    "head.dfl"
+   ],
+   "cost": 0.04764891777473018
+  },
+  "sqnrq@0.1": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv2.1",
+    "head.dfl"
+   ],
+   "cost": 0.0916105181563413
+  },
+  "sqnrq@0.15": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.dfl"
+   ],
+   "cost": 0.14900482976566692
+  },
+  "sqnrq@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv2.2",
+    "head.dfl"
+   ],
+   "cost": 0.19824220380418578
+  },
+  "sqnrr@0.03": {
+   "blocks": [
+    "m0",
+    "m14",
+    "head.dfl"
+   ],
+   "cost": 0.019562339753145308
+  },
+  "sqnrr@0.05": {
+   "blocks": [
+    "m0",
+    "m14",
+    "head.cv2.1",
+    "head.dfl"
+   ],
+   "cost": 0.04764891777473018
+  },
+  "sqnrr@0.1": {
+   "blocks": [
+    "m0",
+    "m2",
+    "m14",
+    "head.cv2.2",
+    "head.dfl"
+   ],
+   "cost": 0.09313696261403613
+  },
+  "sqnrr@0.15": {
+   "blocks": [
+    "m0",
+    "m2",
+    "m10",
+    "m14",
+    "head.cv2.1",
+    "head.dfl"
+   ],
+   "cost": 0.14542722556794466
+  },
+  "sqnrr@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m10",
+    "m14",
+    "head.cv2.1",
+    "head.dfl"
+   ],
+   "cost": 0.18938882594955575
+  }
+ }
+}

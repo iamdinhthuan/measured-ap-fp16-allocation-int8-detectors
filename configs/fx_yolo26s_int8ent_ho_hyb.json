@@ -1,0 +1,87 @@
+{
+ "model": "yolo26s",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fx_hybrid head-first sqnrq (rules_11_10.md Y1)",
+ "scores": "metrics/fx_scores_yolo26s_int8ent_noise_n2000.json",
+ "force_regex": "/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.008419708354370229,
+ "head_blocks": [
+  "head.one2one_cv2.0",
+  "head.one2one_cv2.1",
+  "head.one2one_cv2.2",
+  "head.one2one_cv3.0",
+  "head.one2one_cv3.1",
+  "head.one2one_cv3.2",
+  "head.rest"
+ ],
+ "cost_F_u_head": 0.0890479443239979,
+ "infeasible": [
+  0.03,
+  0.05
+ ],
+ "allocations": {
+  "hyb@0.1": {
+   "blocks": [
+    "head.one2one_cv2.0",
+    "head.one2one_cv2.1",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest",
+    "m0",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21"
+   ],
+   "cost": 0.09760129884272321
+  },
+  "hyb@0.15": {
+   "blocks": [
+    "head.one2one_cv2.0",
+    "head.one2one_cv2.1",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest",
+    "m0",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m17",
+    "m18",
+    "m21"
+   ],
+   "cost": 0.1457535168740657
+  },
+  "hyb@0.2": {
+   "blocks": [
+    "head.one2one_cv2.0",
+    "head.one2one_cv2.1",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest",
+    "m0",
+    "m1",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m17",
+    "m18",
+    "m21"
+   ],
+   "cost": 0.19137140764060073
+  }
+ }
+}

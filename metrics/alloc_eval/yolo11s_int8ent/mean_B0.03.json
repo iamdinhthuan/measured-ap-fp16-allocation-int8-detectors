@@ -1,0 +1,65 @@
+{
+ "key": "mean@0.03",
+ "blocks": [
+  "m0",
+  "m11",
+  "head.cv3.2",
+  "head.dfl"
+ ],
+ "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.11/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+ "qdq_inputs_restored": 40,
+ "cost_macs_frac": 0.02321149603482201,
+ "pred_gap_AP_tune": 1.0830882033485478,
+ "pred_gap_SML_tune": [
+  0.025036359423402654,
+  1.1991388256992197,
+  1.2406522925786478
+ ],
+ "build_s": 50.6,
+ "latency_ms": 0.5862560272216797,
+ "engine_bytes": 12986508,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 219872,
+   "stats": {
+    "AP": 0.5343343848485502,
+    "AP50": 0.7039906925354931,
+    "AP75": 0.5871045315628498,
+    "AP_small": 0.29773998856280165,
+    "AP_medium": 0.5965691433345675,
+    "AP_large": 0.7551419600976559,
+    "AR1": 0.383481255708505,
+    "AR10": 0.6137685027122226,
+    "AR100": 0.661926952588803,
+    "AR_small": 0.44393105017340867,
+    "AR_medium": 0.7290787743735063,
+    "AR_large": 0.8490846159358749
+   },
+   "prediction_sha256": "b4c0fb15dee7c804d4af48a2f11e3e4a7df60663a41f5e4a531f99378514ac70"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 557371,
+   "stats": {
+    "AP": 0.45001226524574717,
+    "AP50": 0.6151738826845603,
+    "AP75": 0.48536604667327493,
+    "AP_small": 0.2748195950179328,
+    "AP_medium": 0.4960113855465231,
+    "AP_large": 0.6157429907594818,
+    "AR1": 0.3440848164069065,
+    "AR10": 0.5621061565174531,
+    "AR100": 0.6097514954286233,
+    "AR_small": 0.4171761312492397,
+    "AR_medium": 0.665766324559062,
+    "AR_large": 0.7689184453477782
+   },
+   "prediction_sha256": "673d581988723a0c11b4f2a7cede941590c4fc5aefdbe71b012c93a8ff5e40a0"
+  }
+ }
+}

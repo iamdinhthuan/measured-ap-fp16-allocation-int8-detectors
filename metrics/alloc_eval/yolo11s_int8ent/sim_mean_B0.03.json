@@ -1,0 +1,64 @@
+{
+ "key": "mean@0.03",
+ "blocks": [
+  "m0",
+  "head.cv3.2",
+  "head.dfl"
+ ],
+ "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+ "qdq_inputs_restored": 39,
+ "cost_macs_frac": 0.02321149603482201,
+ "pred_gap_AP_tune": 1.112045496785119,
+ "pred_gap_SML_tune": [
+  1.424972934718921,
+  1.1335994616240241,
+  1.3702903474039574
+ ],
+ "build_s": 30.9,
+ "latency_ms": 0.5469120144844055,
+ "engine_bytes": 12966324,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_sim_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 220982,
+   "stats": {
+    "AP": 0.5352318594589718,
+    "AP50": 0.7035252453383654,
+    "AP75": 0.5892884946853466,
+    "AP_small": 0.2985040117571331,
+    "AP_medium": 0.5977997036995286,
+    "AP_large": 0.7562956507618176,
+    "AR1": 0.38470394648775286,
+    "AR10": 0.6146249562456717,
+    "AR100": 0.6623557354539834,
+    "AR_small": 0.4392907514910146,
+    "AR_medium": 0.7331366817056612,
+    "AR_large": 0.8473860245725487
+   },
+   "prediction_sha256": "eb0c6f85f04835107adf581826cc9f7a9a09dcf080a94ab42bcaacebfce07933"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_sim_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 559878,
+   "stats": {
+    "AP": 0.44981597200788226,
+    "AP50": 0.615799443328887,
+    "AP75": 0.4843194428370271,
+    "AP_small": 0.2762972356574927,
+    "AP_medium": 0.4972950332828063,
+    "AP_large": 0.6148413578830687,
+    "AR1": 0.34448584037847196,
+    "AR10": 0.5621835332912424,
+    "AR100": 0.6097645568457456,
+    "AR_small": 0.42165547692359695,
+    "AR_medium": 0.6659244048824591,
+    "AR_large": 0.7681439868743234
+   },
+   "prediction_sha256": "76036f4f8590f6009487b94c3019c80fcabdf8182650713cb8a0ae7c42e23a54"
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "key": "fisher@0.05",
+ "blocks": [],
+ "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.10/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.22/m\\.0/cv1/conv/Conv$|^/model\\.23/cv3\\.0/cv3\\.0\\.1/cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.1/cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.0/cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.1/cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.6/m\\.0/cv2/conv/Conv$|^/model\\.8/m\\.0/cv1/conv/Conv$|^/model\\.9/cv1/conv/Conv$",
+ "qdq_inputs_restored": 40,
+ "cost_macs_frac": 0.04997913064217996,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 27.9,
+ "latency_ms": 0.5456960201263428,
+ "engine_bytes": 13341244,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_fisher_B0.05.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 220960,
+   "stats": {
+    "AP": 0.5355129964270917,
+    "AP50": 0.704082075045038,
+    "AP75": 0.5869837713100057,
+    "AP_small": 0.3020329792636844,
+    "AP_medium": 0.597321177236257,
+    "AP_large": 0.7575791422785612,
+    "AR1": 0.38597223737640574,
+    "AR10": 0.6190908717513838,
+    "AR100": 0.6682032441203262,
+    "AR_small": 0.44588341904894413,
+    "AR_medium": 0.7341561674341059,
+    "AR_large": 0.8547111728387323
+   },
+   "prediction_sha256": "f29ae003fd7b69baa62c3dd72b63050e726fb8511eb539a2b44f7d450782aeb8"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_fisher_B0.05.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 558400,
+   "stats": {
+    "AP": 0.4503919226385781,
+    "AP50": 0.6157089912585582,
+    "AP75": 0.48842856925934824,
+    "AP_small": 0.28093664712705857,
+    "AP_medium": 0.494695960951961,
+    "AP_large": 0.6140600811736913,
+    "AR1": 0.3452457720593681,
+    "AR10": 0.5623821901110541,
+    "AR100": 0.6105229555096584,
+    "AR_small": 0.4200064183794117,
+    "AR_medium": 0.6664663920764313,
+    "AR_large": 0.7654387371949828
+   },
+   "prediction_sha256": "06a4978b89acba5182e37a3afcb012cfb395f75364d8ca6ab61f06dbd3037e1c"
+  }
+ }
+}

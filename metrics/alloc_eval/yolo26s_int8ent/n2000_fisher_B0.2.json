@@ -1,0 +1,35 @@
+{
+ "key": "fisher@0.2",
+ "blocks": [],
+ "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.10/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.10/m/m\\.0/attn/qkv/conv/Conv$|^/model\\.10/m/m\\.0/ffn/ffn\\.1/conv/Conv$|^/model\\.13/cv1/conv/Conv$|^/model\\.13/m\\.0/cv1/conv/Conv$|^/model\\.16/m\\.0/cv1/conv/Conv$|^/model\\.16/m\\.0/cv3/conv/Conv$|^/model\\.19/cv2/conv/Conv$|^/model\\.19/m\\.0/cv1/conv/Conv$|^/model\\.19/m\\.0/cv3/conv/Conv$|^/model\\.19/m\\.0/m/m\\.0/cv1/conv/Conv$|^/model\\.19/m\\.0/m/m\\.0/cv2/conv/Conv$|^/model\\.19/m\\.0/m/m\\.1/cv1/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/attn/pe/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.1/one2one_cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.0/one2one_cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.0/one2one_cv3\\.1\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.0/one2one_cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.0/one2one_cv3\\.2\\.0\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.1/conv/Conv$|^/model\\.4/cv1/conv/Conv$|^/model\\.6/cv1/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.8/m\\.0/cv1/conv/Conv$",
+ "qdq_inputs_restored": 74,
+ "cost_macs_frac": 0.19982576500054447,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 69.0,
+ "latency_ms": 0.7008319795131683,
+ "engine_bytes": 15183012,
+ "splits": {
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26s_int8ent_n2000_fisher_B0.2.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 411510,
+   "stats": {
+    "AP": 0.4541510830059222,
+    "AP50": 0.6223982612981188,
+    "AP75": 0.4968057539306064,
+    "AP_small": 0.27242946293508136,
+    "AP_medium": 0.4951101173094605,
+    "AP_large": 0.6151661948799175,
+    "AR1": 0.35447419834537186,
+    "AR10": 0.5923227172394777,
+    "AR100": 0.6470451416889912,
+    "AR_small": 0.4659463799478629,
+    "AR_medium": 0.697938066402142,
+    "AR_large": 0.797735441446133
+   },
+   "prediction_sha256": "07df1ccf5dfa933108e3b84981dffd4582ced92d4cac52fa9b08dd90d789de10"
+  }
+ }
+}

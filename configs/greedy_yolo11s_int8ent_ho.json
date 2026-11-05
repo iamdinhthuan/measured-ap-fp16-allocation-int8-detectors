@@ -1,0 +1,77 @@
+{
+ "model": "yolo11s",
+ "base": "int8ent",
+ "split": "tune",
+ "force_regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.011269453222825115,
+ "criterion": "greedy (engine single-block AP recovery)",
+ "source_alloc": "metrics/alloc_yolo11s_int8ent_ho_v2.json",
+ "allocations": {
+  "greedy@0.03": {
+   "blocks": [
+    "head.dfl",
+    "m0",
+    "head.cv3.2",
+    "m11"
+   ],
+   "cost": 0.02321149603482201,
+   "pred_recovery_AP": 0.7735223600211727,
+   "same_as_mean": true
+  },
+  "greedy@0.05": {
+   "blocks": [
+    "head.dfl",
+    "m0",
+    "head.cv3.2",
+    "head.cv2.2",
+    "m11",
+    "head.cv3.1"
+   ],
+   "cost": 0.04509689344702164,
+   "pred_recovery_AP": 0.8274057080681629,
+   "same_as_mean": true
+  },
+  "greedy@0.1": {
+   "blocks": [
+    "head.dfl",
+    "m2",
+    "m0",
+    "head.cv3.2",
+    "head.cv2.2",
+    "m11"
+   ],
+   "cost": 0.09678611889571284,
+   "pred_recovery_AP": 1.2888013392160391,
+   "same_as_mean": true
+  },
+  "greedy@0.15": {
+   "blocks": [
+    "head.dfl",
+    "m2",
+    "m1",
+    "m0",
+    "head.cv3.2",
+    "head.cv2.2",
+    "m11"
+   ],
+   "cost": 0.14074771927732393,
+   "pred_recovery_AP": 1.4301671213406864,
+   "same_as_mean": true
+  },
+  "greedy@0.2": {
+   "blocks": [
+    "head.dfl",
+    "m2",
+    "m1",
+    "m8",
+    "m0",
+    "head.cv3.2",
+    "head.cv2.2",
+    "m11"
+   ],
+   "cost": 0.19203625305587024,
+   "pred_recovery_AP": 1.5677246126643452,
+   "same_as_mean": true
+  }
+ }
+}

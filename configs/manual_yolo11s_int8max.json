@@ -1,0 +1,17 @@
+{
+ "model": "yolo11s",
+ "base": "int8max",
+ "note": "folklore baselines: first/last layers in FP16; MAC fractions from allocate.conv_macs on exports/yolo11s.onnx",
+ "allocations": {
+  "headout": {
+   "blocks": [],
+   "regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+   "cost": 0.0113
+  },
+  "stem_headout": {
+   "blocks": [],
+   "regex": "^/model\\.0/|/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+   "cost": 0.0195
+  }
+ }
+}

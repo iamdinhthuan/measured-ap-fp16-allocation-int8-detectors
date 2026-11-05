@@ -1,0 +1,21 @@
+{
+ "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8ent_r33_random_B0.2_s105.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+ "n_images": 2000,
+ "n_det": 155160,
+ "stats": {
+  "AP": 0.584991207135341,
+  "AP50": 0.7446542929131774,
+  "AP75": 0.6433693055572912,
+  "AP_small": 0.39963136245563224,
+  "AP_medium": 0.6646344267109016,
+  "AP_large": 0.7692774594346461,
+  "AR1": 0.4236168151178043,
+  "AR10": 0.6885205287092526,
+  "AR100": 0.7463642369242861,
+  "AR_small": 0.5667719596811205,
+  "AR_medium": 0.8082071470120447,
+  "AR_large": 0.8959520645567549
+ },
+ "prediction_sha256": "d99d0dde0271759ddaa352906975409167bf91621c13648805df8ff96bebb62a"
+}

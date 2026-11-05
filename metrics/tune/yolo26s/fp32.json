@@ -1,0 +1,26 @@
+{
+ "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26s_fp32.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+ "n_images": 2000,
+ "n_det": 245918,
+ "stats": {
+  "AP": 0.544088281987946,
+  "AP50": 0.7126497618710019,
+  "AP75": 0.5940622587334069,
+  "AP_small": 0.32468365317380393,
+  "AP_medium": 0.6048746891077194,
+  "AP_large": 0.7508044889777492,
+  "AR1": 0.4029150361581442,
+  "AR10": 0.6506120372485609,
+  "AR100": 0.7120819337026706,
+  "AR_small": 0.5119598415335098,
+  "AR_medium": 0.7797931388043032,
+  "AR_large": 0.8831045361485795
+ },
+ "prediction_sha256": "efcffbbafde4c2756b44f7f9e945e91a7951d3d9f4e9af336a50a674869e2e56",
+ "tag": "fp32",
+ "onnx": "/home/thuan/isci_method_20261025/exports/yolo26s.onnx",
+ "build_s": 16.8,
+ "latency_ms": 1.4935359954833984,
+ "engine_bytes": 39497340
+}

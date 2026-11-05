@@ -1,0 +1,85 @@
+{
+ "model": "yolo11l",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fx_factorial apq",
+ "scores": "metrics/fx_scores_yolo11l_int8ent_apq_n2000.json",
+ "force_regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.004762984803810388,
+ "allocations": {
+  "apq@0.03": {
+   "blocks": [
+    "m10",
+    "m12",
+    "m15",
+    "m18",
+    "head.cv2.2",
+    "head.cv3.1",
+    "head.dfl"
+   ],
+   "cost": 0.029428589101984433
+  },
+  "apq@0.05": {
+   "blocks": [
+    "m9",
+    "m10",
+    "m12",
+    "m15",
+    "m18",
+    "head.cv2.1",
+    "head.cv2.2",
+    "head.cv3.1",
+    "head.dfl"
+   ],
+   "cost": 0.04782779026371678
+  },
+  "apq@0.1": {
+   "blocks": [
+    "m9",
+    "m10",
+    "m12",
+    "m15",
+    "m18",
+    "m22",
+    "head.cv2.0",
+    "head.cv2.1",
+    "head.cv2.2",
+    "head.cv3.1",
+    "head.dfl"
+   ],
+   "cost": 0.09850100002061897
+  },
+  "apq@0.15": {
+   "blocks": [
+    "m2",
+    "m9",
+    "m10",
+    "m12",
+    "m15",
+    "m18",
+    "head.cv2.1",
+    "head.cv2.2",
+    "head.cv3.1",
+    "head.dfl"
+   ],
+   "cost": 0.1491742097775212
+  },
+  "apq@0.2": {
+   "blocks": [
+    "m2",
+    "m9",
+    "m10",
+    "m12",
+    "m15",
+    "m18",
+    "m22",
+    "head.cv2.0",
+    "head.cv2.1",
+    "head.cv2.2",
+    "head.cv3.1",
+    "head.dfl"
+   ],
+   "cost": 0.19984741953442337
+  }
+ }
+}

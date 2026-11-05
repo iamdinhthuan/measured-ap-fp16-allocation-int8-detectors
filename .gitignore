@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.onnx
+*.engine
+*.plan
+*pred*.json
+git_token.txt
+zenodo_key.txt
+*.token

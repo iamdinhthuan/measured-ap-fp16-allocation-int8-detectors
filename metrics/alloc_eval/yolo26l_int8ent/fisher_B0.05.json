@@ -1,0 +1,56 @@
+{
+ "key": "fisher@0.05",
+ "blocks": [],
+ "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.10/m/m\\.0/ffn/ffn\\.1/conv/Conv$|^/model\\.10/m/m\\.1/attn/pe/conv/Conv$|^/model\\.10/m/m\\.1/ffn/ffn\\.1/conv/Conv$|^/model\\.13/m\\.1/cv1/conv/Conv$|^/model\\.16/m\\.0/cv1/conv/Conv$|^/model\\.19/m\\.0/cv1/conv/Conv$|^/model\\.19/m\\.1/cv1/conv/Conv$|^/model\\.19/m\\.1/cv3/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.2/m\\.0/cv1/conv/Conv$|^/model\\.2/m\\.0/cv2/conv/Conv$|^/model\\.2/m\\.0/cv3/conv/Conv$|^/model\\.2/m\\.1/cv1/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.0/cv1/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.0/cv2/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/attn/pe/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/attn/proj/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/attn/qkv/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/ffn/ffn\\.0/conv/Conv$|^/model\\.22/m\\.0/m\\.0\\.1/ffn/ffn\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.0/one2one_cv3\\.0\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.0/one2one_cv3\\.0\\.1/one2one_cv3\\.0\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.0/one2one_cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.1/one2one_cv3\\.1\\.1/one2one_cv3\\.1\\.1\\.1/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.0/one2one_cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.23/one2one_cv3\\.2/one2one_cv3\\.2\\.1/one2one_cv3\\.2\\.1\\.1/conv/Conv$|^/model\\.4/m\\.0/cv3/conv/Conv$",
+ "qdq_inputs_restored": 74,
+ "cost_macs_frac": 0.049835666233024566,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 64.4,
+ "latency_ms": 1.1876640319824219,
+ "engine_bytes": 31953052,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8ent_fisher_B0.05.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 85438,
+   "stats": {
+    "AP": 0.5668703892696175,
+    "AP50": 0.7308458714728954,
+    "AP75": 0.6304741977273658,
+    "AP_small": 0.37020159965587296,
+    "AP_medium": 0.6523475982803806,
+    "AP_large": 0.7579483683704685,
+    "AR1": 0.4140385571853026,
+    "AR10": 0.6693431631276566,
+    "AR100": 0.7174228916257337,
+    "AR_small": 0.5092817728346535,
+    "AR_medium": 0.7886379366157819,
+    "AR_large": 0.8835012243812151
+   },
+   "prediction_sha256": "aa09b565640e668905c26bb5cfcabb5efa8e497633c901815483d36c0e8f27fe"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo26l_int8ent_fisher_B0.05.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 220394,
+   "stats": {
+    "AP": 0.5062022442477369,
+    "AP50": 0.6745564791689523,
+    "AP75": 0.558154074198584,
+    "AP_small": 0.34223240545320405,
+    "AP_medium": 0.567161236585826,
+    "AP_large": 0.6691593180250707,
+    "AR1": 0.3833597053395319,
+    "AR10": 0.6330107566519579,
+    "AR100": 0.67851094565117,
+    "AR_small": 0.4896718600159458,
+    "AR_medium": 0.7398031223271728,
+    "AR_large": 0.8354251825287765
+   },
+   "prediction_sha256": "f8cbab7add02f571db367efd026f3cff04a06163b0f2e20fb2a4eb9ad8a005fa"
+  }
+ }
+}

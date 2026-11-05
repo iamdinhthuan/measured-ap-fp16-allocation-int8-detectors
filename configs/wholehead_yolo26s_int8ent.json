@@ -1,0 +1,12 @@
+{
+ "model": "yolo26s",
+ "base": "int8ent",
+ "note": "whole-head heuristic re-evaluated through eval_alloc (2026-10-25 23:30), replaces metrics/{m}_int8ent_head.json in tables",
+ "allocations": {
+  "head": {
+   "blocks": [],
+   "regex": "^/model\\.23/",
+   "cost": null
+  }
+ }
+}

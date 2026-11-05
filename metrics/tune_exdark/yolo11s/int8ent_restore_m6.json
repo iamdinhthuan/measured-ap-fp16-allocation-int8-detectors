@@ -1,0 +1,26 @@
+{
+ "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_restore_m6.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/exdark/exdark_train.json",
+ "n_images": 3000,
+ "n_det": 417945,
+ "stats": {
+  "AP": 0.29867093412302714,
+  "AP50": 0.5918291209845477,
+  "AP75": 0.26872043719439487,
+  "AP_small": 0.0255304407272022,
+  "AP_medium": 0.16932832175687948,
+  "AP_large": 0.4030188207067588,
+  "AR1": 0.25520052575634933,
+  "AR10": 0.4147377351562317,
+  "AR100": 0.4491633634294014,
+  "AR_small": 0.20495714428712772,
+  "AR_medium": 0.3430283369729368,
+  "AR_large": 0.528363737244036
+ },
+ "prediction_sha256": "8a6f4cd639d8f6b265b6b254e9d5922269e27b54fc1d18f493d5e6e7cc0eb2f5",
+ "tag": "int8ent_restore_m6",
+ "onnx": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_restore_m6.onnx",
+ "build_s": 48.0,
+ "latency_ms": 0.5204000174999237,
+ "engine_bytes": 14650076
+}

@@ -1,0 +1,67 @@
+{
+ "key": "mean@0.05",
+ "blocks": [
+  "m0",
+  "m11",
+  "head.cv2.2",
+  "head.cv3.1",
+  "head.cv3.2",
+  "head.dfl"
+ ],
+ "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.11/)|(?:^/model\\.23/cv2\\.2/)|(?:^/model\\.23/cv3\\.1/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+ "qdq_inputs_restored": 70,
+ "cost_macs_frac": 0.04509689344702164,
+ "pred_gap_AP_tune": 1.0292048553015576,
+ "pred_gap_SML_tune": [
+  -0.009465051611001751,
+  1.2038194540856417,
+  1.1585393027649937
+ ],
+ "build_s": 26.3,
+ "latency_ms": 0.5408959984779358,
+ "engine_bytes": 13195756,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_mean_B0.05.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 219630,
+   "stats": {
+    "AP": 0.5353689024948985,
+    "AP50": 0.7044756183355875,
+    "AP75": 0.5884230902153041,
+    "AP_small": 0.29996356840591615,
+    "AP_medium": 0.5981200307516595,
+    "AP_large": 0.7557518632342106,
+    "AR1": 0.38367205558933626,
+    "AR10": 0.6178780335697902,
+    "AR100": 0.6663906319954459,
+    "AR_small": 0.45017492267766546,
+    "AR_medium": 0.7301922230301094,
+    "AR_large": 0.849263387109922
+   },
+   "prediction_sha256": "4f1571a2cb3d5030c18eca8c2941f4e40c5caa1c25505b4ced12a40d897bd924"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_mean_B0.05.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 556603,
+   "stats": {
+    "AP": 0.4500952739276995,
+    "AP50": 0.6153934962824291,
+    "AP75": 0.4858347923202934,
+    "AP_small": 0.27486275292335083,
+    "AP_medium": 0.4962643500620567,
+    "AP_large": 0.6160625044332869,
+    "AR1": 0.3443869272920573,
+    "AR10": 0.5620170378677365,
+    "AR100": 0.6096283880164509,
+    "AR_small": 0.4175253281090511,
+    "AR_medium": 0.6661981206141124,
+    "AR_large": 0.7674359198093118
+   },
+   "prediction_sha256": "3609fe1b1eec5e136d7bdc345a58bcd04971846071a8c7d77344f14533d72719"
+  }
+ }
+}

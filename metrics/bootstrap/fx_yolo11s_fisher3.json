@@ -1,0 +1,88 @@
+{
+ "gt": "data/coco_src/annotations/instances_val2017.json",
+ "sets": {
+  "fp32": "metrics/alloc_eval/yolo11s_int8ent/fp32_val.pred.json.gz",
+  "mean_B0.03": "metrics/alloc_eval/yolo11s_int8ent/mean_B0.03_val.pred.json.gz",
+  "fisher_B0.03": "metrics/alloc_eval/yolo11s_int8ent/fisher_B0.03_val.pred.json.gz"
+ },
+ "ref": "fp32",
+ "groups": "size",
+ "group_names": [
+  "AP_small",
+  "AP_medium",
+  "AP_large"
+ ],
+ "n": 1000,
+ "seed": 20261025,
+ "n_images": 5000,
+ "point": {
+  "fp32": {
+   "AP": 46.01528551602268,
+   "AP_small": 28.45576215636243,
+   "AP_medium": 50.526345769105404,
+   "AP_large": 62.99369133467751
+  },
+  "mean_B0.03": {
+   "AP": 45.00122652457472,
+   "AP_small": 27.48195950179328,
+   "AP_medium": 49.60113855465231,
+   "AP_large": 61.57429907594818
+  },
+  "fisher_B0.03": {
+   "AP": 44.94899248306638,
+   "AP_small": 27.710275703655636,
+   "AP_medium": 49.294550633554394,
+   "AP_large": 61.36831985067066
+  }
+ },
+ "point_worst_rel": {
+  "fp32": 0.0,
+  "mean_B0.03": 3.4221633186915557,
+  "fisher_B0.03": 2.6198084191539013
+ },
+ "diff_b_minus_a": {
+  "fisher_B0.03:mean_B0.03": {
+   "AP": {
+    "mean": 0.061313229765047945,
+    "ci95": [
+     -0.13176717431690682,
+     0.28207198395647376
+    ],
+    "p_le0": 0.274
+   },
+   "AP_small": {
+    "mean": -0.20003751961219676,
+    "ci95": [
+     -0.7612430375438631,
+     0.3273219086570733
+    ],
+    "p_le0": 0.763
+   },
+   "AP_medium": {
+    "mean": 0.29283853667854076,
+    "ci95": [
+     -0.1569630830943721,
+     0.7481938845573345
+    ],
+    "p_le0": 0.083
+   },
+   "AP_large": {
+    "mean": 0.2416082881888934,
+    "ci95": [
+     -0.23717535590787975,
+     0.7417621141194786
+    ],
+    "p_le0": 0.163
+   },
+   "worst_rel": {
+    "mean": -0.20297500675709318,
+    "ci95": [
+     -1.9443452423881382,
+     1.1190790941461755
+    ],
+    "p_le0": 0.551
+   }
+  }
+ },
+ "impl": "bootstrap_fast.py"
+}

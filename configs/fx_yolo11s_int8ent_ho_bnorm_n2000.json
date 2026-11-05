@@ -1,0 +1,173 @@
+{
+ "model": "yolo11s",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fx_bnorm (rules_11_9.md X1)",
+ "scores": "metrics/fx_scores_yolo11s_int8ent_bnorm_n2000.json",
+ "force_regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.011269453222825115,
+ "allocations": {
+  "bnorm@0.03": {
+   "blocks": [
+    "m0",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.02321149603482201
+  },
+  "bnorm@0.05": {
+   "blocks": [
+    "m0",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.0476346073579393
+  },
+  "bnorm@0.1": {
+   "blocks": [
+    "m0",
+    "m2",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.09363782720171726
+  },
+  "bnorm@0.15": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.13759942758332835
+  },
+  "bnorm@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.1987430683918669
+  },
+  "chnorm@0.03": {
+   "blocks": [
+    "m0",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.02321149603482201
+  },
+  "chnorm@0.05": {
+   "blocks": [
+    "m0",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.0476346073579393
+  },
+  "chnorm@0.1": {
+   "blocks": [
+    "m0",
+    "m2",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.09363782720171726
+  },
+  "chnorm@0.15": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.13759942758332835
+  },
+  "chnorm@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv3.1",
+    "head.cv3.2",
+    "head.dfl"
+   ],
+   "cost": 0.1987430683918669
+  }
+ }
+}

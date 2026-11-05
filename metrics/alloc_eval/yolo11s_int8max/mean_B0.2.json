@@ -1,0 +1,67 @@
+{
+ "key": "mean@0.2",
+ "blocks": [
+  "m1",
+  "m2",
+  "m6",
+  "m10",
+  "head.cv3.2",
+  "head.dfl"
+ ],
+ "regex": "(?:^/model\\.1/)|(?:^/model\\.2/)|(?:^/model\\.6/)|(?:^/model\\.10/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+ "qdq_inputs_restored": 132,
+ "cost_macs_frac": 0.1967276846938167,
+ "pred_gap_AP_tune": 0.6497392072930763,
+ "pred_gap_SML_tune": [
+  0.9760744496002891,
+  0.004452190640092724,
+  -0.7490142895221323
+ ],
+ "build_s": 24.3,
+ "latency_ms": 0.49881601333618164,
+ "engine_bytes": 13778900,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8max_mean_B0.2.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 204636,
+   "stats": {
+    "AP": 0.5354834861323363,
+    "AP50": 0.7057130350546855,
+    "AP75": 0.589480436578217,
+    "AP_small": 0.30132558291252887,
+    "AP_medium": 0.5953173885545422,
+    "AP_large": 0.7640113101994198,
+    "AR1": 0.3857253421235328,
+    "AR10": 0.6191144370145912,
+    "AR100": 0.6669423080058285,
+    "AR_small": 0.45333715862814955,
+    "AR_medium": 0.7294668667367752,
+    "AR_large": 0.8577151547063175
+   },
+   "prediction_sha256": "a420f4361b095b63413d9c5bfce4d4f15c48911fb1fed6e6d37853c4cc9a8ed9"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8max_mean_B0.2.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 516921,
+   "stats": {
+    "AP": 0.45128287254798466,
+    "AP50": 0.6180639044177186,
+    "AP75": 0.4882028029344643,
+    "AP_small": 0.2745385627639533,
+    "AP_medium": 0.4973896125467967,
+    "AP_large": 0.6233680168072214,
+    "AR1": 0.34531197633173233,
+    "AR10": 0.5645347873213187,
+    "AR100": 0.6126935924191207,
+    "AR_small": 0.424871874581424,
+    "AR_medium": 0.6683193354126993,
+    "AR_large": 0.7716020679123917
+   },
+   "prediction_sha256": "b34a1bf031456d6aa9249558f930d1514c5af2e8d1d03bc15260ad07fb48c827"
+  }
+ }
+}

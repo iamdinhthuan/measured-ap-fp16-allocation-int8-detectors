@@ -1,0 +1,259 @@
+{
+ "model": "yolo26s",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "random",
+ "force_regex": "/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.008419708354370229,
+ "allocations": {
+  "random@0.05_s1": {
+   "blocks": [
+    "m15",
+    "head.one2one_cv3.2",
+    "m21",
+    "head.one2one_cv2.0",
+    "m0",
+    "m12",
+    "m18",
+    "head.rest",
+    "m11",
+    "m14"
+   ],
+   "cost": 0.04935008365259917
+  },
+  "random@0.05_s2": {
+   "blocks": [
+    "m18",
+    "m11",
+    "head.one2one_cv2.2",
+    "m20",
+    "m21",
+    "head.one2one_cv3.1",
+    "m14",
+    "head.rest",
+    "m15",
+    "m12"
+   ],
+   "cost": 0.04701375070535476
+  },
+  "random@0.05_s3": {
+   "blocks": [
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.2",
+    "m18",
+    "m15",
+    "head.rest",
+    "m11",
+    "m14",
+    "m21",
+    "m12"
+   ],
+   "cost": 0.04996386603704473
+  },
+  "random@0.05_s4": {
+   "blocks": [
+    "m10",
+    "m15",
+    "m11",
+    "m21",
+    "m14",
+    "m18",
+    "m12",
+    "head.rest"
+   ],
+   "cost": 0.04652371476938612
+  },
+  "random@0.05_s5": {
+   "blocks": [
+    "m15",
+    "m9",
+    "head.one2one_cv2.1",
+    "m18",
+    "m21",
+    "m14",
+    "m11",
+    "head.rest",
+    "m12"
+   ],
+   "cost": 0.04661281221228951
+  },
+  "random@0.1_s1": {
+   "blocks": [
+    "m15",
+    "head.one2one_cv3.2",
+    "m21",
+    "head.one2one_cv2.0",
+    "m0",
+    "head.one2one_cv2.1",
+    "m9",
+    "m12",
+    "head.one2one_cv3.1",
+    "m18",
+    "head.rest",
+    "m11",
+    "m14"
+   ],
+   "cost": 0.09726470850286598
+  },
+  "random@0.1_s2": {
+   "blocks": [
+    "m18",
+    "m11",
+    "head.one2one_cv2.2",
+    "m20",
+    "head.one2one_cv3.0",
+    "m21",
+    "m17",
+    "head.one2one_cv3.1",
+    "m14",
+    "head.rest",
+    "m15",
+    "m12"
+   ],
+   "cost": 0.09785869145555523
+  },
+  "random@0.1_s3": {
+   "blocks": [
+    "head.one2one_cv3.1",
+    "m10",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.2",
+    "m18",
+    "m15",
+    "head.rest",
+    "m11",
+    "m14",
+    "m21",
+    "m0",
+    "m12"
+   ],
+   "cost": 0.09662122697078593
+  },
+  "random@0.1_s4": {
+   "blocks": [
+    "m8",
+    "m10",
+    "m15",
+    "m11",
+    "m21",
+    "m14",
+    "m18",
+    "m12",
+    "head.rest"
+   ],
+   "cost": 0.09974458733034362
+  },
+  "random@0.1_s5": {
+   "blocks": [
+    "m8",
+    "m15",
+    "m9",
+    "head.one2one_cv2.1",
+    "m18",
+    "m21",
+    "m14",
+    "m11",
+    "head.rest",
+    "m12"
+   ],
+   "cost": 0.099833684773247
+  },
+  "random@0.2_s1": {
+   "blocks": [
+    "m15",
+    "head.one2one_cv3.2",
+    "m5",
+    "m21",
+    "head.one2one_cv2.0",
+    "m0",
+    "head.one2one_cv2.1",
+    "m9",
+    "m12",
+    "head.one2one_cv3.1",
+    "m18",
+    "head.rest",
+    "m11",
+    "head.one2one_cv2.2",
+    "m14"
+   ],
+   "cost": 0.1945640660113055
+  },
+  "random@0.2_s2": {
+   "blocks": [
+    "m18",
+    "m11",
+    "head.one2one_cv2.2",
+    "m20",
+    "head.one2one_cv3.0",
+    "m21",
+    "m17",
+    "head.one2one_cv3.1",
+    "m10",
+    "m14",
+    "m6",
+    "head.rest",
+    "m0",
+    "m15",
+    "m12"
+   ],
+   "cost": 0.19773692495025397
+  },
+  "random@0.2_s3": {
+   "blocks": [
+    "head.one2one_cv3.1",
+    "m10",
+    "m19",
+    "head.one2one_cv3.0",
+    "head.one2one_cv2.0",
+    "head.one2one_cv3.2",
+    "m18",
+    "head.one2one_cv2.1",
+    "m15",
+    "head.rest",
+    "m11",
+    "m14",
+    "m21",
+    "m0",
+    "m12"
+   ],
+   "cost": 0.19635096472731234
+  },
+  "random@0.2_s4": {
+   "blocks": [
+    "m8",
+    "m16",
+    "m1",
+    "m15",
+    "head.one2one_cv3.2",
+    "m11",
+    "m21",
+    "m14",
+    "m18",
+    "m12",
+    "head.rest"
+   ],
+   "cost": 0.19467791274390422
+  },
+  "random@0.2_s5": {
+   "blocks": [
+    "m8",
+    "m6",
+    "m15",
+    "m9",
+    "m17",
+    "head.one2one_cv2.1",
+    "m18",
+    "m21",
+    "m14",
+    "m0",
+    "head.one2one_cv2.2",
+    "m11",
+    "head.one2one_cv3.2",
+    "head.rest",
+    "m12"
+   ],
+   "cost": 0.19426707453496084
+  }
+ }
+}

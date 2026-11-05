@@ -1,0 +1,35 @@
+{
+ "key": "fisher@0.1",
+ "blocks": [],
+ "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|^/model\\.0/conv/Conv$|^/model\\.1/conv/Conv$|^/model\\.10/cv1/conv/Conv$|^/model\\.10/m/m\\.0/attn/pe/conv/Conv$|^/model\\.2/cv1/conv/Conv$|^/model\\.22/m\\.0/cv1/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.0/cv3\\.1\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.1/cv3\\.1\\.1/cv3\\.1\\.1\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.0/cv3\\.2\\.0\\.0/conv/Conv$|^/model\\.23/cv3\\.2/cv3\\.2\\.1/cv3\\.2\\.1\\.0/conv/Conv$|^/model\\.6/cv1/conv/Conv$|^/model\\.6/m\\.0/cv1/conv/Conv$|^/model\\.6/m\\.0/cv3/conv/Conv$|^/model\\.8/m\\.0/cv1/conv/Conv$",
+ "qdq_inputs_restored": 42,
+ "cost_macs_frac": 0.09970305885158903,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 33.3,
+ "latency_ms": 0.5692480206489563,
+ "engine_bytes": 13423620,
+ "splits": {
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_n2000_fisher_B0.1.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 567865,
+   "stats": {
+    "AP": 0.4513802044578395,
+    "AP50": 0.6174396934628413,
+    "AP75": 0.48845253901066443,
+    "AP_small": 0.2786432156228657,
+    "AP_medium": 0.49361221741178746,
+    "AP_large": 0.6155854188347173,
+    "AR1": 0.3453766274141505,
+    "AR10": 0.5638587574883871,
+    "AR100": 0.6132909317013783,
+    "AR_small": 0.42510848661482514,
+    "AR_medium": 0.6687269166809097,
+    "AR_large": 0.7671662581737686
+   },
+   "prediction_sha256": "74af45649d82b821f4ba40c2a710773ca16c54217dceae512faba50298ad833a"
+  }
+ }
+}

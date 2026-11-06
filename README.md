@@ -16,6 +16,8 @@ It contains the code, configurations, tuning-split manifests, allocation plans, 
 6. `eval_alloc.py` builds and evaluates each allocation on COCO `val2017` (and ExDark test); `group_eval.py` computes per-group AP.
 7. `bootstrap_fast.py`, `bootstrap_groups.py`, `fx_boot.py`, `fx_boot2.py` run the paired image-level bootstrap (seed 20261025); `y2_analyze.py` computes the 10,000-resample p-values and Holm counts.
 8. `orin_export.py`, `orin_bench_alloc.sh`, `orin_ap.py` export the YOLO26-l allocations to the Jetson Orin Nano Super (TensorRT 10.3) and measure latency and AP there.
+9. Revision arms added in v1.1.0 (exploratory, post-freeze; rules `rules_11_11.md`, `rules_11_11b.md`, `rules_11_11c.md`): `fx_pandey.py` (per-image output SQNR, 256 tuning images) and `a11_analyze.py`; `fit_score.py` (block FIT score from the Fisher trace and the deployed quantization scales) and `c11_analyze.py`; `exdarkcal_sqnr.py`, `fx_exdarkcal.py` and `b11_bootcmd.py` (allocation on the ExDark-calibrated graph); `s6_table.py` writes Supplementary Table S8 from `metrics/bootstrap/fx_*_a11.json` and `fx_*_c11.json`. The queues `fx_queue_b11*.sh`, `fx_queue_c11.sh`, `fx_queue_p.sh`, `fx_boot_a11*.sh`, `fx_boot_c11.sh` and `boot_chains.sh` record the arguments.
+10. Transformer-detector check (RT-DETR-l, rules `rules_11_12d.md`, written before any RT-DETR number existed): `rd_common.py` adapts the unchanged pipeline (stretch preprocessing, `tools/rtdetr_decode.py`, Conv + MatMul + Gemm MAC cost, decoder block split), with `infer_eval_rd.py`, `rd_quant.py`, `rd_gate.py`, `rd_sens.py` and `rd_chain.sh`. Its results are not part of v1.1.0.
 
 Scripts named `queue_*.sh`, `fx_queue_*.sh`, `boot_*.sh` are the unattended job queues that were actually run, in order; they document the exact arguments. They contain absolute paths of the original machine (`/home/thuan/...`) that must be adapted.
 
@@ -24,7 +26,7 @@ Scripts named `queue_*.sh`, `fx_queue_*.sh`, `boot_*.sh` are the unattended job 
 - `protocol/README_isci_method_frozen_20261025.md`: the confirmatory protocol as frozen on 2026-10-25 (internal planning notes, in Vietnamese); SHA-256 `934776253c13171a0612c2e9f4186d0972271866c18689fd5d6379bb0b5afa2e`, the digest printed in Supplementary Section S3.
 - `protocol/README_isci_method_with_10_8a.md`: the same document with the clarification §10.8a appended on 2026-10-25 23:09 +07; SHA-256 `8773a8046a04dda8c122c0ab5ce42f8ed5bfaab023fb1702287195bb1eb3547c`, the digest in `FREEZE_RECORD.md`. Its first 375 lines are byte-identical to the frozen file.
 - `FREEZE_RECORD.md`: SHA-256 digests of the confirmatory protocol at freeze time (2026-10-25) and after the documented clarification.
-- `rules_11_9.md`, `rules_11_10.md`: decision rules of the post-freeze exploratory experiments, written before their results existed.
+- `rules_11_9.md`, `rules_11_10.md`, `rules_11_11.md`, `rules_11_11b.md`, `rules_11_11c.md`, `rules_11_12d.md`: decision rules of the post-freeze exploratory experiments, written before their results existed (their digests and times are in `logs/fx.sha256`).
 - `logs/fx.sha256`: digests of the result files of the post-freeze runs.
 
 ## Layout
@@ -55,4 +57,9 @@ Code and metadata are released under the MIT License (see `LICENSE`). Third-part
 
 ## Citation
 
-DOI: [10.5281/zenodo.23983315](https://doi.org/10.5281/zenodo.23983315). See `CITATION.cff`.
+All versions: [10.5281/zenodo.23983314](https://doi.org/10.5281/zenodo.23983314) (concept DOI). This version (1.1.0): [10.5281/zenodo.24013653](https://doi.org/10.5281/zenodo.24013653); version 1.0.0: [10.5281/zenodo.23983315](https://doi.org/10.5281/zenodo.23983315). See `CITATION.cff`.
+
+## Versions
+
+- 1.1.0 (2026-11-06): revision arms of item 9 (per-image output SQNR, block FIT, ExDark-calibrated allocation, Supplementary Table S8), their decision rules and bootstrap files; rules and adapters of the RT-DETR-l check (item 10), without results.
+- 1.0.0 (2026-11-05): first release.

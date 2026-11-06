@@ -1,0 +1,189 @@
+{
+ "model": "yolo26s",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fit (rules_11_11c.md C)",
+ "scores": "metrics/fit_scores_yolo26s_int8ent.json",
+ "force_regex": "/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.008419708354370229,
+ "sanity_gate": {
+  "all_convs_mapped": true,
+  "max_rel_weight_diff": 0.0,
+  "int8_convs_match": true,
+  "finite": true,
+  "pass": true
+ },
+ "under_scored_blocks": {
+  "m0": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m1": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m2": {
+   "qdq": 22,
+   "convs": 4
+  },
+  "m3": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m4": {
+   "qdq": 22,
+   "convs": 4
+  },
+  "m5": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m6": {
+   "qdq": 50,
+   "convs": 9
+  },
+  "m7": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m8": {
+   "qdq": 50,
+   "convs": 9
+  },
+  "m9": {
+   "qdq": 15,
+   "convs": 2
+  },
+  "m10": {
+   "qdq": 31,
+   "convs": 7
+  },
+  "m11": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m12": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m13": {
+   "qdq": 50,
+   "convs": 9
+  },
+  "m14": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m15": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m16": {
+   "qdq": 50,
+   "convs": 9
+  },
+  "m17": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m18": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m19": {
+   "qdq": 50,
+   "convs": 9
+  },
+  "m20": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m21": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m22": {
+   "qdq": 43,
+   "convs": 9
+  },
+  "head.one2one_cv2.0": {
+   "qdq": 12,
+   "convs": 3
+  },
+  "head.one2one_cv2.1": {
+   "qdq": 12,
+   "convs": 3
+  },
+  "head.one2one_cv2.2": {
+   "qdq": 12,
+   "convs": 3
+  },
+  "head.one2one_cv3.0": {
+   "qdq": 22,
+   "convs": 5
+  },
+  "head.one2one_cv3.1": {
+   "qdq": 22,
+   "convs": 5
+  },
+  "head.one2one_cv3.2": {
+   "qdq": 22,
+   "convs": 5
+  },
+  "head.rest": {
+   "qdq": 2,
+   "convs": 0
+  }
+ },
+ "allocations": {
+  "fit@0.03": {
+   "blocks": [
+    "m0",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.2"
+   ],
+   "cost": 0.026823280171859067
+  },
+  "fit@0.05": {
+   "blocks": [
+    "m0",
+    "head.one2one_cv2.1",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2"
+   ],
+   "cost": 0.04939463237405087
+  },
+  "fit@0.1": {
+   "blocks": [
+    "m0",
+    "m19",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2"
+   ],
+   "cost": 0.09483432825477908
+  },
+  "fit@0.15": {
+   "blocks": [
+    "m0",
+    "m2",
+    "m19",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.2"
+   ],
+   "cost": 0.14847098888261906
+  },
+  "fit@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m19",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.2"
+   ],
+   "cost": 0.19408887964915406
+  }
+ }
+}

@@ -1,0 +1,207 @@
+{
+ "model": "yolo26l",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fx_pandey (rules_11_11 A)",
+ "scores": "metrics/fx_scores_yolo26l_int8ent_pandey_n256.json",
+ "force_regex": "/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.004030738826607142,
+ "allocations": {
+  "pooled@0.03": {
+   "blocks": [
+    "m0",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.029653536552711208
+  },
+  "pooled@0.05": {
+   "blocks": [
+    "m0",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.04768641278462206
+  },
+  "pooled@0.1": {
+   "blocks": [
+    "m0",
+    "m8",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "m22",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.09992014350472858
+  },
+  "pooled@0.15": {
+   "blocks": [
+    "m0",
+    "m7",
+    "m8",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m17",
+    "m18",
+    "m21",
+    "m22",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.14667055285812794
+  },
+  "pooled@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m7",
+    "m8",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m17",
+    "m18",
+    "m21",
+    "m22",
+    "head.one2one_cv2.2",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.one2one_cv3.2",
+    "head.rest"
+   ],
+   "cost": 0.1903475534766011
+  },
+  "pandey@0.03": {
+   "blocks": [
+    "m0",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.one2one_cv3.1",
+    "head.rest"
+   ],
+   "cost": 0.029807562433798493
+  },
+  "pandey@0.05": {
+   "blocks": [
+    "m0",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.rest"
+   ],
+   "cost": 0.04561298746229328
+  },
+  "pandey@0.1": {
+   "blocks": [
+    "m0",
+    "m7",
+    "m8",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.rest"
+   ],
+   "cost": 0.09539889148758195
+  },
+  "pandey@0.15": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m7",
+    "m8",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.rest"
+   ],
+   "cost": 0.14514214219195418
+  },
+  "pandey@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m7",
+    "m8",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m17",
+    "m18",
+    "m21",
+    "head.one2one_cv2.1",
+    "head.one2one_cv3.0",
+    "head.one2one_cv3.1",
+    "head.rest"
+   ],
+   "cost": 0.17927427744089552
+  }
+ },
+ "sanity_gate": {
+  "max_rel_err": 1.6917043946572654e-15,
+  "pooled_selections_identical": true,
+  "pass": true
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "model": "yolo11s",
+ "base": "int8ent_exdarkcal",
+ "split": "exdark",
+ "criterion": "exdarkcal_sqnr (rules_11_11b B)",
+ "scores": "metrics/fx_scores_yolo11s_int8ent_exdarkcal_sqnr_exdark_n256.json",
+ "force_regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.011269453222825115,
+ "allocations": {
+  "sqnrpool@0.03": {
+   "blocks": [
+    "m0",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.dfl"
+   ],
+   "cost": 0.019562339753145308
+  },
+  "sqnrpool@0.05": {
+   "blocks": [
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.dfl"
+   ],
+   "cost": 0.04804006916701449
+  },
+  "sqnrpool@0.1": {
+   "blocks": [
+    "m0",
+    "m2",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv2.2",
+    "head.dfl"
+   ],
+   "cost": 0.09313696261403613
+  },
+  "sqnrpool@0.15": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.dfl"
+   ],
+   "cost": 0.14900482976566692
+  },
+  "sqnrpool@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv2.2",
+    "head.dfl"
+   ],
+   "cost": 0.19824220380418578
+  },
+  "sqnrpandey@0.03": {
+   "blocks": [
+    "m0",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.dfl"
+   ],
+   "cost": 0.019562339753145308
+  },
+  "sqnrpandey@0.05": {
+   "blocks": [
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.dfl"
+   ],
+   "cost": 0.04804006916701449
+  },
+  "sqnrpandey@0.1": {
+   "blocks": [
+    "m0",
+    "m2",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv2.2",
+    "head.dfl"
+   ],
+   "cost": 0.09313696261403613
+  },
+  "sqnrpandey@0.15": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m9",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.dfl"
+   ],
+   "cost": 0.14900482976566692
+  },
+  "sqnrpandey@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m9",
+    "m10",
+    "m11",
+    "m12",
+    "m14",
+    "m15",
+    "m18",
+    "m21",
+    "head.cv2.2",
+    "head.dfl"
+   ],
+   "cost": 0.19824220380418578
+  }
+ }
+}

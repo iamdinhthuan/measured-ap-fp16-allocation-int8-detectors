@@ -1,0 +1,21 @@
+{
+ "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11l_int8ent_fxp_pandey_B0.03.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+ "n_images": 5000,
+ "n_det": 397327,
+ "stats": {
+  "AP": 0.5151673017573615,
+  "AP50": 0.6803091175890517,
+  "AP75": 0.5632322279063602,
+  "AP_small": 0.34280595187905255,
+  "AP_medium": 0.5714011233711376,
+  "AP_large": 0.6721922742599998,
+  "AR1": 0.3779331779440087,
+  "AR10": 0.6199540708695966,
+  "AR100": 0.6649702376024779,
+  "AR_small": 0.48298711161903624,
+  "AR_medium": 0.7245494184125999,
+  "AR_large": 0.8069414499570087
+ },
+ "prediction_sha256": "9cfb3d15b0850a7ebb0e3376e067de39d59bfd72ae5027a90cdcf59a8fce2023"
+}

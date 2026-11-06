@@ -1,0 +1,21 @@
+{
+ "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_exdarkcal_exdarkcal_sqnrpandey_B0.15.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/exdark/exdark_test.json",
+ "n_images": 2563,
+ "n_det": 246630,
+ "stats": {
+  "AP": 0.3447741477989328,
+  "AP50": 0.6269930876955272,
+  "AP75": 0.3392319759716951,
+  "AP_small": 0.018829438219974355,
+  "AP_medium": 0.13438697094565216,
+  "AP_large": 0.41460528506086913,
+  "AR1": 0.2944357123319479,
+  "AR10": 0.46183538210766156,
+  "AR100": 0.5009662377363775,
+  "AR_small": 0.11867211522417054,
+  "AR_medium": 0.31532623939086524,
+  "AR_large": 0.552749756772014
+ },
+ "prediction_sha256": "8535fd074b8828aa1daf6b02ffaeba346c063e50a7f5460ee8c17cb367f538d2"
+}

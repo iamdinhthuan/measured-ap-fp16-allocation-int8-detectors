@@ -1,0 +1,13 @@
+{
+ "model": "yolo11s",
+ "base": "int8ent_exdarkcal",
+ "split": "exdark",
+ "note": "rules_11_11b B: stem baseline on the ExDark-calibrated graph",
+ "allocations": {
+  "stem_headout": {
+   "blocks": [],
+   "regex": "^/model\\.0/|/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+   "cost": 0.0195
+  }
+ }
+}

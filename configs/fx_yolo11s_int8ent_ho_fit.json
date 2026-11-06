@@ -1,0 +1,179 @@
+{
+ "model": "yolo11s",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fit (rules_11_11c.md C)",
+ "scores": "metrics/fit_scores_yolo11s_int8ent.json",
+ "force_regex": "/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/",
+ "force_cost": 0.011269453222825115,
+ "sanity_gate": {
+  "all_convs_mapped": true,
+  "max_rel_weight_diff": 0.0,
+  "int8_convs_match": true,
+  "finite": true,
+  "pass": true
+ },
+ "under_scored_blocks": {
+  "m0": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m1": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m2": {
+   "qdq": 22,
+   "convs": 4
+  },
+  "m3": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m4": {
+   "qdq": 22,
+   "convs": 4
+  },
+  "m5": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m6": {
+   "qdq": 50,
+   "convs": 9
+  },
+  "m7": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m8": {
+   "qdq": 50,
+   "convs": 9
+  },
+  "m9": {
+   "qdq": 16,
+   "convs": 2
+  },
+  "m10": {
+   "qdq": 31,
+   "convs": 7
+  },
+  "m11": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m12": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m13": {
+   "qdq": 22,
+   "convs": 4
+  },
+  "m14": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m15": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m16": {
+   "qdq": 22,
+   "convs": 4
+  },
+  "m17": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m18": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m19": {
+   "qdq": 22,
+   "convs": 4
+  },
+  "m20": {
+   "qdq": 5,
+   "convs": 1
+  },
+  "m21": {
+   "qdq": 1,
+   "convs": 0
+  },
+  "m22": {
+   "qdq": 50,
+   "convs": 9
+  },
+  "head.cv2.0": {
+   "qdq": 12,
+   "convs": 3
+  },
+  "head.cv2.1": {
+   "qdq": 12,
+   "convs": 3
+  },
+  "head.cv2.2": {
+   "qdq": 12,
+   "convs": 3
+  },
+  "head.cv3.0": {
+   "qdq": 22,
+   "convs": 5
+  },
+  "head.cv3.1": {
+   "qdq": 22,
+   "convs": 5
+  },
+  "head.cv3.2": {
+   "qdq": 22,
+   "convs": 5
+  }
+ },
+ "allocations": {
+  "fit@0.03": {
+   "blocks": [
+    "m0",
+    "head.cv3.2"
+   ],
+   "cost": 0.0231614095760539
+  },
+  "fit@0.05": {
+   "blocks": [
+    "m0",
+    "m9",
+    "head.cv3.2"
+   ],
+   "cost": 0.04758452089917119
+  },
+  "fit@0.1": {
+   "blocks": [
+    "m0",
+    "m2",
+    "head.cv2.2",
+    "head.cv3.2"
+   ],
+   "cost": 0.09673603243694473
+  },
+  "fit@0.15": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m9"
+   ],
+   "cost": 0.1489547433068988
+  },
+  "fit@0.2": {
+   "blocks": [
+    "m0",
+    "m1",
+    "m2",
+    "m4",
+    "head.cv2.2"
+   ],
+   "cost": 0.19810625484467234
+  }
+ }
+}

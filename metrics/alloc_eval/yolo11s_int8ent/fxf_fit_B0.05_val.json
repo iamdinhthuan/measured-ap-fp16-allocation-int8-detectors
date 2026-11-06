@@ -1,0 +1,21 @@
+{
+ "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_fxf_fit_B0.05.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+ "n_images": 5000,
+ "n_det": 556894,
+ "stats": {
+  "AP": 0.4501591802901167,
+  "AP50": 0.6157688146586884,
+  "AP75": 0.48825466342842966,
+  "AP_small": 0.27531644477750034,
+  "AP_medium": 0.4960777645904006,
+  "AP_large": 0.6160779168419003,
+  "AR1": 0.34420383601740484,
+  "AR10": 0.5621863495034415,
+  "AR100": 0.6099094814836229,
+  "AR_small": 0.42006730231593414,
+  "AR_medium": 0.6657129105855281,
+  "AR_large": 0.7667955170383028
+ },
+ "prediction_sha256": "c34763152137e27d9b4c59ba044341ef7ad19647efbfdae26fd6ef99cace7653"
+}

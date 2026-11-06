@@ -1,7 +1,7 @@
 {
   "title": "Reproducibility package for measured detection accuracy versus proxy scores for FP16 block allocation in INT8 object detectors: a controlled study",
   "upload_type": "software",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "<p>Reproducibility package accompanying the manuscript <em>Measured detection accuracy versus proxy scores for FP16 block allocation in INT8 object detectors: a controlled study</em>, prepared for <em>Information Sciences</em>.</p><p>The release contains the experiment, allocation, evaluation and bootstrap code; allocation plans and score files; the calibration list and tuning-split manifests; AP, per-group AP, sensitivity, bootstrap and Jetson latency records; and the protocol freeze record and decision rules of the post-freeze experiments. COCO, ExDark, Ultralytics checkpoints, ONNX graphs, TensorRT engines and raw predictions are not redistributed; their sources and regeneration steps are documented in README.md.</p><p>All scientific claims and metadata remain the responsibility of the five human authors. AI tools are not creators or contributors.</p>",
   "creators": [
     {

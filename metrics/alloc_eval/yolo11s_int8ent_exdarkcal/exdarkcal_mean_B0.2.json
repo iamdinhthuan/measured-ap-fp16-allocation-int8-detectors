@@ -1,0 +1,52 @@
+{
+ "key": "mean@0.2",
+ "blocks": [
+  "m1",
+  "m2",
+  "m9",
+  "m10",
+  "m11",
+  "head.cv3.2",
+  "head.dfl"
+ ],
+ "regex": "(?:/model\\.\\d+/(cv2\\.\\d/cv2\\.\\d\\.2|cv3\\.\\d/cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.1/)|(?:^/model\\.2/)|(?:^/model\\.9/)|(?:^/model\\.10/)|(?:^/model\\.11/)|(?:^/model\\.23/cv3\\.2/)|(?:^/model\\.23/dfl/)",
+ "qdq_inputs_restored": 109,
+ "cost_macs_frac": 0.1811317154612128,
+ "pred_gap_AP_tune": -0.3111081826959743,
+ "pred_gap_SML_tune": [
+  -0.1705013913783806,
+  -0.5762319322973051,
+  -0.9416568564726888,
+  0.6092629346281573,
+  -2.5533974057558586,
+  -1.4160911616928282,
+  8.058039697243544,
+  0.09798182776292186
+ ],
+ "build_s": 18.5,
+ "latency_ms": 0.4610399901866913,
+ "engine_bytes": 13821492,
+ "splits": {
+  "exdark_test": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/yolo11s_int8ent_exdarkcal_exdarkcal_mean_B0.2.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/exdark/exdark_test.json",
+   "n_images": 2563,
+   "n_det": 265058,
+   "stats": {
+    "AP": 0.345544563015148,
+    "AP50": 0.6240088239775432,
+    "AP75": 0.3393677609495111,
+    "AP_small": 0.019007957277207325,
+    "AP_medium": 0.1339046814034386,
+    "AP_large": 0.4137015696173087,
+    "AR1": 0.2912531189687403,
+    "AR10": 0.4620028755253221,
+    "AR100": 0.5000444760716967,
+    "AR_small": 0.1171960077741868,
+    "AR_medium": 0.317362818397193,
+    "AR_large": 0.5513741943943131
+   },
+   "prediction_sha256": "52f1f5e58ce8a500937b3a58d576360d9ac5cb7b8990df392e6d8ef49b9cec5c"
+  }
+ }
+}

@@ -1,0 +1,210 @@
+{
+ "model": "rtdetr-l",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "fx_factorial noise",
+ "scores": "metrics/fx_scores_rtdetr-l_int8ent_noise_n2000.json",
+ "force_regex": "^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/)",
+ "force_cost": 0.0034151468842845063,
+ "allocations": {
+  "sqnrq@0.03": {
+   "blocks": [
+    "m2",
+    "m4",
+    "m8",
+    "m10",
+    "m11",
+    "m12",
+    "m13",
+    "m17",
+    "m18",
+    "m23",
+    "m25",
+    "m26",
+    "dec.box_mlp",
+    "dec.rest"
+   ],
+   "cost": 0.026663744754132697
+  },
+  "sqnrq@0.05": {
+   "blocks": [
+    "m2",
+    "m4",
+    "m8",
+    "m10",
+    "m11",
+    "m12",
+    "m13",
+    "m14",
+    "m17",
+    "m18",
+    "m23",
+    "m25",
+    "m26",
+    "dec.input_proj",
+    "dec.query_pos",
+    "dec.box_mlp",
+    "dec.rest"
+   ],
+   "cost": 0.04957102186780027
+  },
+  "sqnrq@0.1": {
+   "blocks": [
+    "m2",
+    "m4",
+    "m8",
+    "m10",
+    "m11",
+    "m12",
+    "m13",
+    "m14",
+    "m17",
+    "m18",
+    "m23",
+    "m25",
+    "m26",
+    "dec.enc_query",
+    "dec.query_pos",
+    "dec.layer3",
+    "dec.layer4",
+    "dec.layer5",
+    "dec.box_mlp",
+    "dec.rest"
+   ],
+   "cost": 0.09998952765861718
+  },
+  "sqnrq@0.15": {
+   "blocks": [
+    "m0",
+    "m2",
+    "m4",
+    "m8",
+    "m10",
+    "m11",
+    "m12",
+    "m13",
+    "m14",
+    "m17",
+    "m18",
+    "m23",
+    "m25",
+    "m26",
+    "dec.input_proj",
+    "dec.enc_query",
+    "dec.query_pos",
+    "dec.layer2",
+    "dec.layer3",
+    "dec.layer4",
+    "dec.layer5",
+    "dec.box_mlp",
+    "dec.rest"
+   ],
+   "cost": 0.14627339792570068
+  },
+  "sqnrq@0.2": {
+   "blocks": [
+    "m0",
+    "m2",
+    "m4",
+    "m8",
+    "m10",
+    "m11",
+    "m12",
+    "m13",
+    "m14",
+    "m17",
+    "m18",
+    "m23",
+    "m25",
+    "m26",
+    "m27",
+    "dec.input_proj",
+    "dec.enc_query",
+    "dec.query_pos",
+    "dec.layer0",
+    "dec.layer1",
+    "dec.layer2",
+    "dec.layer3",
+    "dec.layer4",
+    "dec.layer5",
+    "dec.box_mlp",
+    "dec.rest"
+   ],
+   "cost": 0.19477973175291483
+  },
+  "sqnrr@0.03": {
+   "blocks": [
+    "m8",
+    "m11",
+    "m17",
+    "m18",
+    "dec.layer4",
+    "dec.rest"
+   ],
+   "cost": 0.02953782066697179
+  },
+  "sqnrr@0.05": {
+   "blocks": [
+    "m0",
+    "m8",
+    "m11",
+    "m17",
+    "m18",
+    "dec.layer4",
+    "dec.rest"
+   ],
+   "cost": 0.04883795797100325
+  },
+  "sqnrr@0.1": {
+   "blocks": [
+    "m0",
+    "m8",
+    "m11",
+    "m14",
+    "m17",
+    "m18",
+    "dec.query_pos",
+    "dec.layer3",
+    "dec.layer4",
+    "dec.layer5",
+    "dec.rest"
+   ],
+   "cost": 0.0944353080807689
+  },
+  "sqnrr@0.15": {
+   "blocks": [
+    "m0",
+    "m8",
+    "m11",
+    "m14",
+    "m17",
+    "m18",
+    "dec.query_pos",
+    "dec.layer0",
+    "dec.layer3",
+    "dec.layer4",
+    "dec.layer5",
+    "dec.rest"
+   ],
+   "cost": 0.11099324340048561
+  },
+  "sqnrr@0.2": {
+   "blocks": [
+    "m0",
+    "m8",
+    "m9",
+    "m11",
+    "m14",
+    "m17",
+    "m18",
+    "dec.query_pos",
+    "dec.layer0",
+    "dec.layer3",
+    "dec.layer4",
+    "dec.layer5",
+    "dec.rest"
+   ],
+   "cost": 0.16169682959561246
+  }
+ }
+}

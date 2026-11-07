@@ -1,0 +1,12 @@
+{
+ "model": "rtdetr-l",
+ "base": "int8ent",
+ "split": "tune",
+ "force_regex": "^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/)",
+ "allocations": {
+  "F@0": {
+   "blocks": [],
+   "cost": null
+  }
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "key": "mean@0.03",
+ "blocks": [
+  "m2",
+  "m8",
+  "m13",
+  "m14",
+  "m17",
+  "m18",
+  "m23",
+  "m26",
+  "dec.enc_query",
+  "dec.box_mlp",
+  "dec.rest"
+ ],
+ "regex": "(?:^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/))|(?:^/model\\.2/)|(?:^/model\\.8/)|(?:^/model\\.13/)|(?:^/model\\.14/)|(?:^/model\\.17/)|(?:^/model\\.18/)|(?:^/model\\.23/)|(?:^/model\\.26/)|(?:^/model\\.28/(?:enc_output/|enc_bbox_head/layers\\.[01]/))|(?:^/model\\.28/decoder/dec_bbox_head\\.\\d+/layers\\.[01]/)|(?:^/model\\.28/(?!input_proj\\.|enc_output/|enc_score_head/|enc_bbox_head/|decoder/query_pos_head|decoder/layers\\.\\d/|decoder/dec_score_head|decoder/dec_bbox_head))",
+ "qdq_inputs_restored": 54,
+ "cost_macs_frac": 0.029192621265834565,
+ "pred_gap_AP_tune": -312.5129415085619,
+ "pred_gap_SML_tune": [
+  -209.08102553474328,
+  -362.9284976561341,
+  -409.81336710442747
+ ],
+ "build_s": 56.2,
+ "latency_ms": 1.2682879567146301,
+ "engine_bytes": 44986468,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8entF_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 600000,
+   "stats": {
+    "AP": 0.0007149406125313315,
+    "AP50": 0.0013337555705686802,
+    "AP75": 0.0006502984869264504,
+    "AP_small": 0.0022961127631809736,
+    "AP_medium": 0.0014399248411673638,
+    "AP_large": 0.0006107929546538036,
+    "AR1": 0.02212626253456074,
+    "AR10": 0.034534007212583796,
+    "AR100": 0.03707203540393286,
+    "AR_small": 0.00710024328828843,
+    "AR_medium": 0.006202430101142206,
+    "AR_large": 0.07069680947355797
+   },
+   "prediction_sha256": "fedc09a8f7642ddd085e872f9312cd0284d6ff0b4de215f72951ef156e5efb04",
+   "arch": "rtdetr"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8entF_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 1500000,
+   "stats": {
+    "AP": 0.0005192772726784078,
+    "AP50": 0.0010548754777685613,
+    "AP75": 0.00042692847063901607,
+    "AP_small": 0.0010717950790420524,
+    "AP_medium": 0.0006611402602166356,
+    "AP_large": 0.000527761929313496,
+    "AR1": 0.02368118834425143,
+    "AR10": 0.03451950804749997,
+    "AR100": 0.03673948703182528,
+    "AR_small": 0.006495154985328796,
+    "AR_medium": 0.00442542832777577,
+    "AR_large": 0.06761813719579494
+   },
+   "prediction_sha256": "cd6683fbcc459911619584d8f53e17f6bff870e035b1f8070d8897de7a4dd130",
+   "arch": "rtdetr"
+  }
+ }
+}

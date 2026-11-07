@@ -1,0 +1,94 @@
+{
+ "rules": "rules_11_12d_add2.md A5",
+ "graphs": {
+  "g1_fp32": {
+   "onnx": "exports/rtdetr-l.onnx",
+   "builds": {
+    "1": {
+     "AP": 62.65359625746479,
+     "runtime_repeat_AP": 62.65359625746479
+    },
+    "2": {
+     "AP": 62.69548920844981,
+     "runtime_repeat_AP": null
+    },
+    "3": {
+     "AP": 62.71660182443258,
+     "runtime_repeat_AP": null
+    },
+    "4": {
+     "AP": 62.637827054640724,
+     "runtime_repeat_AP": null
+    }
+   },
+   "range": 0.07877476979185616
+  },
+  "g2_int8F": {
+   "onnx": "exports/tmp/det/g2_int8F.onnx",
+   "builds": {
+    "1": {
+     "AP": 25.7115193097351,
+     "runtime_repeat_AP": 25.7115193097351
+    },
+    "2": {
+     "AP": 5.185567413511007,
+     "runtime_repeat_AP": null
+    },
+    "3": {
+     "AP": 53.87922497437757,
+     "runtime_repeat_AP": null
+    },
+    "4": {
+     "AP": 0.24145651004296773,
+     "runtime_repeat_AP": null
+    }
+   },
+   "range": 53.637768464334606
+  },
+  "g3_sqnr003": {
+   "onnx": "exports/tmp/det/g3_sqnr003.onnx",
+   "builds": {
+    "1": {
+     "AP": 0.4278181190178053,
+     "runtime_repeat_AP": 0.4278181190178053
+    },
+    "2": {
+     "AP": 0.4278181190178053,
+     "runtime_repeat_AP": null
+    },
+    "3": {
+     "AP": 60.87947542147424,
+     "runtime_repeat_AP": null
+    },
+    "4": {
+     "AP": 0.4278181190178053,
+     "runtime_repeat_AP": null
+    }
+   },
+   "range": 60.45165730245643
+  },
+  "g4_int8": {
+   "onnx": "exports/tmp/det/g4_int8.onnx",
+   "builds": {
+    "1": {
+     "AP": 0.18494072710140902,
+     "runtime_repeat_AP": 0.18494072710140902
+    },
+    "2": {
+     "AP": 0.20754681224562876,
+     "runtime_repeat_AP": null
+    },
+    "3": {
+     "AP": 0.20754681224562876,
+     "runtime_repeat_AP": null
+    },
+    "4": {
+     "AP": 26.232061378780795,
+     "runtime_repeat_AP": null
+    }
+   },
+   "range": 26.047120651679386
+  }
+ },
+ "reproducible": false
+}

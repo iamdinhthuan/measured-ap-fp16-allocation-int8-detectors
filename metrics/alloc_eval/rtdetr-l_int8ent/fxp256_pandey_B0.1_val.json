@@ -1,0 +1,22 @@
+{
+ "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_fxp256_pandey_B0.1.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+ "n_images": 5000,
+ "n_det": 1500000,
+ "stats": {
+  "AP": 0.0007234457787240021,
+  "AP50": 0.0013480674583182652,
+  "AP75": 0.0006382668726490071,
+  "AP_small": 0.0006270576948660586,
+  "AP_medium": 0.00027052147956806464,
+  "AP_large": 0.0005649350896872591,
+  "AR1": 0.02243538008797239,
+  "AR10": 0.036517962679315924,
+  "AR100": 0.04000426266596168,
+  "AR_small": 0.02206726251289076,
+  "AR_medium": 0.005677907448195692,
+  "AR_large": 0.05303527217560186
+ },
+ "prediction_sha256": "cddfa65ae9e775422f3f20ef4a475675071312ee361a7ffd113710a81b753735",
+ "arch": "rtdetr"
+}

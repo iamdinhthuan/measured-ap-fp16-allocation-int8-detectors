@@ -1,0 +1,340 @@
+{
+ "model": "rtdetr-l",
+ "base": "int8ent",
+ "mode": "noise",
+ "n_img": 2000,
+ "gt": "data/tune2000/instances_tune.json",
+ "executor": "onnxruntime 1.24.4 CUDAExecutionProvider, opt level ORT_ENABLE_BASIC, graph lifted to FP32",
+ "scores": {
+  "m0": {
+   "sqnrq": 0.36443599210275035,
+   "sqnrr": -0.0007711796757388069,
+   "n_out": 1
+  },
+  "m1": {
+   "sqnrq": 0.3679258165131165,
+   "sqnrr": 0.0020394856518255065,
+   "n_out": 1
+  },
+  "m2": {
+   "sqnrq": 0.3395307251197346,
+   "sqnrr": -0.0004339174640395655,
+   "n_out": 1
+  },
+  "m3": {
+   "sqnrq": 0.3526535424601642,
+   "sqnrr": -0.000376868964755172,
+   "n_out": 1
+  },
+  "m4": {
+   "sqnrq": 0.31386803566590016,
+   "sqnrr": -0.0005819131370007162,
+   "n_out": 1
+  },
+  "m5": {
+   "sqnrq": 0.3497990157058858,
+   "sqnrr": 0.0004384212296186186,
+   "n_out": 1
+  },
+  "m6": {
+   "sqnrq": 0.34540365740950274,
+   "sqnrr": -0.00036893895136835077,
+   "n_out": 1
+  },
+  "m7": {
+   "sqnrq": 0.34526568148723613,
+   "sqnrr": 0.0008719200862007363,
+   "n_out": 1
+  },
+  "m8": {
+   "sqnrq": 0.3323816123027698,
+   "sqnrr": -0.0005257945121189484,
+   "n_out": 1
+  },
+  "m9": {
+   "sqnrq": 0.34854106610961627,
+   "sqnrr": -0.0008275383279376272,
+   "n_out": 1
+  },
+  "m10": {
+   "sqnrq": 0.3155743972224993,
+   "sqnrr": 0.00026233048431476225,
+   "n_out": 1
+  },
+  "m11": {
+   "sqnrq": 0.37229856037150283,
+   "sqnrr": 0.008399849079251783,
+   "n_out": 1
+  },
+  "m12": {
+   "sqnrq": 0.29834149593315445,
+   "sqnrr": -0.0001838636623556549,
+   "n_out": 1
+  },
+  "m13": {
+   "sqnrq": 0.29637075445256644,
+   "sqnrr": -0.00027372659863265355,
+   "n_out": 1
+  },
+  "m14": {
+   "sqnrq": 0.32332521010057585,
+   "sqnrr": -0.0004623518002892161,
+   "n_out": 1
+  },
+  "m16": {
+   "sqnrq": 0.3395061257856431,
+   "sqnrr": -3.970635177244684e-05,
+   "n_out": 1
+  },
+  "m17": {
+   "sqnrq": 0.31832209257520155,
+   "sqnrr": -7.631958873449232e-05,
+   "n_out": 1
+  },
+  "m18": {
+   "sqnrq": 0.30115821822823907,
+   "sqnrr": 0.0006423794084441688,
+   "n_out": 1
+  },
+  "m19": {
+   "sqnrq": 0.2890771216141245,
+   "sqnrr": -0.0005641168113036716,
+   "n_out": 1
+  },
+  "m21": {
+   "sqnrq": 0.3457575971792286,
+   "sqnrr": -0.0016103766697356582,
+   "n_out": 1
+  },
+  "m22": {
+   "sqnrq": 0.2644547213290895,
+   "sqnrr": 0.00019095806650018036,
+   "n_out": 1
+  },
+  "m23": {
+   "sqnrq": 0.25144565461566126,
+   "sqnrr": 0.0,
+   "n_out": 1
+  },
+  "m24": {
+   "sqnrq": 0.32371882929654944,
+   "sqnrr": 0.0006141213579939919,
+   "n_out": 1
+  },
+  "m25": {
+   "sqnrq": 0.3053692284415564,
+   "sqnrr": -0.001019600489444195,
+   "n_out": 1
+  },
+  "m26": {
+   "sqnrq": 0.2761172677664573,
+   "sqnrr": 0.0,
+   "n_out": 1
+  },
+  "m27": {
+   "sqnrq": 0.3424280907498626,
+   "sqnrr": 0.00031651295963738396,
+   "n_out": 1
+  },
+  "dec.input_proj": {
+   "sqnrq": 0.3382920932249877,
+   "sqnrr": -9.261309271582754e-05,
+   "n_out": 3
+  },
+  "dec.enc_query": {
+   "sqnrq": 0.34472249398986116,
+   "sqnrr": -0.000556207010293191,
+   "n_out": 3
+  },
+  "dec.query_pos": {
+   "sqnrq": 0.2738504086201703,
+   "sqnrr": 0.00014644349046776371,
+   "n_out": 6
+  },
+  "dec.layer0": {
+   "sqnrq": 0.35068154362196097,
+   "sqnrr": 0.00014825543203072494,
+   "n_out": 2
+  },
+  "dec.layer1": {
+   "sqnrq": 0.35087717052459977,
+   "sqnrr": -0.000377102198119641,
+   "n_out": 1
+  },
+  "dec.layer2": {
+   "sqnrq": 0.3516408817924011,
+   "sqnrr": 0.0003519132461487345,
+   "n_out": 1
+  },
+  "dec.layer3": {
+   "sqnrq": 0.3565603581608333,
+   "sqnrr": -9.663049270804972e-05,
+   "n_out": 1
+  },
+  "dec.layer4": {
+   "sqnrq": 0.3593880815941614,
+   "sqnrr": 0.0008034830541802602,
+   "n_out": 1
+  },
+  "dec.layer5": {
+   "sqnrq": 0.3524713140658884,
+   "sqnrr": 0.0005224143080680215,
+   "n_out": 1
+  },
+  "dec.box_mlp": {
+   "sqnrq": 0.2985004307487173,
+   "sqnrr": -0.0007553129087562808,
+   "n_out": 13
+  },
+  "dec.rest": {
+   "sqnrq": 0.3550718424592656,
+   "sqnrr": 0.0036213065041899944,
+   "n_out": 10
+  }
+ },
+ "noise_base": 0.3837609166990162,
+ "boundary_outputs": {
+  "m0": [
+   "/model.0/stem4/act/Relu_output_0"
+  ],
+  "m1": [
+   "/model.1/ec/act/Relu_output_0"
+  ],
+  "m2": [
+   "/model.2/conv/Conv_output_0"
+  ],
+  "m3": [
+   "/model.3/ec/act/Relu_output_0"
+  ],
+  "m4": [
+   "/model.4/conv/Conv_output_0"
+  ],
+  "m5": [
+   "/model.5/ec/act/Relu_output_0"
+  ],
+  "m6": [
+   "/model.6/Add_output_0"
+  ],
+  "m7": [
+   "/model.7/Add_output_0"
+  ],
+  "m8": [
+   "/model.8/conv/Conv_output_0"
+  ],
+  "m9": [
+   "/model.9/ec/act/Relu_output_0"
+  ],
+  "m10": [
+   "/model.10/conv/Conv_output_0"
+  ],
+  "m11": [
+   "/model.11/Reshape_7_output_0"
+  ],
+  "m12": [
+   "/model.12/act/Mul_output_0"
+  ],
+  "m13": [
+   "/model.13/Resize_output_0"
+  ],
+  "m14": [
+   "/model.14/conv/Conv_output_0"
+  ],
+  "m16": [
+   "/model.16/Add_output_0"
+  ],
+  "m17": [
+   "/model.17/act/Mul_output_0"
+  ],
+  "m18": [
+   "/model.18/Resize_output_0"
+  ],
+  "m19": [
+   "/model.19/conv/Conv_output_0"
+  ],
+  "m21": [
+   "/model.21/Add_output_0"
+  ],
+  "m22": [
+   "/model.22/act/Mul_output_0"
+  ],
+  "m23": [
+   "/model.23/Concat_output_0"
+  ],
+  "m24": [
+   "/model.24/Add_output_0"
+  ],
+  "m25": [
+   "/model.25/act/Mul_output_0"
+  ],
+  "m26": [
+   "/model.26/Concat_output_0"
+  ],
+  "m27": [
+   "/model.27/Add_output_0"
+  ],
+  "dec.input_proj": [
+   "/model.28/input_proj.0/input_proj.0.0/Conv_output_0",
+   "/model.28/input_proj.1/input_proj.1.0/Conv_output_0",
+   "/model.28/input_proj.2/input_proj.2.0/Conv_output_0"
+  ],
+  "dec.enc_query": [
+   "/model.28/enc_bbox_head/layers.0/Add_output_0",
+   "/model.28/enc_bbox_head/layers.1/Add_output_0",
+   "/model.28/enc_output/enc_output.1/LayerNormalization_output_0"
+  ],
+  "dec.query_pos": [
+   "/model.28/decoder/query_pos_head/layers.1/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_1/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_2/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_3/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_4/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_5/Add_output_0"
+  ],
+  "dec.layer0": [
+   "/model.28/decoder/layers.0/cross_attn/value_proj/MatMul_pre_reshape_out",
+   "/model.28/decoder/layers.0/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer1": [
+   "/model.28/decoder/layers.1/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer2": [
+   "/model.28/decoder/layers.2/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer3": [
+   "/model.28/decoder/layers.3/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer4": [
+   "/model.28/decoder/layers.4/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer5": [
+   "/model.28/decoder/layers.5/norm3/LayerNormalization_output_0"
+  ],
+  "dec.box_mlp": [
+   "/model.28/decoder/dec_bbox_head.0/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.0/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.1/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.1/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.2/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.2/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.3/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.3/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.4/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.4/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.5/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.5/layers.0/MatMul_pre_reshape_out",
+   "/model.28/decoder/dec_bbox_head.5/layers.1/Add_output_0"
+  ],
+  "dec.rest": [
+   "/model.28/Concat_3_output_0",
+   "/model.28/Mul_output_0",
+   "/model.28/Reshape_7_output_0",
+   "/model.28/decoder/Sigmoid_1_output_0",
+   "/model.28/decoder/Sigmoid_2_output_0",
+   "/model.28/decoder/Sigmoid_3_output_0",
+   "/model.28/decoder/Sigmoid_4_output_0",
+   "/model.28/decoder/Sigmoid_5_output_0",
+   "/model.28/decoder/Sigmoid_output_0",
+   "output0_pre_cast"
+  ]
+ }
+}

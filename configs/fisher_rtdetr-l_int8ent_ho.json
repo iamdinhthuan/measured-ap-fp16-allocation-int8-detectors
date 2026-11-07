@@ -1,0 +1,4 @@
+{
+ "force_regex": "^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/)",
+ "note": "forced set F only (rules_11_12d.md); no Fisher score was computed for RT-DETR-l. Read by fx_factorial.py for F."
+}

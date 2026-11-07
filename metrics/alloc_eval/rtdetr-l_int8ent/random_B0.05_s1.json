@@ -1,0 +1,72 @@
+{
+ "key": "random@0.05_s1",
+ "blocks": [
+  "dec.layer1",
+  "dec.layer5",
+  "m12",
+  "m11",
+  "dec.box_mlp",
+  "m23",
+  "m4",
+  "m13",
+  "m18",
+  "m8",
+  "dec.rest",
+  "m26",
+  "m2"
+ ],
+ "regex": "(?:^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/))|(?:^/model\\.28/decoder/layers\\.1/)|(?:^/model\\.28/decoder/layers\\.5/)|(?:^/model\\.12/)|(?:^/model\\.11/)|(?:^/model\\.28/decoder/dec_bbox_head\\.\\d+/layers\\.[01]/)|(?:^/model\\.23/)|(?:^/model\\.4/)|(?:^/model\\.13/)|(?:^/model\\.18/)|(?:^/model\\.8/)|(?:^/model\\.28/(?!input_proj\\.|enc_output/|enc_score_head/|enc_bbox_head/|decoder/query_pos_head|decoder/layers\\.\\d/|decoder/dec_score_head|decoder/dec_bbox_head))|(?:^/model\\.26/)|(?:^/model\\.2/)",
+ "qdq_inputs_restored": 147,
+ "cost_macs_frac": 0.04935381775023078,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 53.4,
+ "latency_ms": 1.4433600306510925,
+ "engine_bytes": 43300140,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_random_B0.05_s1.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 600000,
+   "stats": {
+    "AP": 0.6156860787099363,
+    "AP50": 0.8076745235392231,
+    "AP75": 0.6711636450794642,
+    "AP_small": 0.4097228067012366,
+    "AP_medium": 0.6790973233209447,
+    "AP_large": 0.824852639832068,
+    "AR1": 0.43331398936848287,
+    "AR10": 0.6912100448683032,
+    "AR100": 0.7472856591677614,
+    "AR_small": 0.5633789658647467,
+    "AR_medium": 0.8000738928043591,
+    "AR_large": 0.9206335884704308
+   },
+   "prediction_sha256": "133e9ce49685a99ba1bee053cef1ca3dabe95903558ca68897e7b061104546c1",
+   "arch": "rtdetr"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_random_B0.05_s1.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 1500000,
+   "stats": {
+    "AP": 0.5188140239022829,
+    "AP50": 0.7094172057829686,
+    "AP75": 0.5617768759929936,
+    "AP_small": 0.32946759869229203,
+    "AP_medium": 0.5671865236436551,
+    "AP_large": 0.704944650322359,
+    "AR1": 0.3850507145075854,
+    "AR10": 0.6433681822913954,
+    "AR100": 0.709145979944999,
+    "AR_small": 0.532011840692019,
+    "AR_medium": 0.7527997798917899,
+    "AR_large": 0.889999179296665
+   },
+   "prediction_sha256": "6d0029c702ca865a1d8f25fc1f1722107ab3ba1503cbd7d30b1b400ad3944891",
+   "arch": "rtdetr"
+  }
+ }
+}

@@ -1,0 +1,327 @@
+{
+ "model": "rtdetr-l",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "random",
+ "force_regex": "^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/)",
+ "force_cost": 0.0034151468842845063,
+ "allocations": {
+  "random@0.05_s1": {
+   "blocks": [
+    "dec.layer1",
+    "dec.layer5",
+    "m12",
+    "m11",
+    "dec.box_mlp",
+    "m23",
+    "m4",
+    "m13",
+    "m18",
+    "m8",
+    "dec.rest",
+    "m26",
+    "m2"
+   ],
+   "cost": 0.04935381775023078
+  },
+  "random@0.05_s2": {
+   "blocks": [
+    "dec.query_pos",
+    "dec.layer0",
+    "dec.layer3",
+    "dec.box_mlp",
+    "m18",
+    "dec.rest",
+    "m26",
+    "m10",
+    "m2",
+    "m23",
+    "m4",
+    "m13",
+    "m8"
+   ],
+   "cost": 0.04985804159458851
+  },
+  "random@0.05_s3": {
+   "blocks": [
+    "m23",
+    "dec.layer4",
+    "dec.layer2",
+    "dec.enc_query",
+    "m18",
+    "m8",
+    "dec.rest",
+    "m26",
+    "m2",
+    "m13",
+    "m12",
+    "m4"
+   ],
+   "cost": 0.04854705959925841
+  },
+  "random@0.05_s4": {
+   "blocks": [
+    "m12",
+    "m11",
+    "dec.layer1",
+    "dec.layer0",
+    "m17",
+    "m18",
+    "m2",
+    "m8",
+    "dec.rest",
+    "m26",
+    "m13",
+    "m23",
+    "m4"
+   ],
+   "cost": 0.04687148497800809
+  },
+  "random@0.05_s5": {
+   "blocks": [
+    "m23",
+    "dec.layer2",
+    "m2",
+    "m26",
+    "m8",
+    "m14",
+    "m25",
+    "m18",
+    "m27",
+    "m4",
+    "m13",
+    "dec.rest",
+    "m12"
+   ],
+   "cost": 0.048620753853433764
+  },
+  "random@0.1_s1": {
+   "blocks": [
+    "dec.layer1",
+    "dec.layer5",
+    "dec.layer0",
+    "dec.layer3",
+    "m12",
+    "m11",
+    "dec.box_mlp",
+    "m23",
+    "dec.input_proj",
+    "m10",
+    "m4",
+    "m13",
+    "m18",
+    "m8",
+    "dec.rest",
+    "m26",
+    "m17",
+    "m2"
+   ],
+   "cost": 0.09885308468633401
+  },
+  "random@0.1_s2": {
+   "blocks": [
+    "dec.query_pos",
+    "dec.layer0",
+    "dec.layer3",
+    "dec.box_mlp",
+    "m18",
+    "m19",
+    "m27",
+    "dec.layer1",
+    "dec.rest",
+    "m26",
+    "m10",
+    "m12",
+    "m2",
+    "m23",
+    "m4",
+    "m13",
+    "m8"
+   ],
+   "cost": 0.09818983639875574
+  },
+  "random@0.1_s3": {
+   "blocks": [
+    "m23",
+    "dec.layer4",
+    "m5",
+    "dec.layer2",
+    "dec.enc_query",
+    "m18",
+    "m8",
+    "dec.rest",
+    "m26",
+    "m2",
+    "m13",
+    "m12",
+    "m4"
+   ],
+   "cost": 0.09968699335200255
+  },
+  "random@0.1_s4": {
+   "blocks": [
+    "m12",
+    "m11",
+    "m16",
+    "dec.layer1",
+    "m17",
+    "dec.query_pos",
+    "m18",
+    "m2",
+    "m8",
+    "dec.rest",
+    "m26",
+    "m13",
+    "m23",
+    "m4"
+   ],
+   "cost": 0.09641341700863387
+  },
+  "random@0.1_s5": {
+   "blocks": [
+    "m16",
+    "m23",
+    "dec.layer2",
+    "m2",
+    "m26",
+    "m8",
+    "m14",
+    "m25",
+    "m18",
+    "m4",
+    "m10",
+    "m13",
+    "dec.rest",
+    "m12"
+   ],
+   "cost": 0.09876387585233223
+  },
+  "random@0.2_s1": {
+   "blocks": [
+    "dec.layer1",
+    "dec.layer5",
+    "dec.layer0",
+    "dec.layer3",
+    "m12",
+    "m11",
+    "m16",
+    "dec.box_mlp",
+    "m23",
+    "m0",
+    "dec.input_proj",
+    "dec.layer2",
+    "m10",
+    "m4",
+    "dec.query_pos",
+    "m13",
+    "m18",
+    "m8",
+    "dec.rest",
+    "m26",
+    "m2"
+   ],
+   "cost": 0.19882515844264648
+  },
+  "random@0.2_s2": {
+   "blocks": [
+    "dec.query_pos",
+    "dec.layer0",
+    "dec.layer3",
+    "dec.box_mlp",
+    "m18",
+    "m19",
+    "m27",
+    "dec.layer1",
+    "dec.rest",
+    "m22",
+    "m9",
+    "m14",
+    "m11",
+    "m26",
+    "m10",
+    "dec.input_proj",
+    "m25",
+    "m12",
+    "m2",
+    "m23",
+    "m4",
+    "m17",
+    "m13",
+    "m8"
+   ],
+   "cost": 0.19909860291208661
+  },
+  "random@0.2_s3": {
+   "blocks": [
+    "m23",
+    "dec.layer4",
+    "m5",
+    "m16",
+    "dec.layer2",
+    "dec.layer1",
+    "m27",
+    "dec.enc_query",
+    "m18",
+    "m8",
+    "dec.box_mlp",
+    "dec.rest",
+    "m26",
+    "m2",
+    "m13",
+    "m12",
+    "m4",
+    "m17"
+   ],
+   "cost": 0.19965130981840182
+  },
+  "random@0.2_s4": {
+   "blocks": [
+    "m12",
+    "m11",
+    "m16",
+    "dec.layer1",
+    "dec.layer0",
+    "m6",
+    "dec.layer4",
+    "m17",
+    "dec.query_pos",
+    "m18",
+    "m2",
+    "m8",
+    "dec.rest",
+    "m26",
+    "m10",
+    "m25",
+    "m13",
+    "m23"
+   ],
+   "cost": 0.19989178580571093
+  },
+  "random@0.2_s5": {
+   "blocks": [
+    "m16",
+    "m23",
+    "m9",
+    "dec.layer2",
+    "m2",
+    "m26",
+    "m8",
+    "m14",
+    "m25",
+    "m18",
+    "m27",
+    "m4",
+    "m10",
+    "dec.layer3",
+    "dec.query_pos",
+    "m17",
+    "m11",
+    "m13",
+    "dec.box_mlp",
+    "dec.rest",
+    "m12"
+   ],
+   "cost": 0.19991699699792884
+  }
+ }
+}

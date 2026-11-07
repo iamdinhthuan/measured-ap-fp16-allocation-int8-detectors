@@ -1,0 +1,58 @@
+{
+ "key": "F@0",
+ "blocks": [],
+ "regex": "(?:^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/))",
+ "qdq_inputs_restored": 4,
+ "cost_macs_frac": 0.0034151468842845063,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 41.6,
+ "latency_ms": 1.3507999777793884,
+ "engine_bytes": 44421668,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_F_B0.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 600000,
+   "stats": {
+    "AP": 0.0024755598023354667,
+    "AP50": 0.004308349150173892,
+    "AP75": 0.0026347684838627958,
+    "AP_small": 0.004612018367068485,
+    "AP_medium": 0.005539850630494019,
+    "AP_large": 0.002538522090171989,
+    "AR1": 0.020672901212941106,
+    "AR10": 0.03809703013452806,
+    "AR100": 0.04465715087392784,
+    "AR_small": 0.013270177326917309,
+    "AR_medium": 0.01867771360166791,
+    "AR_large": 0.08300005803968473
+   },
+   "prediction_sha256": "b99af91790d24ddcf83c3c6755dae78f3aa1a76bcebcf93f548b2b9aa0fc8cf0",
+   "arch": "rtdetr"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_F_B0.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 1499963,
+   "stats": {
+    "AP": 0.001517566666914743,
+    "AP50": 0.0027339452096703594,
+    "AP75": 0.0016080678171469223,
+    "AP_small": 0.002723690402603198,
+    "AP_medium": 0.004332178261601245,
+    "AP_large": 0.0010860317455717106,
+    "AR1": 0.02225613844376363,
+    "AR10": 0.03747281900515733,
+    "AR100": 0.04230376884981828,
+    "AR_small": 0.010722969998819401,
+    "AR_medium": 0.01895489725844002,
+    "AR_large": 0.07435606665499189
+   },
+   "prediction_sha256": "a605ddc702a62d725c82a682a0aabad48f4022b058eb3e0eae58f94164ce2692",
+   "arch": "rtdetr"
+  }
+ }
+}

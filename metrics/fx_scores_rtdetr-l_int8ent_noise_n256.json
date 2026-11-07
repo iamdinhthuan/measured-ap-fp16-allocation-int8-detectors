@@ -1,0 +1,340 @@
+{
+ "model": "rtdetr-l",
+ "base": "int8ent",
+ "mode": "noise",
+ "n_img": 256,
+ "gt": "data/tune2000/instances_tune.json",
+ "executor": "onnxruntime 1.24.4 CUDAExecutionProvider, opt level ORT_ENABLE_BASIC, graph lifted to FP32",
+ "scores": {
+  "m0": {
+   "sqnrq": 0.40296975945886276,
+   "sqnrr": 0.004287632419906499,
+   "n_out": 1
+  },
+  "m1": {
+   "sqnrq": 0.4029177082206305,
+   "sqnrr": 0.0032341597901382325,
+   "n_out": 1
+  },
+  "m2": {
+   "sqnrq": 0.3735292708031278,
+   "sqnrr": 0.003985762711246134,
+   "n_out": 1
+  },
+  "m3": {
+   "sqnrq": 0.38675295075939714,
+   "sqnrr": 7.189930805374805e-05,
+   "n_out": 1
+  },
+  "m4": {
+   "sqnrq": 0.3455830577136225,
+   "sqnrr": 0.0011739928299106229,
+   "n_out": 1
+  },
+  "m5": {
+   "sqnrq": 0.3826307800514853,
+   "sqnrr": 0.002547485932291357,
+   "n_out": 1
+  },
+  "m6": {
+   "sqnrq": 0.38098702775157345,
+   "sqnrr": -0.0012469467921187101,
+   "n_out": 1
+  },
+  "m7": {
+   "sqnrq": 0.3778311673936274,
+   "sqnrr": 0.005119473209424766,
+   "n_out": 1
+  },
+  "m8": {
+   "sqnrq": 0.3656966221056122,
+   "sqnrr": 0.0031953182875104798,
+   "n_out": 1
+  },
+  "m9": {
+   "sqnrq": 0.38285784335775486,
+   "sqnrr": 0.0032743863154726005,
+   "n_out": 1
+  },
+  "m10": {
+   "sqnrq": 0.34537227483295735,
+   "sqnrr": 0.005816546755026468,
+   "n_out": 1
+  },
+  "m11": {
+   "sqnrq": 0.41192819377653395,
+   "sqnrr": 0.013379536455963074,
+   "n_out": 1
+  },
+  "m12": {
+   "sqnrq": 0.3296730196105782,
+   "sqnrr": 0.0019736606193488304,
+   "n_out": 1
+  },
+  "m13": {
+   "sqnrq": 0.329681615453687,
+   "sqnrr": -4.672394811482899e-05,
+   "n_out": 1
+  },
+  "m14": {
+   "sqnrq": 0.35857676439315356,
+   "sqnrr": 0.004368606410312886,
+   "n_out": 1
+  },
+  "m16": {
+   "sqnrq": 0.375270680495009,
+   "sqnrr": 0.0035413374942169077,
+   "n_out": 1
+  },
+  "m17": {
+   "sqnrq": 0.3496490426094241,
+   "sqnrr": 0.0013162088513906439,
+   "n_out": 1
+  },
+  "m18": {
+   "sqnrq": 0.3348544362383722,
+   "sqnrr": 0.0016101485122646442,
+   "n_out": 1
+  },
+  "m19": {
+   "sqnrq": 0.32753125324756416,
+   "sqnrr": 0.006590149222410586,
+   "n_out": 1
+  },
+  "m21": {
+   "sqnrq": 0.3831110609555598,
+   "sqnrr": 0.0039514680914716285,
+   "n_out": 1
+  },
+  "m22": {
+   "sqnrq": 0.2759205272712614,
+   "sqnrr": 0.002066731257802728,
+   "n_out": 1
+  },
+  "m23": {
+   "sqnrq": 0.26388931216961126,
+   "sqnrr": 0.0,
+   "n_out": 1
+  },
+  "m24": {
+   "sqnrq": 0.3499795039900491,
+   "sqnrr": 0.005965824223216875,
+   "n_out": 1
+  },
+  "m25": {
+   "sqnrq": 0.3262557175420534,
+   "sqnrr": 0.00018675687512746973,
+   "n_out": 1
+  },
+  "m26": {
+   "sqnrq": 0.292259557364199,
+   "sqnrr": 0.0,
+   "n_out": 1
+  },
+  "m27": {
+   "sqnrq": 0.3730782922460063,
+   "sqnrr": 0.0016582161585940445,
+   "n_out": 1
+  },
+  "dec.input_proj": {
+   "sqnrq": 0.37008241266995784,
+   "sqnrr": 0.0020376269277098185,
+   "n_out": 3
+  },
+  "dec.enc_query": {
+   "sqnrq": 0.3758771828951778,
+   "sqnrr": 0.0003629861079273517,
+   "n_out": 3
+  },
+  "dec.query_pos": {
+   "sqnrq": 0.29544376670325595,
+   "sqnrr": 0.0008949185448546636,
+   "n_out": 6
+  },
+  "dec.layer0": {
+   "sqnrq": 0.38612163605980204,
+   "sqnrr": -0.0018746383015447508,
+   "n_out": 2
+  },
+  "dec.layer1": {
+   "sqnrq": 0.38820906087446094,
+   "sqnrr": 0.0007305322462811077,
+   "n_out": 1
+  },
+  "dec.layer2": {
+   "sqnrq": 0.38391170024610277,
+   "sqnrr": -0.0012911053885480187,
+   "n_out": 1
+  },
+  "dec.layer3": {
+   "sqnrq": 0.3953228187247165,
+   "sqnrr": -0.0007173289298628703,
+   "n_out": 1
+  },
+  "dec.layer4": {
+   "sqnrq": 0.39920753110548823,
+   "sqnrr": 0.005284512216023645,
+   "n_out": 1
+  },
+  "dec.layer5": {
+   "sqnrq": 0.3934628112309466,
+   "sqnrr": 0.0006928589422329525,
+   "n_out": 1
+  },
+  "dec.box_mlp": {
+   "sqnrq": 0.3282602217333747,
+   "sqnrr": -0.002306404378877408,
+   "n_out": 13
+  },
+  "dec.rest": {
+   "sqnrq": 0.39303595887511594,
+   "sqnrr": 0.005495290068029748,
+   "n_out": 10
+  }
+ },
+ "noise_base": 0.42964452181641954,
+ "boundary_outputs": {
+  "m0": [
+   "/model.0/stem4/act/Relu_output_0"
+  ],
+  "m1": [
+   "/model.1/ec/act/Relu_output_0"
+  ],
+  "m2": [
+   "/model.2/conv/Conv_output_0"
+  ],
+  "m3": [
+   "/model.3/ec/act/Relu_output_0"
+  ],
+  "m4": [
+   "/model.4/conv/Conv_output_0"
+  ],
+  "m5": [
+   "/model.5/ec/act/Relu_output_0"
+  ],
+  "m6": [
+   "/model.6/Add_output_0"
+  ],
+  "m7": [
+   "/model.7/Add_output_0"
+  ],
+  "m8": [
+   "/model.8/conv/Conv_output_0"
+  ],
+  "m9": [
+   "/model.9/ec/act/Relu_output_0"
+  ],
+  "m10": [
+   "/model.10/conv/Conv_output_0"
+  ],
+  "m11": [
+   "/model.11/Reshape_7_output_0"
+  ],
+  "m12": [
+   "/model.12/act/Mul_output_0"
+  ],
+  "m13": [
+   "/model.13/Resize_output_0"
+  ],
+  "m14": [
+   "/model.14/conv/Conv_output_0"
+  ],
+  "m16": [
+   "/model.16/Add_output_0"
+  ],
+  "m17": [
+   "/model.17/act/Mul_output_0"
+  ],
+  "m18": [
+   "/model.18/Resize_output_0"
+  ],
+  "m19": [
+   "/model.19/conv/Conv_output_0"
+  ],
+  "m21": [
+   "/model.21/Add_output_0"
+  ],
+  "m22": [
+   "/model.22/act/Mul_output_0"
+  ],
+  "m23": [
+   "/model.23/Concat_output_0"
+  ],
+  "m24": [
+   "/model.24/Add_output_0"
+  ],
+  "m25": [
+   "/model.25/act/Mul_output_0"
+  ],
+  "m26": [
+   "/model.26/Concat_output_0"
+  ],
+  "m27": [
+   "/model.27/Add_output_0"
+  ],
+  "dec.input_proj": [
+   "/model.28/input_proj.0/input_proj.0.0/Conv_output_0",
+   "/model.28/input_proj.1/input_proj.1.0/Conv_output_0",
+   "/model.28/input_proj.2/input_proj.2.0/Conv_output_0"
+  ],
+  "dec.enc_query": [
+   "/model.28/enc_bbox_head/layers.0/Add_output_0",
+   "/model.28/enc_bbox_head/layers.1/Add_output_0",
+   "/model.28/enc_output/enc_output.1/LayerNormalization_output_0"
+  ],
+  "dec.query_pos": [
+   "/model.28/decoder/query_pos_head/layers.1/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_1/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_2/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_3/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_4/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_5/Add_output_0"
+  ],
+  "dec.layer0": [
+   "/model.28/decoder/layers.0/cross_attn/value_proj/MatMul_pre_reshape_out",
+   "/model.28/decoder/layers.0/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer1": [
+   "/model.28/decoder/layers.1/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer2": [
+   "/model.28/decoder/layers.2/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer3": [
+   "/model.28/decoder/layers.3/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer4": [
+   "/model.28/decoder/layers.4/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer5": [
+   "/model.28/decoder/layers.5/norm3/LayerNormalization_output_0"
+  ],
+  "dec.box_mlp": [
+   "/model.28/decoder/dec_bbox_head.0/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.0/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.1/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.1/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.2/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.2/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.3/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.3/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.4/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.4/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.5/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.5/layers.0/MatMul_pre_reshape_out",
+   "/model.28/decoder/dec_bbox_head.5/layers.1/Add_output_0"
+  ],
+  "dec.rest": [
+   "/model.28/Concat_3_output_0",
+   "/model.28/Mul_output_0",
+   "/model.28/Reshape_7_output_0",
+   "/model.28/decoder/Sigmoid_1_output_0",
+   "/model.28/decoder/Sigmoid_2_output_0",
+   "/model.28/decoder/Sigmoid_3_output_0",
+   "/model.28/decoder/Sigmoid_4_output_0",
+   "/model.28/decoder/Sigmoid_5_output_0",
+   "/model.28/decoder/Sigmoid_output_0",
+   "output0_pre_cast"
+  ]
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "key": "mean@0.03",
+ "blocks": [
+  "m2",
+  "m4",
+  "m8",
+  "m10",
+  "m11",
+  "m12",
+  "m25",
+  "dec.query_pos"
+ ],
+ "regex": "(?:^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/))|(?:^/model\\.2/)|(?:^/model\\.4/)|(?:^/model\\.8/)|(?:^/model\\.10/)|(?:^/model\\.11/)|(?:^/model\\.12/)|(?:^/model\\.25/)|(?:^/model\\.28/decoder/query_pos_head)",
+ "qdq_inputs_restored": 55,
+ "cost_macs_frac": 0.024747694145573304,
+ "pred_gap_AP_tune": -238.28328517818713,
+ "pred_gap_SML_tune": [
+  -162.78340032322427,
+  -282.00034137622424,
+  -303.38138520269484
+ ],
+ "build_s": 49.1,
+ "latency_ms": 1.2946079969406128,
+ "engine_bytes": 48127532,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 569197,
+   "stats": {
+    "AP": 0.0012434365468834616,
+    "AP50": 0.002066303132473483,
+    "AP75": 0.0013723305373417607,
+    "AP_small": 0.0018522952570156391,
+    "AP_medium": 0.0003614362162696027,
+    "AP_large": 0.0008280647580903825,
+    "AR1": 0.020139846234967375,
+    "AR10": 0.034828564203525404,
+    "AR100": 0.037079369522304215,
+    "AR_small": 0.019145817302348978,
+    "AR_medium": 0.0060967994040447854,
+    "AR_large": 0.05260264282910222
+   },
+   "prediction_sha256": "f9c770edd5c3a2c9a39cf79d674d9cb9c9ce6c3f03a0e4ca39dde5fc7c600eff",
+   "arch": "rtdetr"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_mean_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 1422171,
+   "stats": {
+    "AP": 0.0006010959680965995,
+    "AP50": 0.001096370608750306,
+    "AP75": 0.0005780100781467301,
+    "AP_small": 0.00045598452412261493,
+    "AP_medium": 0.00022860399845701018,
+    "AP_large": 0.0006263204981834306,
+    "AR1": 0.02063472600288116,
+    "AR10": 0.034970433870079164,
+    "AR100": 0.03736410497272524,
+    "AR_small": 0.0187576321521355,
+    "AR_medium": 0.003756938079183241,
+    "AR_large": 0.05457798910314422
+   },
+   "prediction_sha256": "45fce360d8950ad15089f0c1ddf2e7a4c300e3dddd2e66059b991e819989963f",
+   "arch": "rtdetr"
+  }
+ }
+}

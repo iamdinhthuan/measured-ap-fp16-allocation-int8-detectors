@@ -1,0 +1,22 @@
+{
+ "engine": "exports/tmp/rtdetr-l_int8_val.plan",
+ "gt": "data/coco_src/annotations/instances_val2017.json",
+ "n_images": 5000,
+ "n_det": 1500000,
+ "stats": {
+  "AP": 0.2390405667189062,
+  "AP50": 0.3455378984006254,
+  "AP75": 0.2598185784903831,
+  "AP_small": 0.16675674523854678,
+  "AP_medium": 0.30651337766007636,
+  "AP_large": 0.2624090924590246,
+  "AR1": 0.266669253894239,
+  "AR10": 0.49770353570014686,
+  "AR100": 0.5427175247145284,
+  "AR_small": 0.3481529636626749,
+  "AR_medium": 0.5806334469533516,
+  "AR_large": 0.6777562700180573
+ },
+ "prediction_sha256": "2fb72407cdd84f473456f6ad8e1724832d50a3e190e7a65c093eccb0651ee621",
+ "arch": "rtdetr"
+}

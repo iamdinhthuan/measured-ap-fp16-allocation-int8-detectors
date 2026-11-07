@@ -1,0 +1,340 @@
+{
+ "model": "rtdetr-l",
+ "base": "int8ent",
+ "mode": "noise",
+ "n_img": 2000,
+ "gt": "data/tune2000/instances_tune.json",
+ "executor": "onnxruntime 1.24.4 CUDAExecutionProvider, opt level ORT_ENABLE_BASIC, graph lifted to FP32",
+ "scores": {
+  "m0": {
+   "sqnrq": 0.39509040626551994,
+   "sqnrr": 0.0018483440937781472,
+   "n_out": 1
+  },
+  "m1": {
+   "sqnrq": 0.39347642683257944,
+   "sqnrr": -0.0013086685844608393,
+   "n_out": 1
+  },
+  "m2": {
+   "sqnrq": 0.36697153560883516,
+   "sqnrr": -0.0017301029549184619,
+   "n_out": 1
+  },
+  "m3": {
+   "sqnrq": 0.3801596682781634,
+   "sqnrr": -0.0006747660825592352,
+   "n_out": 1
+  },
+  "m4": {
+   "sqnrq": 0.3383231773052887,
+   "sqnrr": -0.00029468277893556866,
+   "n_out": 1
+  },
+  "m5": {
+   "sqnrq": 0.3764310910342681,
+   "sqnrr": -0.0010550069141922118,
+   "n_out": 1
+  },
+  "m6": {
+   "sqnrq": 0.3716968600013088,
+   "sqnrr": -0.0018120058071584466,
+   "n_out": 1
+  },
+  "m7": {
+   "sqnrq": 0.37306101462061714,
+   "sqnrr": 0.000329752052988087,
+   "n_out": 1
+  },
+  "m8": {
+   "sqnrq": 0.3574693258747712,
+   "sqnrr": 0.0007078813753227457,
+   "n_out": 1
+  },
+  "m9": {
+   "sqnrq": 0.3763096679729629,
+   "sqnrr": 0.00034605863314516553,
+   "n_out": 1
+  },
+  "m10": {
+   "sqnrq": 0.33899515499779154,
+   "sqnrr": -0.0004023508721345994,
+   "n_out": 1
+  },
+  "m11": {
+   "sqnrq": 0.4027941888025191,
+   "sqnrr": 0.008741119458638941,
+   "n_out": 1
+  },
+  "m12": {
+   "sqnrq": 0.3189323685137874,
+   "sqnrr": -0.0013485881427809088,
+   "n_out": 1
+  },
+  "m13": {
+   "sqnrq": 0.3181232942338058,
+   "sqnrr": -0.0009313696806876665,
+   "n_out": 1
+  },
+  "m14": {
+   "sqnrq": 0.349666364836791,
+   "sqnrr": 0.0011636117902112998,
+   "n_out": 1
+  },
+  "m16": {
+   "sqnrq": 0.36719956408766746,
+   "sqnrr": 0.00023907629687601876,
+   "n_out": 1
+  },
+  "m17": {
+   "sqnrq": 0.3424129348497587,
+   "sqnrr": 0.0004845077804563536,
+   "n_out": 1
+  },
+  "m18": {
+   "sqnrq": 0.3264114340780708,
+   "sqnrr": 0.0003655636674355978,
+   "n_out": 1
+  },
+  "m19": {
+   "sqnrq": 0.31736014123830736,
+   "sqnrr": -0.0007175162874672213,
+   "n_out": 1
+  },
+  "m21": {
+   "sqnrq": 0.3751458134936091,
+   "sqnrr": 0.00049113648433486,
+   "n_out": 1
+  },
+  "m22": {
+   "sqnrq": 0.27517906904256606,
+   "sqnrr": -0.0005929909102403433,
+   "n_out": 1
+  },
+  "m23": {
+   "sqnrq": 0.258644235873208,
+   "sqnrr": 0.0,
+   "n_out": 1
+  },
+  "m24": {
+   "sqnrq": 0.34494778743400417,
+   "sqnrr": -0.00020903110524944705,
+   "n_out": 1
+  },
+  "m25": {
+   "sqnrq": 0.32185497836615434,
+   "sqnrr": -0.0004494731882607937,
+   "n_out": 1
+  },
+  "m26": {
+   "sqnrq": 0.28812030015404533,
+   "sqnrr": 0.0,
+   "n_out": 1
+  },
+  "m27": {
+   "sqnrq": 0.36592855836488913,
+   "sqnrr": -0.0010112197363341894,
+   "n_out": 1
+  },
+  "dec.input_proj": {
+   "sqnrq": 0.36457497294959573,
+   "sqnrr": -0.0005217303638935363,
+   "n_out": 3
+  },
+  "dec.enc_query": {
+   "sqnrq": 0.3700403827219401,
+   "sqnrr": -0.0011048774674990221,
+   "n_out": 3
+  },
+  "dec.query_pos": {
+   "sqnrq": 0.2939355571155824,
+   "sqnrr": 0.0002508201457820543,
+   "n_out": 6
+  },
+  "dec.layer0": {
+   "sqnrq": 0.37770757041182823,
+   "sqnrr": 0.0007937120977757643,
+   "n_out": 2
+  },
+  "dec.layer1": {
+   "sqnrq": 0.3788061736977455,
+   "sqnrr": -0.0005010913531196124,
+   "n_out": 1
+  },
+  "dec.layer2": {
+   "sqnrq": 0.3803052368388498,
+   "sqnrr": -0.0009636782921783117,
+   "n_out": 1
+  },
+  "dec.layer3": {
+   "sqnrq": 0.38652075154229587,
+   "sqnrr": 0.0009457085623567242,
+   "n_out": 1
+  },
+  "dec.layer4": {
+   "sqnrq": 0.3913159043672396,
+   "sqnrr": 0.0031659037378082987,
+   "n_out": 1
+  },
+  "dec.layer5": {
+   "sqnrq": 0.385469333392986,
+   "sqnrr": 0.0015909338175853639,
+   "n_out": 1
+  },
+  "dec.box_mlp": {
+   "sqnrq": 0.3191897424753432,
+   "sqnrr": -0.0006882420697625361,
+   "n_out": 13
+  },
+  "dec.rest": {
+   "sqnrq": 0.38729046047160287,
+   "sqnrr": 0.0036714786190244933,
+   "n_out": 10
+  }
+ },
+ "noise_base": 0.4199930472063259,
+ "boundary_outputs": {
+  "m0": [
+   "/model.0/stem4/act/Relu_output_0"
+  ],
+  "m1": [
+   "/model.1/ec/act/Relu_output_0"
+  ],
+  "m2": [
+   "/model.2/conv/Conv_output_0"
+  ],
+  "m3": [
+   "/model.3/ec/act/Relu_output_0"
+  ],
+  "m4": [
+   "/model.4/conv/Conv_output_0"
+  ],
+  "m5": [
+   "/model.5/ec/act/Relu_output_0"
+  ],
+  "m6": [
+   "/model.6/Add_output_0"
+  ],
+  "m7": [
+   "/model.7/Add_output_0"
+  ],
+  "m8": [
+   "/model.8/conv/Conv_output_0"
+  ],
+  "m9": [
+   "/model.9/ec/act/Relu_output_0"
+  ],
+  "m10": [
+   "/model.10/conv/Conv_output_0"
+  ],
+  "m11": [
+   "/model.11/Reshape_7_output_0"
+  ],
+  "m12": [
+   "/model.12/act/Mul_output_0"
+  ],
+  "m13": [
+   "/model.13/Resize_output_0"
+  ],
+  "m14": [
+   "/model.14/conv/Conv_output_0"
+  ],
+  "m16": [
+   "/model.16/Add_output_0"
+  ],
+  "m17": [
+   "/model.17/act/Mul_output_0"
+  ],
+  "m18": [
+   "/model.18/Resize_output_0"
+  ],
+  "m19": [
+   "/model.19/conv/Conv_output_0"
+  ],
+  "m21": [
+   "/model.21/Add_output_0"
+  ],
+  "m22": [
+   "/model.22/act/Mul_output_0"
+  ],
+  "m23": [
+   "/model.23/Concat_output_0"
+  ],
+  "m24": [
+   "/model.24/Add_output_0"
+  ],
+  "m25": [
+   "/model.25/act/Mul_output_0"
+  ],
+  "m26": [
+   "/model.26/Concat_output_0"
+  ],
+  "m27": [
+   "/model.27/Add_output_0"
+  ],
+  "dec.input_proj": [
+   "/model.28/input_proj.0/input_proj.0.0/Conv_output_0",
+   "/model.28/input_proj.1/input_proj.1.0/Conv_output_0",
+   "/model.28/input_proj.2/input_proj.2.0/Conv_output_0"
+  ],
+  "dec.enc_query": [
+   "/model.28/enc_bbox_head/layers.0/Add_output_0",
+   "/model.28/enc_bbox_head/layers.1/Add_output_0",
+   "/model.28/enc_output/enc_output.1/LayerNormalization_output_0"
+  ],
+  "dec.query_pos": [
+   "/model.28/decoder/query_pos_head/layers.1/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_1/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_2/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_3/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_4/Add_output_0",
+   "/model.28/decoder/query_pos_head/layers.1_5/Add_output_0"
+  ],
+  "dec.layer0": [
+   "/model.28/decoder/layers.0/cross_attn/value_proj/MatMul_pre_reshape_out",
+   "/model.28/decoder/layers.0/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer1": [
+   "/model.28/decoder/layers.1/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer2": [
+   "/model.28/decoder/layers.2/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer3": [
+   "/model.28/decoder/layers.3/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer4": [
+   "/model.28/decoder/layers.4/norm3/LayerNormalization_output_0"
+  ],
+  "dec.layer5": [
+   "/model.28/decoder/layers.5/norm3/LayerNormalization_output_0"
+  ],
+  "dec.box_mlp": [
+   "/model.28/decoder/dec_bbox_head.0/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.0/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.1/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.1/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.2/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.2/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.3/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.3/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.4/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.4/layers.1/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.5/layers.0/Add_output_0",
+   "/model.28/decoder/dec_bbox_head.5/layers.0/MatMul_pre_reshape_out",
+   "/model.28/decoder/dec_bbox_head.5/layers.1/Add_output_0"
+  ],
+  "dec.rest": [
+   "/model.28/Concat_3_output_0",
+   "/model.28/Mul_output_0",
+   "/model.28/Reshape_7_output_0",
+   "/model.28/decoder/Sigmoid_1_output_0",
+   "/model.28/decoder/Sigmoid_2_output_0",
+   "/model.28/decoder/Sigmoid_3_output_0",
+   "/model.28/decoder/Sigmoid_4_output_0",
+   "/model.28/decoder/Sigmoid_5_output_0",
+   "/model.28/decoder/Sigmoid_output_0",
+   "output0_pre_cast"
+  ]
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "model": "rtdetr-l",
+ "base": "int8ent",
+ "split": "tune",
+ "criterion": "decoder-first sqnrq (rules_11_12d.md arm 5)",
+ "scores": "metrics/fx_scores_rtdetr-l_int8ent_noise_n2000.json",
+ "force_regex": "^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/)",
+ "force_cost": 0.0034151468842845063,
+ "head_blocks": [
+  "dec.input_proj",
+  "dec.enc_query",
+  "dec.query_pos",
+  "dec.layer0",
+  "dec.layer1",
+  "dec.layer2",
+  "dec.layer3",
+  "dec.layer4",
+  "dec.layer5",
+  "dec.box_mlp",
+  "dec.rest"
+ ],
+ "cost_F_u_decoder": 0.13336526751014266,
+ "infeasible": [
+  0.03,
+  0.05,
+  0.1
+ ],
+ "allocations": {
+  "hyb@0.15": {
+   "blocks": [
+    "dec.input_proj",
+    "dec.enc_query",
+    "dec.query_pos",
+    "dec.layer0",
+    "dec.layer1",
+    "dec.layer2",
+    "dec.layer3",
+    "dec.layer4",
+    "dec.layer5",
+    "dec.box_mlp",
+    "dec.rest",
+    "m2",
+    "m4",
+    "m8",
+    "m10",
+    "m11",
+    "m12",
+    "m13",
+    "m17",
+    "m18",
+    "m23",
+    "m26"
+   ],
+   "cost": 0.14767746739998913
+  },
+  "hyb@0.2": {
+   "blocks": [
+    "dec.input_proj",
+    "dec.enc_query",
+    "dec.query_pos",
+    "dec.layer0",
+    "dec.layer1",
+    "dec.layer2",
+    "dec.layer3",
+    "dec.layer4",
+    "dec.layer5",
+    "dec.box_mlp",
+    "dec.rest",
+    "m0",
+    "m2",
+    "m4",
+    "m8",
+    "m10",
+    "m11",
+    "m12",
+    "m13",
+    "m14",
+    "m17",
+    "m18",
+    "m23",
+    "m25",
+    "m26",
+    "m27"
+   ],
+   "cost": 0.1947797317529148
+  }
+ }
+}

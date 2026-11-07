@@ -1,0 +1,78 @@
+{
+ "key": "mean@0.1",
+ "blocks": [
+  "m0",
+  "m2",
+  "m8",
+  "m13",
+  "m14",
+  "m17",
+  "m18",
+  "m23",
+  "m26",
+  "dec.enc_query",
+  "dec.layer0",
+  "dec.layer2",
+  "dec.layer3",
+  "dec.box_mlp",
+  "dec.rest"
+ ],
+ "regex": "(?:^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/))|(?:^/model\\.0/)|(?:^/model\\.2/)|(?:^/model\\.8/)|(?:^/model\\.13/)|(?:^/model\\.14/)|(?:^/model\\.17/)|(?:^/model\\.18/)|(?:^/model\\.23/)|(?:^/model\\.26/)|(?:^/model\\.28/(?:enc_output/|enc_bbox_head/layers\\.[01]/))|(?:^/model\\.28/decoder/layers\\.0/)|(?:^/model\\.28/decoder/layers\\.2/)|(?:^/model\\.28/decoder/layers\\.3/)|(?:^/model\\.28/decoder/dec_bbox_head\\.\\d+/layers\\.[01]/)|(?:^/model\\.28/(?!input_proj\\.|enc_output/|enc_score_head/|enc_bbox_head/|decoder/query_pos_head|decoder/layers\\.\\d/|decoder/dec_score_head|decoder/dec_bbox_head))",
+ "qdq_inputs_restored": 180,
+ "cost_macs_frac": 0.09816656452901615,
+ "pred_gap_AP_tune": -527.9026692860987,
+ "pred_gap_SML_tune": [
+  -350.49484466868404,
+  -603.3160865183776,
+  -700.6777356753513
+ ],
+ "build_s": 42.4,
+ "latency_ms": 1.3408000469207764,
+ "engine_bytes": 48369356,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8entF_mean_B0.1.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 600000,
+   "stats": {
+    "AP": 0.0008296534898321574,
+    "AP50": 0.0015518855266589038,
+    "AP75": 0.0007816796142400374,
+    "AP_small": 0.0029369812752233575,
+    "AP_medium": 0.00019899324451158983,
+    "AP_large": 0.0005616412552001333,
+    "AR1": 0.02191146368032006,
+    "AR10": 0.03364638877639649,
+    "AR100": 0.03601215288574659,
+    "AR_small": 0.011656153340527227,
+    "AR_medium": 0.004746544978284472,
+    "AR_large": 0.06815601201921781
+   },
+   "prediction_sha256": "e9489684c9d7a44735ee84ffcd609961b92f05ba38eec3d668c5be6cdcb35c55",
+   "arch": "rtdetr"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8entF_mean_B0.1.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 1500000,
+   "stats": {
+    "AP": 0.0006504619354286505,
+    "AP50": 0.001318296244223008,
+    "AP75": 0.0005633517018426201,
+    "AP_small": 0.0017976392074263515,
+    "AP_medium": 0.000758904591163552,
+    "AP_large": 0.0005114282833445376,
+    "AR1": 0.023786602923203903,
+    "AR10": 0.03480783363782662,
+    "AR100": 0.03666858360590426,
+    "AR_small": 0.006850573274605519,
+    "AR_medium": 0.005343582268692121,
+    "AR_large": 0.06643168742529372
+   },
+   "prediction_sha256": "856ce4b31c83eb1de648293bdda05ad22a6b66fe9976ebd1a5ae9aeed45c5056",
+   "arch": "rtdetr"
+  }
+ }
+}

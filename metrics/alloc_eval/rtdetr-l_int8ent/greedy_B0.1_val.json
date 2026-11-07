@@ -1,0 +1,22 @@
+{
+ "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_greedy_B0.1.plan",
+ "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+ "n_images": 5000,
+ "n_det": 1424502,
+ "stats": {
+  "AP": 0.0006582972301827536,
+  "AP50": 0.001304527727712881,
+  "AP75": 0.0006224422469587463,
+  "AP_small": 0.0005780880726208708,
+  "AP_medium": 0.00047275295039120817,
+  "AP_large": 0.0005095305046040333,
+  "AR1": 0.021845055946877388,
+  "AR10": 0.035454218017013275,
+  "AR100": 0.03787013581186906,
+  "AR_small": 0.0192993328129788,
+  "AR_medium": 0.003947034332685227,
+  "AR_large": 0.05329937306868862
+ },
+ "prediction_sha256": "be8ecf3834d62f94f9e66aa0c589222130408a6c8fb8c97fd48156d03b7d7f3f",
+ "arch": "rtdetr"
+}

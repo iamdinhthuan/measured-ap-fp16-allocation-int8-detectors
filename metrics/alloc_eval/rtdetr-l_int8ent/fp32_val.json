@@ -1,0 +1,22 @@
+{
+ "engine": "exports/tmp/rtdetr-l_fp32_val.plan",
+ "gt": "data/coco_src/annotations/instances_val2017.json",
+ "n_images": 5000,
+ "n_det": 1500000,
+ "stats": {
+  "AP": 0.5278581438028331,
+  "AP50": 0.7125126116618582,
+  "AP75": 0.5717124045750401,
+  "AP_small": 0.3442775145846058,
+  "AP_medium": 0.5737275142879851,
+  "AP_large": 0.7084120233989197,
+  "AR1": 0.38853876259222575,
+  "AR10": 0.6523785630956328,
+  "AR100": 0.7175573425699947,
+  "AR_small": 0.5464851669953471,
+  "AR_medium": 0.7583396240898574,
+  "AR_large": 0.8898526633227958
+ },
+ "prediction_sha256": "b43d62709e98a355272d5c28f067dfdffc7b122023f4fd94114bbe193ef359e7",
+ "arch": "rtdetr"
+}

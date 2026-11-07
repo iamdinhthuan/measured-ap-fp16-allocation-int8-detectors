@@ -1,0 +1,73 @@
+{
+ "key": "sqnrq@0.03",
+ "blocks": [
+  "m2",
+  "m4",
+  "m8",
+  "m10",
+  "m11",
+  "m12",
+  "m13",
+  "m17",
+  "m18",
+  "m23",
+  "m25",
+  "m26",
+  "dec.box_mlp",
+  "dec.rest"
+ ],
+ "regex": "(?:^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/))|(?:^/model\\.2/)|(?:^/model\\.4/)|(?:^/model\\.8/)|(?:^/model\\.10/)|(?:^/model\\.11/)|(?:^/model\\.12/)|(?:^/model\\.13/)|(?:^/model\\.17/)|(?:^/model\\.18/)|(?:^/model\\.23/)|(?:^/model\\.25/)|(?:^/model\\.26/)|(?:^/model\\.28/decoder/dec_bbox_head\\.\\d+/layers\\.[01]/)|(?:^/model\\.28/(?!input_proj\\.|enc_output/|enc_score_head/|enc_bbox_head/|decoder/query_pos_head|decoder/layers\\.\\d/|decoder/dec_score_head|decoder/dec_bbox_head))",
+ "qdq_inputs_restored": 83,
+ "cost_macs_frac": 0.026663744754132697,
+ "pred_gap_AP_tune": null,
+ "pred_gap_SML_tune": null,
+ "build_s": 40.7,
+ "latency_ms": 1.3232319951057434,
+ "engine_bytes": 44021580,
+ "splits": {
+  "tune": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_fx2000_sqnrq_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/tune2000/instances_tune.json",
+   "n_images": 2000,
+   "n_det": 600000,
+   "stats": {
+    "AP": 0.6153054429021918,
+    "AP50": 0.8078274254785428,
+    "AP75": 0.6725928346850802,
+    "AP_small": 0.40887802189173783,
+    "AP_medium": 0.6767999598655714,
+    "AP_large": 0.8259039553602852,
+    "AR1": 0.434202086944873,
+    "AR10": 0.6901366389937124,
+    "AR100": 0.7468917656020938,
+    "AR_small": 0.5655735030064789,
+    "AR_medium": 0.7990707327206392,
+    "AR_large": 0.9199768503882072
+   },
+   "prediction_sha256": "fb00faa4240aa9e5c231ae12a0f36d6af3891f9a6799c233edf3869fc1dded0c",
+   "arch": "rtdetr"
+  },
+  "val": {
+   "engine": "/home/thuan/isci_method_20261025/exports/tmp/rtdetr-l_int8ent_fx2000_sqnrq_B0.03.plan",
+   "gt": "/home/thuan/isci_method_20261025/data/coco_src/annotations/instances_val2017.json",
+   "n_images": 5000,
+   "n_det": 1500000,
+   "stats": {
+    "AP": 0.5169255408057268,
+    "AP50": 0.7086529516074752,
+    "AP75": 0.558859469718118,
+    "AP_small": 0.3277170252048471,
+    "AP_medium": 0.5659354823177662,
+    "AP_large": 0.704094223403442,
+    "AR1": 0.38374614268557244,
+    "AR10": 0.6415596083195877,
+    "AR100": 0.7070084742678031,
+    "AR_small": 0.5283763517880229,
+    "AR_medium": 0.751268439176656,
+    "AR_large": 0.8897125837815862
+   },
+   "prediction_sha256": "9653f07a4162f97c1b8893280d750a7b0780a346aa84e5c2fc630e8d292b0fa6",
+   "arch": "rtdetr"
+  }
+ }
+}

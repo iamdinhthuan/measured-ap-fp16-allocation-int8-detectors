@@ -1,0 +1,88 @@
+{
+ "model": "rtdetr-l",
+ "base": "int8ent",
+ "split": "tune",
+ "force_regex": "^/model\\.28/(?:enc_score_head/|decoder/dec_score_head\\.\\d+/|enc_bbox_head/layers\\.2/|decoder/dec_bbox_head\\.\\d+/layers\\.2/)",
+ "force_cost": 0.0034151468842845063,
+ "criterion": "greedy (engine single-block AP recovery)",
+ "source_alloc": "metrics/alloc_rtdetr-l_int8ent_ho.json",
+ "allocations": {
+  "greedy@0.03": {
+   "blocks": [
+    "m11",
+    "m2",
+    "m25",
+    "m12",
+    "dec.query_pos",
+    "m10",
+    "m4",
+    "m8"
+   ],
+   "cost": 0.0247476941455733,
+   "pred_recovery_AP": 300.862400143096,
+   "same_as_mean": true
+  },
+  "greedy@0.05": {
+   "blocks": [
+    "m11",
+    "m2",
+    "m25",
+    "m19",
+    "m12",
+    "m27",
+    "m4",
+    "m8"
+   ],
+   "cost": 0.04751534004080334,
+   "pred_recovery_AP": 355.3985393219695,
+   "same_as_mean": true
+  },
+  "greedy@0.1": {
+   "blocks": [
+    "m11",
+    "m1",
+    "m2",
+    "m25",
+    "m12",
+    "dec.query_pos",
+    "m10",
+    "m4",
+    "m8"
+   ],
+   "cost": 0.09946591058947646,
+   "pred_recovery_AP": 354.67073812660965,
+   "same_as_mean": false
+  },
+  "greedy@0.15": {
+   "blocks": [
+    "m11",
+    "m1",
+    "m2",
+    "m5",
+    "m25",
+    "m12",
+    "dec.query_pos",
+    "m4",
+    "m8"
+   ],
+   "cost": 0.1466341119066643,
+   "pred_recovery_AP": 382.3518664074101,
+   "same_as_mean": false
+  },
+  "greedy@0.2": {
+   "blocks": [
+    "m11",
+    "m1",
+    "m2",
+    "m5",
+    "m16",
+    "m12",
+    "m4",
+    "m8"
+   ],
+   "cost": 0.19918975106856668,
+   "pred_recovery_AP": 355.7291520238205,
+   "same_as_mean": false
+  }
+ }
+}

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this package, please cite it as below."
 title: "Reproducibility package for measured detection accuracy versus proxy scores for FP16 block allocation in INT8 object detectors: a controlled study"
 type: software
-version: 1.1.0
+version: 1.2.0
 license: MIT
 authors:
   - family-names: "Nguyen"
@@ -34,5 +34,5 @@ keywords:
   - "INT8"
   - "TensorRT"
   - "edge deployment"
-doi: "10.5281/zenodo.24013653"
+doi: "10.5281/zenodo.24038179"
 repository-code: "https://github.com/iamdinhthuan/measured-ap-fp16-allocation-int8-detectors"

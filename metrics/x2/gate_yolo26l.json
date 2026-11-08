@@ -1,0 +1,11 @@
+{
+ "rules": "rules_20261108_x2.md",
+ "model": "yolo26l",
+ "pt_sha256": "9fe3c544f2b19bebad7ea41e76d7ad3d88b7c2f10d11d24430c5311f6b32db26",
+ "torch": "2.11.0+cu128",
+ "ultralytics": "8.4.95",
+ "onnx_sha256": "de02e481fde0092b711d95527ae5d49177457a1abb29bada21a37d351c800557",
+ "int8ent_sha256": "374bb7ba96d1e3fbf448ab0ebb085bdb14f18fa6ceef7c684f917b1f3f06d747",
+ "G0_blocks": true,
+ "G0_pass": true
+}

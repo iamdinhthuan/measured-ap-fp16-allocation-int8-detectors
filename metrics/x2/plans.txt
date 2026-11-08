@@ -1,0 +1,5 @@
+yolo11s published mean@0.15,mean@0.2
+yolo26s published mean@0.05,mean@0.1,mean@0.15
+yolo11l fsweep mean@0.15
+yolo26l published mean@0.05,mean@0.1,mean@0.2
+yolo26l fsweep mean@0.03,mean@0.05,mean@0.1,mean@0.2

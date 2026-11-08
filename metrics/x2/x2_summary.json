@@ -1,0 +1,273 @@
+{
+ "outcome": "b",
+ "range": [
+  -0.12136635013198571,
+  0.1997306913984218
+ ],
+ "families": {
+  "published": [
+   {
+    "model": "yolo26l",
+    "arm": "published",
+    "B": "mean@0.05",
+    "AP_rebuilt": 52.24081999922955,
+    "AP_exact": 52.422681286777994,
+    "diff": 0.18186128754844333,
+    "boot_mean": 0.18130915424240532,
+    "ci95": [
+     0.142649380610208,
+     0.22071238576866
+    ],
+    "p_le0": 0.0,
+    "p": 0.001998001998001998,
+    "mac_published": 4.582862369581547,
+    "mac_exact": 4.889966280180187,
+    "g3": "G3 yolo26l x2r_mean_B0.05 rebuilt=52.241 published=52.238 diff=+0.003",
+    "holm_thr": 0.00625,
+    "holm_reject": true
+   },
+   {
+    "model": "yolo26l",
+    "arm": "published",
+    "B": "mean@0.1",
+    "AP_rebuilt": 53.24650200997559,
+    "AP_exact": 53.23894842200524,
+    "diff": -0.007553587970363651,
+    "boot_mean": -0.018763274628071265,
+    "ci95": [
+     -0.19949426042706087,
+     0.1691165622585884
+    ],
+    "p_le0": 0.572,
+    "p": 0.8560000000000001,
+    "mac_published": 9.565244178414103,
+    "mac_exact": 9.974716059212287,
+    "g3": "G3 yolo26l x2r_mean_B0.1 rebuilt=53.247 published=53.216 diff=+0.031",
+    "holm_thr": 0.05,
+    "holm_reject": false
+   },
+   {
+    "model": "yolo26l",
+    "arm": "published",
+    "B": "mean@0.2",
+    "AP_rebuilt": 53.44694811797596,
+    "AP_exact": 53.64667880937438,
+    "diff": 0.1997306913984218,
+    "boot_mean": 0.18952114612160353,
+    "ci95": [
+     -0.07494245001353796,
+     0.4501628376977276
+    ],
+    "p_le0": 0.069,
+    "p": 0.138,
+    "mac_published": 18.3482738437988,
+    "mac_exact": 19.756544322724505,
+    "g3": "G3 yolo26l x2r_mean_B0.2 rebuilt=53.447 published=53.428 diff=+0.019",
+    "holm_thr": 0.008333333333333333,
+    "holm_reject": false
+   },
+   {
+    "model": "yolo26s",
+    "arm": "published",
+    "B": "mean@0.05",
+    "AP_rebuilt": 46.10069667311894,
+    "AP_exact": 46.24496635530962,
+    "diff": 0.14426968219068215,
+    "boot_mean": 0.1329267219182121,
+    "ci95": [
+     0.07024744915704932,
+     0.20678960826962065
+    ],
+    "p_le0": 0.0,
+    "p": 0.001998001998001998,
+    "mac_published": 3.8836585389999305,
+    "mac_exact": 4.770673081682555,
+    "g3": "G3 yolo26s x2r_mean_B0.05 rebuilt=46.101 published=46.099 diff=+0.001",
+    "holm_thr": 0.0071428571428571435,
+    "holm_reject": true
+   },
+   {
+    "model": "yolo26s",
+    "arm": "published",
+    "B": "mean@0.1",
+    "AP_rebuilt": 46.53923686932207,
+    "AP_exact": 46.41787051919009,
+    "diff": -0.12136635013198571,
+    "boot_mean": -0.12611697586587148,
+    "ci95": [
+     -0.29320809781944807,
+     0.04872031958342811
+    ],
+    "p_le0": 0.924,
+    "p": 0.1519999999999999,
+    "mac_published": 8.90479443239979,
+    "mac_exact": 9.864076900992941,
+    "g3": "G3 yolo26s x2r_mean_B0.1 rebuilt=46.539 published=46.539 diff=-0.000",
+    "holm_thr": 0.01,
+    "holm_reject": false
+   },
+   {
+    "model": "yolo26s",
+    "arm": "published",
+    "B": "mean@0.15",
+    "AP_rebuilt": 46.56889966693583,
+    "AP_exact": 46.596890549102596,
+    "diff": 0.027990882166768927,
+    "boot_mean": 0.02814887820239899,
+    "ci95": [
+     -0.0178551836917773,
+     0.07695935737690718
+    ],
+    "p_le0": 0.118,
+    "p": 0.236,
+    "mac_published": 12.71519507390138,
+    "mac_exact": 14.99608961222813,
+    "g3": "G3 yolo26s x2r_mean_B0.15 rebuilt=46.569 published=46.549 diff=+0.020",
+    "holm_thr": 0.0125,
+    "holm_reject": false
+   },
+   {
+    "model": "yolo11s",
+    "arm": "published",
+    "B": "mean@0.15",
+    "AP_rebuilt": 45.74365755662977,
+    "AP_exact": 45.76036417962442,
+    "diff": 0.01670662299464709,
+    "boot_mean": 0.027063364508107816,
+    "ci95": [
+     -0.05984552743946274,
+     0.122798503594586
+    ],
+    "p_le0": 0.281,
+    "p": 0.562,
+    "mac_published": 14.016337725836264,
+    "mac_exact": 14.800548565976984,
+    "g3": "G3 yolo11s x2r_mean_B0.15 rebuilt=45.744 published=45.778 diff=-0.034",
+    "holm_thr": 0.016666666666666666,
+    "holm_reject": false
+   },
+   {
+    "model": "yolo11s",
+    "arm": "published",
+    "B": "mean@0.2",
+    "AP_rebuilt": 45.802209431332685,
+    "AP_exact": 45.809467704675946,
+    "diff": 0.007258273343275334,
+    "boot_mean": 0.01754455818979055,
+    "ci95": [
+     -0.03310105226212823,
+     0.1124603060206736
+    ],
+    "p_le0": 0.344,
+    "p": 0.688,
+    "mac_published": 19.14519110369089,
+    "mac_exact": 19.92940194383161,
+    "g3": "G3 yolo11s x2r_mean_B0.2 rebuilt=45.802 published=45.793 diff=+0.009",
+    "holm_thr": 0.025,
+    "holm_reject": false
+   }
+  ],
+  "fsweep": [
+   {
+    "model": "yolo26l",
+    "arm": "fsweep",
+    "B": "mean@0.03",
+    "AP_rebuilt": 51.331529532266075,
+    "AP_exact": 51.78645243942367,
+    "diff": 0.4549229071575951,
+    "boot_mean": 0.42453397391689357,
+    "ci95": [
+     0.09239703751379072,
+     0.7323040123587992
+    ],
+    "p_le0": 0.011,
+    "p": 0.022,
+    "mac_published": 2.66820218621966,
+    "mac_exact": 2.908008634927857,
+    "g3": "G3 yolo26l x2fr_mean_B0.03 rebuilt=51.332 published=51.335 diff=-0.003",
+    "holm_thr": 0.0125,
+    "holm_reject": false
+   },
+   {
+    "model": "yolo26l",
+    "arm": "fsweep",
+    "B": "mean@0.05",
+    "AP_rebuilt": 52.02484501993986,
+    "AP_exact": 52.38684417374186,
+    "diff": 0.3619991538020031,
+    "boot_mean": 0.34316141399379024,
+    "ci95": [
+     0.2615407267305809,
+     0.45799409350032416
+    ],
+    "p_le0": 0.0,
+    "p": 0.001998001998001998,
+    "mac_published": 4.489262026459277,
+    "mac_exact": 4.67764752717372,
+    "g3": "G3 yolo26l x2fr_mean_B0.05 rebuilt=52.025 published=52.021 diff=+0.004",
+    "holm_thr": 0.01,
+    "holm_reject": true
+   },
+   {
+    "model": "yolo26l",
+    "arm": "fsweep",
+    "B": "mean@0.1",
+    "AP_rebuilt": 53.24584502164886,
+    "AP_exact": 53.240933841679116,
+    "diff": -0.0049111799697314495,
+    "boot_mean": -0.01520323910617433,
+    "ci95": [
+     -0.19628095724130287,
+     0.1752866767789351
+    ],
+    "p_le0": 0.562,
+    "p": 0.8759999999999999,
+    "mac_published": 9.565244178414101,
+    "mac_exact": 9.974716059212287,
+    "g3": "G3 yolo26l x2fr_mean_B0.1 rebuilt=53.246 published=53.247 diff=-0.001",
+    "holm_thr": 0.05,
+    "holm_reject": false
+   },
+   {
+    "model": "yolo26l",
+    "arm": "fsweep",
+    "B": "mean@0.2",
+    "AP_rebuilt": 53.336446825756745,
+    "AP_exact": 53.43830035161474,
+    "diff": 0.10185352585801155,
+    "boot_mean": 0.11611504104914468,
+    "ci95": [
+     -0.05348272549998043,
+     0.29181884209633646
+    ],
+    "p_le0": 0.089,
+    "p": 0.178,
+    "mac_published": 19.568158822010066,
+    "mac_exact": 19.977630702808252,
+    "g3": "G3 yolo26l x2fr_mean_B0.2 rebuilt=53.336 published=53.331 diff=+0.005",
+    "holm_thr": 0.016666666666666666,
+    "holm_reject": false
+   },
+   {
+    "model": "yolo11l",
+    "arm": "fsweep",
+    "B": "mean@0.15",
+    "AP_rebuilt": 52.35354817629015,
+    "AP_exact": 52.37337403138071,
+    "diff": 0.019825855090580546,
+    "boot_mean": 0.02087861282186396,
+    "ci95": [
+     -0.01959797957082312,
+     0.06939778654510284
+    ],
+    "p_le0": 0.173,
+    "p": 0.346,
+    "mac_published": 14.727196142483054,
+    "mac_exact": 14.914534320295262,
+    "g3": "G3 yolo11l x2fr_mean_B0.15 rebuilt=52.354 published=52.383 diff=-0.030",
+    "holm_thr": 0.025,
+    "holm_reject": false
+   }
+  ]
+ }
+}

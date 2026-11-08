@@ -1,0 +1,25 @@
+== 2026-11-08_22:54:35 gate yolo26l
+2026-11-08 23:13:58,127 - [modelopt][onnx] - INFO - Cleaning up intermediate files
+2026-11-08 23:13:58,135 - [modelopt][onnx] - INFO - Validating quantized model
+2026-11-08 23:13:58,268 - [modelopt][onnx] - INFO - Quantization process completed
+yolo26l int8ent 374bb7ba96d1e3fbf448ab0ebb085bdb14f18fa6ceef7c684f917b1f3f06d747 G0_PASS
+rc=0
+== 2026-11-08_23:14:02 gate yolo26s
+2026-11-08 23:22:14,434 - [modelopt][onnx] - INFO - Cleaning up intermediate files
+2026-11-08 23:22:14,439 - [modelopt][onnx] - INFO - Validating quantized model
+2026-11-08 23:22:14,493 - [modelopt][onnx] - INFO - Quantization process completed
+yolo26s int8ent 7f97cb67b8498712564aac98c614c5de3d040d89ad4480c1b898623f405d934d G0_PASS
+rc=0
+== 2026-11-08_23:22:15 gate yolo11s
+2026-11-08 23:30:09,544 - [modelopt][onnx] - INFO - Cleaning up intermediate files
+2026-11-08 23:30:09,549 - [modelopt][onnx] - INFO - Validating quantized model
+2026-11-08 23:30:09,602 - [modelopt][onnx] - INFO - Quantization process completed
+yolo11s int8ent ee980bd3bffdd57d477fad19ba8b0540bec56273adb939a7d17add2609f62b09 G0_PASS
+rc=0
+== 2026-11-08_23:30:10 gate yolo11l
+2026-11-08 23:50:03,380 - [modelopt][onnx] - INFO - Cleaning up intermediate files
+2026-11-08 23:50:03,392 - [modelopt][onnx] - INFO - Validating quantized model
+2026-11-08 23:50:03,526 - [modelopt][onnx] - INFO - Quantization process completed
+yolo11l int8ent 09e51a77327869c1dc40ba0361f7b005e470432b8559f3092ec2e5df21793fff G0_PASS
+rc=0
+X2_QUANT_DONE

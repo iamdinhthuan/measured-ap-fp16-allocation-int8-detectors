@@ -1,0 +1,106 @@
+yolo11s published mean@0.15,mean@0.2
+yolo26s published mean@0.05,mean@0.1,mean@0.15
+yolo11l fsweep mean@0.15
+yolo26l published mean@0.05,mean@0.1,mean@0.2
+yolo26l fsweep mean@0.03,mean@0.05,mean@0.1,mean@0.2
+== 2026-11-08_23:14:35 eval yolo26l x2r_ mean@0.05,mean@0.1,mean@0.2
+mean@0.05    cost=0.050 lat=1.318 {'val': {'AP': 52.24, 'AP_small': 33.71, 'AP_medium': 56.9, 'AP_large': 68.3}}
+mean@0.1     cost=0.100 lat=1.324 {'val': {'AP': 53.25, 'AP_small': 35.2, 'AP_medium': 57.36, 'AP_large': 69.02}}
+mean@0.2     cost=0.188 lat=1.332 {'val': {'AP': 53.45, 'AP_small': 35.26, 'AP_medium': 57.72, 'AP_large': 69.27}}
+ALLOC_DONE
+rc=0
+== 2026-11-08_23:20:03 eval yolo26l x2e_ mean@0.05,mean@0.1,mean@0.2
+mean@0.05    cost=0.049 lat=1.398 {'val': {'AP': 52.42, 'AP_small': 33.61, 'AP_medium': 56.92, 'AP_large': 68.81}}
+mean@0.1     cost=0.100 lat=1.317 {'val': {'AP': 53.24, 'AP_small': 35.69, 'AP_medium': 57.44, 'AP_large': 68.96}}
+mean@0.2     cost=0.198 lat=1.293 {'val': {'AP': 53.65, 'AP_small': 36.0, 'AP_medium': 57.97, 'AP_large': 69.58}}
+ALLOC_DONE
+rc=0
+== 2026-11-08_23:25:23 eval yolo26l x2fr_ mean@0.03,mean@0.05,mean@0.1,mean@0.2
+mean@0.03    cost=0.028 lat=1.252 {'val': {'AP': 51.33, 'AP_small': 33.46, 'AP_medium': 57.06, 'AP_large': 69.0}}
+mean@0.05    cost=0.049 lat=1.235 {'val': {'AP': 52.02, 'AP_small': 34.76, 'AP_medium': 56.33, 'AP_large': 67.68}}
+mean@0.1     cost=0.100 lat=1.345 {'val': {'AP': 53.25, 'AP_small': 35.21, 'AP_medium': 57.36, 'AP_large': 69.02}}
+mean@0.2     cost=0.200 lat=1.315 {'val': {'AP': 53.34, 'AP_small': 35.91, 'AP_medium': 57.42, 'AP_large': 68.13}}
+ALLOC_DONE
+rc=0
+== 2026-11-08_23:32:10 eval yolo26l x2fe_ mean@0.03,mean@0.05,mean@0.1,mean@0.2
+mean@0.03    cost=0.029 lat=1.327 {'val': {'AP': 51.79, 'AP_small': 33.38, 'AP_medium': 55.93, 'AP_large': 68.07}}
+mean@0.05    cost=0.047 lat=1.300 {'val': {'AP': 52.39, 'AP_small': 34.78, 'AP_medium': 56.66, 'AP_large': 68.99}}
+mean@0.1     cost=0.100 lat=1.280 {'val': {'AP': 53.24, 'AP_small': 35.7, 'AP_medium': 57.45, 'AP_large': 68.95}}
+mean@0.2     cost=0.200 lat=1.188 {'val': {'AP': 53.44, 'AP_small': 36.83, 'AP_medium': 57.64, 'AP_large': 68.36}}
+ALLOC_DONE
+rc=0
+G3 yolo26l x2r_mean_B0.05 rebuilt=52.241 published=52.238 diff=+0.003
+G3 yolo26l x2r_mean_B0.1 rebuilt=53.247 published=53.216 diff=+0.031
+G3 yolo26l x2r_mean_B0.2 rebuilt=53.447 published=53.428 diff=+0.019
+G3 yolo26l x2fr_mean_B0.03 rebuilt=51.332 published=51.335 diff=-0.003
+G3 yolo26l x2fr_mean_B0.05 rebuilt=52.025 published=52.021 diff=+0.004
+G3 yolo26l x2fr_mean_B0.1 rebuilt=53.246 published=53.247 diff=-0.001
+G3 yolo26l x2fr_mean_B0.2 rebuilt=53.336 published=53.331 diff=+0.005
+== 2026-11-08_23:38:40 fp32 yolo26l
+{"AP": 54.09, "AP_small": 36.65, "AP_medium": 58.35, "AP_large": 69.81}
+== 2026-11-08_23:40:16 bootstrap yolo26l
+r_0.05:e_0.05 {'AP': '+0.18 [+0.14,+0.22]', 'worst_rel': '-0.20 [-1.49,+0.01]'}
+r_0.1:e_0.1 {'AP': '-0.02 [-0.20,+0.17]', 'worst_rel': '+1.04 [-0.73,+3.10]'}
+r_0.2:e_0.2 {'AP': '+0.19 [-0.07,+0.45]', 'worst_rel': '+1.48 [-0.67,+3.52]'}
+fr_0.03:fe_0.03 {'AP': '+0.42 [+0.09,+0.73]', 'worst_rel': '-0.25 [-2.62,+2.31]'}
+fr_0.05:fe_0.05 {'AP': '+0.34 [+0.26,+0.46]', 'worst_rel': '+0.05 [+0.01,+0.09]'}
+fr_0.1:fe_0.1 {'AP': '-0.02 [-0.20,+0.18]', 'worst_rel': '+1.05 [-0.72,+3.10]'}
+fr_0.2:fe_0.2 {'AP': '+0.12 [-0.05,+0.29]', 'worst_rel': '+0.50 [-0.55,+2.34]'}
+BOOT_DONE metrics/bootstrap/x2_yolo26l.json
+rc=0
+== 2026-11-09_01:14:34 eval yolo26s x2r_ mean@0.05,mean@0.1,mean@0.15
+mean@0.05    cost=0.041 lat=0.627 {'val': {'AP': 46.1, 'AP_small': 27.03, 'AP_medium': 50.72, 'AP_large': 62.68}}
+mean@0.1     cost=0.097 lat=0.679 {'val': {'AP': 46.54, 'AP_small': 28.33, 'AP_medium': 51.04, 'AP_large': 62.68}}
+mean@0.15    cost=0.136 lat=0.622 {'val': {'AP': 46.57, 'AP_small': 28.17, 'AP_medium': 51.02, 'AP_large': 62.48}}
+ALLOC_DONE
+rc=0
+== 2026-11-09_01:19:51 eval yolo26s x2e_ mean@0.05,mean@0.1,mean@0.15
+mean@0.05    cost=0.048 lat=0.642 {'val': {'AP': 46.24, 'AP_small': 27.86, 'AP_medium': 50.68, 'AP_large': 62.63}}
+mean@0.1     cost=0.099 lat=0.626 {'val': {'AP': 46.42, 'AP_small': 27.56, 'AP_medium': 51.02, 'AP_large': 62.48}}
+mean@0.15    cost=0.150 lat=0.653 {'val': {'AP': 46.6, 'AP_small': 28.18, 'AP_medium': 51.02, 'AP_large': 62.54}}
+ALLOC_DONE
+rc=0
+G3 yolo26s x2r_mean_B0.05 rebuilt=46.101 published=46.099 diff=+0.001
+G3 yolo26s x2r_mean_B0.1 rebuilt=46.539 published=46.539 diff=-0.000
+G3 yolo26s x2r_mean_B0.15 rebuilt=46.569 published=46.549 diff=+0.020
+== 2026-11-09_01:25:13 fp32 yolo26s
+{"AP": 47.72, "AP_small": 30.24, "AP_medium": 52.36, "AP_large": 64.22}
+== 2026-11-09_01:26:49 bootstrap yolo26s
+r_0.05:e_0.05 {'AP': '+0.13 [+0.07,+0.21]', 'worst_rel': '+2.62 [+1.39,+4.57]'}
+r_0.1:e_0.1 {'AP': '-0.13 [-0.29,+0.05]', 'worst_rel': '-2.31 [-4.06,-1.07]'}
+r_0.15:e_0.15 {'AP': '+0.03 [-0.02,+0.08]', 'worst_rel': '+0.01 [-0.02,+0.04]'}
+BOOT_DONE metrics/bootstrap/x2_yolo26s.json
+rc=0
+== 2026-11-09_02:22:05 eval yolo11s x2r_ mean@0.15,mean@0.2
+mean@0.15    cost=0.141 lat=0.476 {'val': {'AP': 45.74, 'AP_small': 28.65, 'AP_medium': 50.19, 'AP_large': 62.88}}
+mean@0.2     cost=0.192 lat=0.494 {'val': {'AP': 45.8, 'AP_small': 28.6, 'AP_medium': 50.34, 'AP_large': 62.95}}
+ALLOC_DONE
+rc=0
+== 2026-11-09_02:24:25 eval yolo11s x2e_ mean@0.15,mean@0.2
+mean@0.15    cost=0.148 lat=0.485 {'val': {'AP': 45.76, 'AP_small': 28.56, 'AP_medium': 50.12, 'AP_large': 63.07}}
+mean@0.2     cost=0.199 lat=0.487 {'val': {'AP': 45.81, 'AP_small': 28.67, 'AP_medium': 50.34, 'AP_large': 63.08}}
+ALLOC_DONE
+rc=0
+G3 yolo11s x2r_mean_B0.15 rebuilt=45.744 published=45.778 diff=-0.034
+G3 yolo11s x2r_mean_B0.2 rebuilt=45.802 published=45.793 diff=+0.009
+== 2026-11-09_02:26:45 fp32 yolo11s
+{"AP": 46.02, "AP_small": 28.47, "AP_medium": 50.52, "AP_large": 63.0}
+== 2026-11-09_02:27:52 bootstrap yolo11s
+r_0.15:e_0.15 {'AP': '+0.03 [-0.06,+0.12]', 'worst_rel': '-0.18 [-0.85,+0.40]'}
+r_0.2:e_0.2 {'AP': '+0.02 [-0.03,+0.11]', 'worst_rel': '+0.02 [-0.39,+0.60]'}
+BOOT_DONE metrics/bootstrap/x2_yolo11s.json
+rc=0
+== 2026-11-09_02:58:08 eval yolo11l x2fr_ mean@0.15
+mean@0.15    cost=0.148 lat=1.247 {'val': {'AP': 52.35, 'AP_small': 35.24, 'AP_medium': 57.9, 'AP_large': 68.09}}
+ALLOC_DONE
+rc=0
+== 2026-11-09_02:59:22 eval yolo11l x2fe_ mean@0.15
+mean@0.15    cost=0.149 lat=1.204 {'val': {'AP': 52.37, 'AP_small': 35.23, 'AP_medium': 57.94, 'AP_large': 68.48}}
+ALLOC_DONE
+rc=0
+G3 yolo11l x2fr_mean_B0.15 rebuilt=52.354 published=52.383 diff=-0.030
+== 2026-11-09_03:00:35 bootstrap yolo11l
+fr_0.15:fe_0.15 {'AP': '+0.02 [-0.02,+0.07]', 'worst_rel': '+0.11 [-0.03,+0.59]'}
+BOOT_DONE metrics/bootstrap/x2_yolo11l.json
+rc=0
+X2_QUEUE_DONE

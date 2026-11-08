@@ -1,0 +1,13 @@
+G3 yolo26l x2r_mean_B0.05 rebuilt=52.241 published=52.238 diff=+0.003
+G3 yolo26l x2r_mean_B0.1 rebuilt=53.247 published=53.216 diff=+0.031
+G3 yolo26l x2r_mean_B0.2 rebuilt=53.447 published=53.428 diff=+0.019
+G3 yolo26l x2fr_mean_B0.03 rebuilt=51.332 published=51.335 diff=-0.003
+G3 yolo26l x2fr_mean_B0.05 rebuilt=52.025 published=52.021 diff=+0.004
+G3 yolo26l x2fr_mean_B0.1 rebuilt=53.246 published=53.247 diff=-0.001
+G3 yolo26l x2fr_mean_B0.2 rebuilt=53.336 published=53.331 diff=+0.005
+G3 yolo26s x2r_mean_B0.05 rebuilt=46.101 published=46.099 diff=+0.001
+G3 yolo26s x2r_mean_B0.1 rebuilt=46.539 published=46.539 diff=-0.000
+G3 yolo26s x2r_mean_B0.15 rebuilt=46.569 published=46.549 diff=+0.020
+G3 yolo11s x2r_mean_B0.15 rebuilt=45.744 published=45.778 diff=-0.034
+G3 yolo11s x2r_mean_B0.2 rebuilt=45.802 published=45.793 diff=+0.009
+G3 yolo11l x2fr_mean_B0.15 rebuilt=52.354 published=52.383 diff=-0.030

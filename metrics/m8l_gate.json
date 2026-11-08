@@ -1,0 +1,29 @@
+{
+ "rules": "rules_20261108_m8l.md",
+ "torch": "2.11.0+cu128",
+ "ultralytics": "8.4.95",
+ "onnx_sha256": "aec9348a8bbd5d3f292d19d17930d1fa2a930a81a2d9ae571ba207cef3f148aa",
+ "onnx_sha_matches_published": false,
+ "int8ent_sha256": "630e5cb823459ff122a32aee983c1f3411608311f52c3aea4e6ffc02059a7525",
+ "checks": {
+  "g8l_int8ent": {
+   "AP": 59.62349208968254,
+   "published": 59.62349208968254,
+   "diff": 0.0,
+   "build_s": 88.7
+  },
+  "g8l_restore_head.cv3.0": {
+   "AP": 59.59459193227477,
+   "published": 59.59459193227477,
+   "diff": 0.0,
+   "build_s": 91.7
+  },
+  "g8l_restore_m9": {
+   "AP": 59.773020277351975,
+   "published": 59.773020277351975,
+   "diff": 0.0,
+   "build_s": 88.8
+  }
+ },
+ "gate_pass": true
+}

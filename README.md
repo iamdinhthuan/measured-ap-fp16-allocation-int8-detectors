@@ -27,6 +27,7 @@ Scripts named `queue_*.sh`, `fx_queue_*.sh`, `boot_*.sh` are the unattended job 
 - `protocol/README_isci_method_with_10_8a.md`: the same document with the clarification §10.8a appended on 2026-10-25 23:09 +07; SHA-256 `8773a8046a04dda8c122c0ab5ce42f8ed5bfaab023fb1702287195bb1eb3547c`, the digest in `FREEZE_RECORD.md`. Its first 375 lines are byte-identical to the frozen file.
 - `FREEZE_RECORD.md`: SHA-256 digests of the confirmatory protocol at freeze time (2026-10-25) and after the documented clarification.
 - `rules_11_9.md`, `rules_11_10.md`, `rules_11_11.md`, `rules_11_11b.md`, `rules_11_11c.md`, `rules_11_12d.md`, `rules_11_12d_add1.md`, `rules_11_12e.md`: decision rules of the post-freeze exploratory experiments, written before their results existed; `rules_11_12d_add2.md` was written post hoc, after the RT-DETR-l sweep and proxy allocations had been read (digests and times of all rules are in `logs/fx.sha256`).
+- `rules_20261108_m8l.md`: decision rule of the YOLO11-l sweep with the forced set restored (Supplementary Section S6), written before any graph was rebuilt (file time 2026-11-08 17:30:36 +07, before the data preparation started at 17:31:17; the time "~17:35" in its header is approximate). Run by `m8l_prep.sh` (data reconstruction; its inputs `m8l_calib_files.txt` and `m8l_tune_manifest_published.json` are copies of `data/calib512/calib_files.txt` and `data/tune2000/tune_manifest.json`), `m8l_gate.py` (graph regeneration and reproduction gate, result `metrics/m8l_gate.json`) and `m8l_queue.sh`; the regenerated FP32 ONNX is not byte-identical to the archived one (digests in `logs/fx.sha256`).
 - `logs/fx.sha256`: digests of the result files of the post-freeze runs.
 
 ## Layout
@@ -61,6 +62,7 @@ All versions: [10.5281/zenodo.23983314](https://doi.org/10.5281/zenodo.23983314)
 
 ## Versions
 
+- Unreleased (2026-11-08): YOLO11-l sweep with the forced set restored (`rules_20261108_m8l.md`): reproduction gate, F-conditioned sensitivities, allocations, held-out evaluations and paired bootstrap (`metrics/bootstrap/m8l_yolo11l_fsweep.json`); Supplementary Section S6 of the article.
 - 1.2.0 (2026-11-07): results of the RT-DETR-l check (item 10): addenda `rules_11_12d_add1.md` and `rules_11_12d_add2.md` (the latter post hoc), diagnostic, secondary sweep, paired-bootstrap verdict, and the build-reproducibility tests of RT-DETR-l and YOLO (`rules_11_12e.md`); Supplementary Section S7 and Table S11 of the article.
 - 1.1.0 (2026-11-06): revision arms of item 9 (per-image output SQNR, block FIT, ExDark-calibrated allocation, Supplementary Table S8), their decision rules and bootstrap files; rules and adapters of the RT-DETR-l check (item 10), without results.
 - 1.0.0 (2026-11-05): first release.

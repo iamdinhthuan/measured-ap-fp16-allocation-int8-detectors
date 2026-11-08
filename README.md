@@ -28,6 +28,9 @@ Scripts named `queue_*.sh`, `fx_queue_*.sh`, `boot_*.sh` are the unattended job 
 - `FREEZE_RECORD.md`: SHA-256 digests of the confirmatory protocol at freeze time (2026-10-25) and after the documented clarification.
 - `rules_11_9.md`, `rules_11_10.md`, `rules_11_11.md`, `rules_11_11b.md`, `rules_11_11c.md`, `rules_11_12d.md`, `rules_11_12d_add1.md`, `rules_11_12e.md`: decision rules of the post-freeze exploratory experiments, written before their results existed; `rules_11_12d_add2.md` was written post hoc, after the RT-DETR-l sweep and proxy allocations had been read (digests and times of all rules are in `logs/fx.sha256`).
 - `rules_20261108_m8l.md`: decision rule of the YOLO11-l sweep with the forced set restored (Supplementary Section S6), written before any graph was rebuilt (file time 2026-11-08 17:30:36 +07, before the data preparation started at 17:31:17; the time "~17:35" in its header is approximate). Run by `m8l_prep.sh` (data reconstruction; its inputs `m8l_calib_files.txt` and `m8l_tune_manifest_published.json` are copies of `data/calib512/calib_files.txt` and `data/tune2000/tune_manifest.json`), `m8l_gate.py` (graph regeneration and reproduction gate, result `metrics/m8l_gate.json`) and `m8l_queue.sh`; the regenerated FP32 ONNX is not byte-identical to the archived one (digests in `logs/fx.sha256`).
+- `rules_20261108_x1.md`: decision rule of the exact-incremental-cost analysis (Supplementary Section S6), written before its result existed. Run by `x1_exactcost.py` (solver re-run on the published sensitivities with the cost of a head block reduced by its forced convolution; no engine built, no image evaluated); result `metrics/x1_exactcost.json`, log `logs/x1_exactcost.log`.
+- `x1b_hybrid_n256_check.py`: checks that the head-first hybrid selects the same blocks from the 256-image and the 2000-image output-SQNR scores at every feasible budget; result `metrics/x1b_hybrid_n256_check.json`.
+- `supp_headfirst_fsweep_tables.py`: writes Supplementary Tables S8 (head-first comparison) and S12 (forced set restored, exact cost) from the bootstrap files and `metrics/x1_exactcost.json`.
 - `logs/fx.sha256`: digests of the result files of the post-freeze runs.
 
 ## Layout
@@ -62,6 +65,7 @@ All versions: [10.5281/zenodo.23983314](https://doi.org/10.5281/zenodo.23983314)
 
 ## Versions
 
+- Since 1.3.0 (not yet archived on Zenodo): exact-incremental-cost analysis (`rules_20261108_x1.md`, `x1_exactcost.py`), head-first score check (`x1b_hybrid_n256_check.py`) and the generator of Supplementary Tables S8 and S12.
 - 1.3.0 (2026-11-08): YOLO11-l sweep with the forced set restored (`rules_20261108_m8l.md`): reproduction gate, F-conditioned sensitivities, allocations, held-out evaluations and paired bootstrap (`metrics/bootstrap/m8l_yolo11l_fsweep.json`); Supplementary Section S6 of the article.
 - 1.2.0 (2026-11-07): results of the RT-DETR-l check (item 10): addenda `rules_11_12d_add1.md` and `rules_11_12d_add2.md` (the latter post hoc), diagnostic, secondary sweep, paired-bootstrap verdict, and the build-reproducibility tests of RT-DETR-l and YOLO (`rules_11_12e.md`); Supplementary Section S7 and Table S11 of the article.
 - 1.1.0 (2026-11-06): revision arms of item 9 (per-image output SQNR, block FIT, ExDark-calibrated allocation, Supplementary Table S8), their decision rules and bootstrap files; rules and adapters of the RT-DETR-l check (item 10), without results.

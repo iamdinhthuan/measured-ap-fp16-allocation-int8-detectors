@@ -1,0 +1,125 @@
+Ultralytics 8.4.95 🚀 Python-3.11.15 torch-2.11.0+cu128 CPU (Intel Core Ultra 5 245KF)
+YOLO11s summary (fused): 100 layers, 9,443,760 parameters, 0 gradients, 21.5 GFLOPs
+
+[34m[1mPyTorch:[0m starting from 'exports/x1_tmp/yolo11s/yolo11s.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (18.4 MB)
+
+[34m[1mONNX:[0m starting export with onnx 1.21.0 opset 17...
+[34m[1mONNX:[0m slimming with onnxslim 0.1.94...
+[34m[1mONNX:[0m export success ✅ 1.1s, saved as 'exports/x1_tmp/yolo11s/yolo11s.onnx' (36.3 MB)
+
+Export complete (1.4s)
+Results saved to [1m/home/thuan/isci_method_20261025/exports/x1_tmp/yolo11s/yolo11s.onnx[0m
+Predict:         yolo predict task=detect model=exports/x1_tmp/yolo11s/yolo11s.onnx imgsz=640 
+Validate:        yolo val task=detect model=exports/x1_tmp/yolo11s/yolo11s.onnx imgsz=640 data=/usr/src/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+yolo11s G1 True 0.0 overlap blocks ['head.cv2.0', 'head.cv2.1', 'head.cv2.2', 'head.cv3.0', 'head.cv3.1', 'head.cv3.2', 'head.dfl']
+yolo11s published mean@0.03 repro same mac 0.0228->0.0228 pred dAP +0.000
+yolo11s published minimax@0.03 repro same mac 0.0228->0.0228 pred dAP +0.000
+yolo11s published mean@0.05 repro same mac 0.0430->0.0430 pred dAP +0.000
+yolo11s published minimax@0.05 repro CHANGED mac 0.0351->0.0437 pred dAP -0.040
+yolo11s published mean@0.1 repro same mac 0.0962->0.0962 pred dAP +0.000
+yolo11s published minimax@0.1 repro same mac 0.0962->0.0962 pred dAP +0.000
+yolo11s published mean@0.15 repro CHANGED mac 0.1402->0.1480 pred dAP +0.009
+yolo11s published minimax@0.15 repro CHANGED mac 0.1392->0.1478 pred dAP -0.023
+yolo11s published mean@0.2 repro CHANGED mac 0.1915->0.1993 pred dAP +0.009
+yolo11s published minimax@0.2 repro CHANGED mac 0.1876->0.1969 pred dAP +0.109
+Ultralytics 8.4.95 🚀 Python-3.11.15 torch-2.11.0+cu128 CPU (Intel Core Ultra 5 245KF)
+YOLO26s summary (fused): 122 layers, 9,496,140 parameters, 0 gradients, 20.7 GFLOPs
+
+[34m[1mPyTorch:[0m starting from 'exports/x1_tmp/yolo26s/yolo26s.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 300, 6) (19.5 MB)
+
+[34m[1mONNX:[0m starting export with onnx 1.21.0 opset 17...
+/home/thuan/miniconda3/envs/qtsd/lib/python3.11/site-packages/torch/onnx/_internal/torchscript_exporter/symbolic_opset11.py:954: UserWarning: Exporting aten::index operator of advanced indexing in opset 17 is achieved by combination of multiple ONNX operators, including Reshape, Transpose, Concat, and Gather. If indices include negative values, the exported graph will produce incorrect results.
+  return opset9.index(g, self, index)
+[34m[1mONNX:[0m slimming with onnxslim 0.1.94...
+[34m[1mONNX:[0m export success ✅ 0.8s, saved as 'exports/x1_tmp/yolo26s/yolo26s.onnx' (36.5 MB)
+
+Export complete (1.0s)
+Results saved to [1m/home/thuan/isci_method_20261025/exports/x1_tmp/yolo26s/yolo26s.onnx[0m
+Predict:         yolo predict task=detect model=exports/x1_tmp/yolo26s/yolo26s.onnx imgsz=640 
+Validate:        yolo val task=detect model=exports/x1_tmp/yolo26s/yolo26s.onnx imgsz=640 data=/home/lq/codes/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+yolo26s G1 True 0.0 overlap blocks ['head.one2one_cv2.0', 'head.one2one_cv2.1', 'head.one2one_cv2.2', 'head.one2one_cv3.0', 'head.one2one_cv3.1', 'head.one2one_cv3.2']
+yolo26s published mean@0.03 repro same mac 0.0260->0.0260 pred dAP +0.000
+yolo26s published minimax@0.03 repro CHANGED mac 0.0260->0.0294 pred dAP -0.498
+yolo26s published mean@0.05 repro CHANGED mac 0.0388->0.0477 pred dAP +0.209
+yolo26s published minimax@0.05 repro CHANGED mac 0.0416->0.0477 pred dAP +0.560
+yolo26s published mean@0.1 repro CHANGED mac 0.0890->0.0986 pred dAP +0.004
+yolo26s published minimax@0.1 repro same mac 0.0890->0.0890 pred dAP +0.000
+yolo26s published mean@0.15 repro CHANGED mac 0.1272->0.1500 pred dAP +0.023
+yolo26s published minimax@0.15 repro CHANGED mac 0.1396->0.1423 pred dAP +0.027
+yolo26s published mean@0.2 repro same mac 0.1905->0.1905 pred dAP +0.000
+yolo26s published minimax@0.2 repro same mac 0.1905->0.1905 pred dAP +0.000
+Ultralytics 8.4.95 🚀 Python-3.11.15 torch-2.11.0+cu128 CPU (Intel Core Ultra 5 245KF)
+YOLO11l summary (fused): 190 layers, 25,340,992 parameters, 0 gradients, 86.9 GFLOPs
+
+[34m[1mPyTorch:[0m starting from 'exports/x1_tmp/yolo11l/yolo11l.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 84, 8400) (49.0 MB)
+
+[34m[1mONNX:[0m starting export with onnx 1.21.0 opset 17...
+[34m[1mONNX:[0m slimming with onnxslim 0.1.94...
+[34m[1mONNX:[0m export success ✅ 1.6s, saved as 'exports/x1_tmp/yolo11l/yolo11l.onnx' (97.0 MB)
+
+Export complete (2.0s)
+Results saved to [1m/home/thuan/isci_method_20261025/exports/x1_tmp/yolo11l/yolo11l.onnx[0m
+Predict:         yolo predict task=detect model=exports/x1_tmp/yolo11l/yolo11l.onnx imgsz=640 
+Validate:        yolo val task=detect model=exports/x1_tmp/yolo11l/yolo11l.onnx imgsz=640 data=/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+yolo11l G1 True 0.0 overlap blocks ['head.cv2.0', 'head.cv2.1', 'head.cv2.2', 'head.cv3.0', 'head.cv3.1', 'head.cv3.2', 'head.dfl']
+yolo11l published mean@0.03 repro same mac 0.0273->0.0273 pred dAP +0.000
+yolo11l published minimax@0.03 repro same mac 0.0273->0.0273 pred dAP +0.000
+yolo11l published mean@0.05 repro same mac 0.0490->0.0490 pred dAP +0.000
+yolo11l published minimax@0.05 repro same mac 0.0395->0.0395 pred dAP +0.000
+yolo11l published mean@0.1 repro same mac 0.0829->0.0829 pred dAP +0.000
+yolo11l published minimax@0.1 repro same mac 0.0922->0.0922 pred dAP +0.000
+yolo11l published mean@0.15 repro same mac 0.1473->0.1473 pred dAP +0.000
+yolo11l published minimax@0.15 repro same mac 0.1463->0.1463 pred dAP +0.000
+yolo11l published mean@0.2 repro same mac 0.1843->0.1843 pred dAP +0.000
+yolo11l published minimax@0.2 repro same mac 0.1918->0.1918 pred dAP +0.000
+yolo11l fsweep mean@0.03 repro same mac 0.0273->0.0273 pred dAP +0.000
+yolo11l fsweep minimax@0.03 NOT_REPRO same mac 0.0273->0.0273 pred dAP +0.000
+yolo11l fsweep mean@0.05 repro same mac 0.0478->0.0478 pred dAP +0.000
+yolo11l fsweep minimax@0.05 NOT_REPRO same mac 0.0406->0.0406 pred dAP +0.000
+yolo11l fsweep mean@0.1 repro same mac 0.0950->0.0950 pred dAP +0.000
+yolo11l fsweep minimax@0.1 NOT_REPRO same mac 0.0904->0.0904 pred dAP +0.000
+yolo11l fsweep mean@0.15 repro CHANGED mac 0.1473->0.1491 pred dAP +0.009
+yolo11l fsweep minimax@0.15 NOT_REPRO same mac 0.1419->0.1419 pred dAP +0.000
+yolo11l fsweep mean@0.2 repro same mac 0.1964->0.1964 pred dAP +0.000
+yolo11l fsweep minimax@0.2 NOT_REPRO same mac 0.1918->0.1918 pred dAP +0.000
+Ultralytics 8.4.95 🚀 Python-3.11.15 torch-2.11.0+cu128 CPU (Intel Core Ultra 5 245KF)
+YOLO26l summary (fused): 190 layers, 24,807,420 parameters, 0 gradients, 86.4 GFLOPs
+
+[34m[1mPyTorch:[0m starting from 'exports/x1_tmp/yolo26l/yolo26l.pt' with input shape (1, 3, 640, 640) BCHW and output shape(s) (1, 300, 6) (50.7 MB)
+
+[34m[1mONNX:[0m starting export with onnx 1.21.0 opset 17...
+/home/thuan/miniconda3/envs/qtsd/lib/python3.11/site-packages/torch/onnx/_internal/torchscript_exporter/symbolic_opset11.py:954: UserWarning: Exporting aten::index operator of advanced indexing in opset 17 is achieved by combination of multiple ONNX operators, including Reshape, Transpose, Concat, and Gather. If indices include negative values, the exported graph will produce incorrect results.
+  return opset9.index(g, self, index)
+[34m[1mONNX:[0m slimming with onnxslim 0.1.94...
+[34m[1mONNX:[0m export success ✅ 1.5s, saved as 'exports/x1_tmp/yolo26l/yolo26l.onnx' (95.0 MB)
+
+Export complete (2.0s)
+Results saved to [1m/home/thuan/isci_method_20261025/exports/x1_tmp/yolo26l/yolo26l.onnx[0m
+Predict:         yolo predict task=detect model=exports/x1_tmp/yolo26l/yolo26l.onnx imgsz=640 
+Validate:        yolo val task=detect model=exports/x1_tmp/yolo26l/yolo26l.onnx imgsz=640 data=/home/lq/codes/ultralytics/ultralytics/cfg/datasets/coco.yaml  
+Visualize:       https://netron.app
+yolo26l G1 True 0.0 overlap blocks ['head.one2one_cv2.0', 'head.one2one_cv2.1', 'head.one2one_cv2.2', 'head.one2one_cv3.0', 'head.one2one_cv3.1', 'head.one2one_cv3.2']
+yolo26l published mean@0.03 repro same mac 0.0288->0.0288 pred dAP +0.000
+yolo26l published minimax@0.03 repro CHANGED mac 0.0241->0.0282 pred dAP +0.005
+yolo26l published mean@0.05 repro CHANGED mac 0.0458->0.0489 pred dAP +0.354
+yolo26l published minimax@0.05 repro CHANGED mac 0.0466->0.0496 pred dAP +0.354
+yolo26l published mean@0.1 repro CHANGED mac 0.0957->0.0997 pred dAP +0.005
+yolo26l published minimax@0.1 repro CHANGED mac 0.0864->0.0997 pred dAP +0.223
+yolo26l published mean@0.15 repro same mac 0.1398->0.1398 pred dAP +0.000
+yolo26l published minimax@0.15 repro same mac 0.1434->0.1434 pred dAP +0.000
+yolo26l published mean@0.2 repro CHANGED mac 0.1835->0.1976 pred dAP +0.022
+yolo26l published minimax@0.2 repro same mac 0.1653->0.1653 pred dAP +0.000
+yolo26l fsweep mean@0.03 repro CHANGED mac 0.0267->0.0291 pred dAP +0.051
+yolo26l fsweep minimax@0.03 repro same mac 0.0295->0.0295 pred dAP +0.000
+yolo26l fsweep mean@0.05 repro CHANGED mac 0.0449->0.0468 pred dAP +0.063
+yolo26l fsweep minimax@0.05 NOT_REPRO same mac 0.0490->0.0490 pred dAP +0.000
+yolo26l fsweep mean@0.1 repro CHANGED mac 0.0957->0.0997 pred dAP +0.077
+yolo26l fsweep minimax@0.1 NOT_REPRO same mac 0.0979->0.0979 pred dAP +0.000
+yolo26l fsweep mean@0.15 repro same mac 0.1398->0.1398 pred dAP +0.000
+yolo26l fsweep minimax@0.15 NOT_REPRO same mac 0.1197->0.1197 pred dAP +0.000
+yolo26l fsweep mean@0.2 repro CHANGED mac 0.1957->0.1998 pred dAP +0.077
+yolo26l fsweep minimax@0.2 NOT_REPRO CHANGED mac 0.1816->0.1998 pred dAP +0.080
+X1_DONE metrics/x1_exactcost.json

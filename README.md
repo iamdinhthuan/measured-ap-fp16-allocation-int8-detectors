@@ -58,11 +58,11 @@ Code and metadata are released under the MIT License (see `LICENSE`). Third-part
 
 ## Citation
 
-All versions: [10.5281/zenodo.23983314](https://doi.org/10.5281/zenodo.23983314) (concept DOI). This version (1.2.0): [10.5281/zenodo.24038179](https://doi.org/10.5281/zenodo.24038179); version 1.1.0: [10.5281/zenodo.24013653](https://doi.org/10.5281/zenodo.24013653); version 1.0.0: [10.5281/zenodo.23983315](https://doi.org/10.5281/zenodo.23983315). See `CITATION.cff`.
+All versions: [10.5281/zenodo.23983314](https://doi.org/10.5281/zenodo.23983314) (concept DOI). This version (1.3.0): [10.5281/zenodo.24054476](https://doi.org/10.5281/zenodo.24054476); version 1.2.0: [10.5281/zenodo.24038179](https://doi.org/10.5281/zenodo.24038179); version 1.1.0: [10.5281/zenodo.24013653](https://doi.org/10.5281/zenodo.24013653); version 1.0.0: [10.5281/zenodo.23983315](https://doi.org/10.5281/zenodo.23983315). See `CITATION.cff`.
 
 ## Versions
 
-- Unreleased (2026-11-08): YOLO11-l sweep with the forced set restored (`rules_20261108_m8l.md`): reproduction gate, F-conditioned sensitivities, allocations, held-out evaluations and paired bootstrap (`metrics/bootstrap/m8l_yolo11l_fsweep.json`); Supplementary Section S6 of the article.
+- 1.3.0 (2026-11-08): YOLO11-l sweep with the forced set restored (`rules_20261108_m8l.md`): reproduction gate, F-conditioned sensitivities, allocations, held-out evaluations and paired bootstrap (`metrics/bootstrap/m8l_yolo11l_fsweep.json`); Supplementary Section S6 of the article.
 - 1.2.0 (2026-11-07): results of the RT-DETR-l check (item 10): addenda `rules_11_12d_add1.md` and `rules_11_12d_add2.md` (the latter post hoc), diagnostic, secondary sweep, paired-bootstrap verdict, and the build-reproducibility tests of RT-DETR-l and YOLO (`rules_11_12e.md`); Supplementary Section S7 and Table S11 of the article.
 - 1.1.0 (2026-11-06): revision arms of item 9 (per-image output SQNR, block FIT, ExDark-calibrated allocation, Supplementary Table S8), their decision rules and bootstrap files; rules and adapters of the RT-DETR-l check (item 10), without results.
 - 1.0.0 (2026-11-05): first release.

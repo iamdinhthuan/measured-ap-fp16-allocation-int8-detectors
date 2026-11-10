@@ -1,0 +1,61 @@
+{
+ "base": {
+  "sha256": "65c7e25ff42be5bc5379685137a89655de383d87453b682ae8f2b972592c421e"
+ },
+ "headout": {
+  "regex": "/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/",
+  "cost_macs_frac": 0.004030738826607142,
+  "qdq_inputs_restored": 12,
+  "sha256": "894b6b8d029ae81298aeedbdddae05fda68aaa88dcf104d307af4c3e3b0982f3",
+  "table5_graph": true
+ },
+ "head": {
+  "regex": "/model\\.23/",
+  "cost_macs_frac": 0.07619778818834759,
+  "qdq_inputs_restored": 104,
+  "sha256": "15334bee0e205428697ffec0fc042c706fc7e1aa8ee587aacdebdb6a54a7adbc",
+  "table5_graph": true
+ },
+ "mean_B0.05": {
+  "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.23/one2one_cv2\\.1/)|(?:^/model\\.23/one2one_cv3\\.0/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.23/one2one_cv3\\.2/)|(?:^/model\\.23/(?!(?:one2one_)?cv[23]\\.\\d/|dfl/))",
+  "cost_macs_frac": 0.049819078830445944,
+  "qdq_inputs_restored": 84,
+  "sha256": "ef91ae4c0af66c857f7685f5ce22ba776298eb6180be23cf608ccbd0afd2b1df",
+  "table5_graph": true
+ },
+ "mean_B0.1": {
+  "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.9/)|(?:^/model\\.10/)|(?:^/model\\.23/one2one_cv2\\.0/)|(?:^/model\\.23/one2one_cv2\\.1/)|(?:^/model\\.23/one2one_cv2\\.2/)|(?:^/model\\.23/one2one_cv3\\.0/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.23/one2one_cv3\\.2/)|(?:^/model\\.23/(?!(?:one2one_)?cv[23]\\.\\d/|dfl/))",
+  "cost_macs_frac": 0.09968318061074816,
+  "qdq_inputs_restored": 171,
+  "sha256": "6941ef860606a83be7c7b6bf42bab05e4dde6a9775d3159dca901d2ade726e39",
+  "table5_graph": true
+ },
+ "mean_B0.2": {
+  "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.0/)|(?:^/model\\.1/)|(?:^/model\\.9/)|(?:^/model\\.10/)|(?:^/model\\.17/)|(?:^/model\\.22/)|(?:^/model\\.23/one2one_cv2\\.0/)|(?:^/model\\.23/one2one_cv2\\.1/)|(?:^/model\\.23/one2one_cv2\\.2/)|(?:^/model\\.23/one2one_cv3\\.0/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.23/one2one_cv3\\.2/)|(?:^/model\\.23/(?!(?:one2one_)?cv[23]\\.\\d/|dfl/))",
+  "cost_macs_frac": 0.18751347726459514,
+  "qdq_inputs_restored": 229,
+  "sha256": "a6a0c58046f6cb6fe9675501993707f9903f71294bed6646c38c5e99a80586a4",
+  "table5_graph": true
+ },
+ "hf_B0.1": {
+  "source": "metrics/alloc_eval/yolo26l_int8ent/fxh_hyb_B0.1.json",
+  "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.23/one2one_cv2\\.0/)|(?:^/model\\.23/one2one_cv2\\.1/)|(?:^/model\\.23/one2one_cv2\\.2/)|(?:^/model\\.23/one2one_cv3\\.0/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.23/one2one_cv3\\.2/)|(?:^/model\\.23/(?!(?:one2one_)?cv[23]\\.\\d/|dfl/))|(?:^/model\\.0/)|(?:^/model\\.9/)|(?:^/model\\.10/)|(?:^/model\\.11/)|(?:^/model\\.12/)|(?:^/model\\.14/)|(?:^/model\\.15/)|(?:^/model\\.18/)|(?:^/model\\.21/)",
+  "cost_macs_frac": 0.09974716059212288,
+  "qdq_inputs_restored": 182,
+  "sha256": "e4a9a5cfef4d646af2ebb8b0f29383ae1eefe8ea9e36c7eebe96886ebf342b58"
+ },
+ "hf_B0.15": {
+  "source": "metrics/alloc_eval/yolo26l_int8ent/fxh_hyb_B0.15.json",
+  "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.23/one2one_cv2\\.0/)|(?:^/model\\.23/one2one_cv2\\.1/)|(?:^/model\\.23/one2one_cv2\\.2/)|(?:^/model\\.23/one2one_cv3\\.0/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.23/one2one_cv3\\.2/)|(?:^/model\\.23/(?!(?:one2one_)?cv[23]\\.\\d/|dfl/))|(?:^/model\\.0/)|(?:^/model\\.7/)|(?:^/model\\.8/)|(?:^/model\\.9/)|(?:^/model\\.10/)|(?:^/model\\.11/)|(?:^/model\\.12/)|(?:^/model\\.14/)|(?:^/model\\.15/)|(?:^/model\\.18/)|(?:^/model\\.21/)",
+  "cost_macs_frac": 0.14221091119341622,
+  "qdq_inputs_restored": 277,
+  "sha256": "ec018b9fcd28be05eca06fe438ca86287edf3ecaea4c6f0353e4ac11e3199fbc"
+ },
+ "hf_B0.2": {
+  "source": "metrics/alloc_eval/yolo26l_int8ent/fxh_hyb_B0.2.json",
+  "regex": "(?:/model\\.\\d+/((?:one2one_)?cv2\\.\\d/(?:one2one_)?cv2\\.\\d\\.2|(?:one2one_)?cv3\\.\\d/(?:one2one_)?cv3\\.\\d\\.2|dfl)/)|(?:^/model\\.23/one2one_cv2\\.0/)|(?:^/model\\.23/one2one_cv2\\.1/)|(?:^/model\\.23/one2one_cv2\\.2/)|(?:^/model\\.23/one2one_cv3\\.0/)|(?:^/model\\.23/one2one_cv3\\.1/)|(?:^/model\\.23/one2one_cv3\\.2/)|(?:^/model\\.23/(?!(?:one2one_)?cv[23]\\.\\d/|dfl/))|(?:^/model\\.0/)|(?:^/model\\.7/)|(?:^/model\\.8/)|(?:^/model\\.9/)|(?:^/model\\.10/)|(?:^/model\\.11/)|(?:^/model\\.12/)|(?:^/model\\.14/)|(?:^/model\\.15/)|(?:^/model\\.17/)|(?:^/model\\.18/)|(?:^/model\\.21/)|(?:^/model\\.22/)",
+  "cost_macs_frac": 0.1822694884208082,
+  "qdq_inputs_restored": 325,
+  "sha256": "d5eed876d1cc79639a8492109635e4bad9241371a8365cc77ffcd6af49b63922"
+ }
+}
